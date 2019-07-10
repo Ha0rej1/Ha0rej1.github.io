@@ -14,15 +14,25 @@
     <div class="wrapper">
         <div class="content">
             <nav id="nav">
-               <a href="#nav"><p class="logo">Ha0rej1</p></a>
+                <a href="#nav">
+                    <p class="logo">Ha0rej1</p>
+                </a>
                 <ul class="pc-menu">
-                    <li><a href="#">Проекты</a></li>
-                    <li><a href="#">Связаться</a></li>
+                    <a href="#projects" onclick="showProjects()">
+                        <li>Проекты</li>
+                    </a>
+                    <a href="#projects" onclick="showProjects()">
+                        <li>Связаться</li>
+                    </a>
                 </ul>
-                <a onclick="callmenu()"><i class="fas fa-bars menu-burger"></i></a>
+                <a onclick="callmenu()"><i class="fas fa-bars menu-burger" id="burgermen"></i></a>
                 <ul id="mobmenu" class="mobile-menu">
-                    <li>Проекты</li>
-                    <li>Связаться</li>
+                    <a href="#projects" onclick="showProjects()">
+                        <li>Проекты</li>
+                    </a>
+                    <a href="#projects" onclick="showProjects()">
+                        <li>Связаться</li>
+                    </a>
                 </ul>
             </nav>
             <div id="welcome">
@@ -33,43 +43,86 @@
                         <a href="#projects" onclick="showProjects()">
                             <div class="btn">Подробнее</div>
                         </a>
-                        <div class="btn">Присоединиться</div>
+                        <a href="#projects" onclick="showProjects()">
+                            <div class="btn">Связаться</div>
+                        </a>
                     </div>
                 </div>
-                 <div class="contacts">
-                    <a><i class="fab fa-telegram-plane"></i></a>
-                    <a><i class="fab fa-vk"></i></a>
+                <div class="contacts">
+                    <a href="https://t.me/ha0rej1" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
                 </div>
             </div>
             <div id="projects" class="dnone">
                 <p id="projects-main">Проекты</p>
                 <div id="projects-block">
                     <div class="card" id="firstcard">
-                        <img src="img/kazkabel.png" alt="" width="100%" >
-                            <p class="project-description">Казка.бел - озвученные белорусские сказки и предания<br> 
-                            (html, materialize css, js)</p>
-                            <div class="btn">кнопка</div>
+                        <img src="img/kazkabel.png" alt="" width="100%">
+                        <p class="project-description">Казка.бел - озвученные белорусские сказки и предания<br>
+                            (Html, materialize css, js)</p>
+                        <a href="https://kazkabelgroup.github.io">
+                            <div class="btn">Перейти</div>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="img/ivanovskiy.png" alt="" width="100%" >
-                            <p class="project-description">Ивановский - сайт про советского генерала <br> 
-                            (Materialize css)
-                            </p>
-                            <div class="btn">ъеъ</div>
+                        <img src="img/ivanovskiy.png" alt="" width="100%">
+                        <p class="project-description">Ивановский - сайт про советского генерала <br>
+                            (Html, materialize.css, js)
+                        </p>
+                        <a href="https://ivanovskiy.github.io">
+                            <div class="btn">Перейти</div>
+                        </a>
                     </div>
                     <div class="card" id="lastcard">
-                        <img src="img/aveweb.png" alt="" width="100%" >
-                            <p class="project-description">Ave Diary - Электронный дневник <br>(Чистый css)</p>
-
-                            <div class="btn">кнопка</div>
+                        <img src="img/aveweb.png" alt="" width="100%">
+                        <p class="project-description">Ave Diary - Электронный дневник <br>(Html, css)</p>
+                        <a href="https://aveweb.xyz">
+                            <div class="btn">Перейти</div>
+                        </a>
                     </div>
                 </div>
+                <footer>
+                    <div class="prefooter">
+                        <div id="prefooter-contacts">
+                            <a href="https://t.me/ha0rej1" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
+                            <a> <i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <p id="footer-text">Ha0rej1 2019</p>
             </div>
-            <footer>
-               
         </div>
         </footer>
     </div>
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
+    <style type="text/css">
+    #hellopreloader>p {
+        display: none;
+    }
+
+    #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        min-width: 100%;
+        background: #131218 url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;
+        background-size: 41px;
+    }
+    </style>
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) { el.style.opacity = 1; var interhellopreloader = setInterval(function() { el.style.opacity = el.style.opacity - 0.05; if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none"; } }, 16); } window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
+    </script>
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
 </body>
 <script src="js/burger.js"></script>
 
