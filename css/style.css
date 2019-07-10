@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 
-
 }
 
 html,
@@ -24,8 +23,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    color: white;
     z-index: 10;
+    color: white;
 }
 
 nav .pc-menu li {
@@ -79,6 +78,7 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #040405;
+    color: white;
 }
 
 .contacts {
@@ -314,6 +314,9 @@ a:hover {
     #top-welcome {
         display: block;
         text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-37%);
 
     }
 
@@ -326,6 +329,11 @@ a:hover {
     #lastcard {
         margin-bottom: 160px !important;
     }
+    #welcome .btn {
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
 }
 
 @media screen and (min-width: 770px) {
@@ -347,7 +355,7 @@ a:hover {
     }
 
     #projects {
-        height: 75vh;
+        height: 80vh;
     }
 }
 
@@ -378,12 +386,13 @@ a:hover {
     left: 0;
 }
 
-.footer {}
-
 #prefooter-contacts {
     color: white;
     text-align: center;
     position: relative;
     top: 15px;
     font-size: 1.3em;
+}
+a{
+    color:white;
 }

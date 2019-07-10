@@ -21,7 +21,7 @@
                     <a href="#projects" onclick="showProjects()">
                         <li>Проекты</li>
                     </a>
-                    <a href="#projects" onclick="showProjects()">
+                    <a href="#prefooter-contacts" onclick="showProjects()">
                         <li>Связаться</li>
                     </a>
                 </ul>
@@ -30,7 +30,7 @@
                     <a href="#projects" onclick="showProjects()">
                         <li>Проекты</li>
                     </a>
-                    <a href="#projects" onclick="showProjects()">
+                    <a href="#prefooter-contacts" onclick="showProjects()">
                         <li>Связаться</li>
                     </a>
                 </ul>
@@ -43,7 +43,7 @@
                         <a href="#projects" onclick="showProjects()">
                             <div class="btn">Подробнее</div>
                         </a>
-                        <a href="#projects" onclick="showProjects()">
+                        <a href="#prefooter-contacts" onclick="showProjects()">
                             <div class="btn">Связаться</div>
                         </a>
                     </div>
@@ -85,8 +85,8 @@
                     <div class="prefooter">
                         <div id="prefooter-contacts">
                             <a href="https://t.me/ha0rej1" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                    <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
-                            <a> <i class="fas fa-envelope"></i></a>
+                            <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
+                            <a href="mailto:Rostik3021@gmail.com" target="_blank"> <i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                     <p id="footer-text">Ha0rej1 2019</p>
@@ -119,8 +119,17 @@
     <script type="text/javascript">
     var hellopreloader = document.getElementById("hellopreloader_preload");
 
-    function fadeOutnojquery(el) { el.style.opacity = 1; var interhellopreloader = setInterval(function() { el.style.opacity = el.style.opacity - 0.05; if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader);
-                hellopreloader.style.display = "none"; } }, 16); } window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none";
+            }
+        }, 16);
+    }
+    window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
     </script>
     <!-- HelloPreload http://hello-site.ru/preloader/ -->
 </body>
