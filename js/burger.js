@@ -1,6 +1,7 @@
 var menu = document.getElementById('mobmenu');
 var open = false;
 var burger = document.getElementById('burgermen');
+var noscroll = document.getElementById('no-scroll');
 
 function callmenu() {
     if (open == false) {
@@ -14,14 +15,16 @@ function callmenu() {
 
     }
 }
-var projects = document.getElementById('projects');
+var inf = document.getElementById('inf');
 
-function showProjects() {
-    projects.classList.remove('dnone');
+function showinf() {
+    inf.classList.remove('dnone');
         open = false;
     menu.classList.remove('mobile-menu-move');
     burger.classList.remove('menu-burger-move');
+    noscroll.classList.remove('no-scroll');
 }
+
 
 /*function closemenu() {
     open = false;

@@ -11,12 +11,20 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: #131218;
+    background-color: #202029;
     user-select: none;
 }
-.container {
-    margin-left: 15px;
+
+a {
+    text-decoration: none;
+    color: white;
+
 }
+
+a:hover {
+    cursor: pointer;
+}
+
 nav {
     height: 70px;
     position: absolute;
@@ -60,25 +68,43 @@ nav a:hover {
     opacity: 1;
     width: 110px;
 }
-.logo:hover{
+
+.logo:hover {
     transition: 0.3s;
     opacity: 0.7;
 }
+
+.mobile-menu-move {
+    transition: 0.7s;
+    top: 0px !important;
+    color: black;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: -85px;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    transition: 0.7s;
+    padding-top: 15px;
+    color: black;
+}
+
+.mobile-menu li {
+    text-align: center;
+    margin-right: 20px;
+    font-size: 24px;
+    color: black;
+}
+
+.mobile-menu li a {
+    color: black;
+}
+
 .wrapper {
     position: relative;
     min-height: 100%;
-}
-
-.content {}
-
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #040405;
-    color: white;
 }
 
 .contacts {
@@ -93,14 +119,10 @@ footer {
     margin-left: 7px;
 }
 
-a {
-    text-decoration: none;
-}
-
 i {
     opacity: 1;
     transition: 0.3s;
-    padding:5px;
+    padding: 5px;
 }
 
 i:hover {
@@ -108,11 +130,313 @@ i:hover {
     transition: 0.3s;
 }
 
-a:hover {
+#welcome {
+    height: 100vh;
+    color: white;
+    position: relative;
+    background: linear-gradient(to top, #000024, #6D019D);
+    user-select: none;
+    background-size: 100vh 200vh;
+}
+
+#top-welcome {
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    display: flex;
+}
+
+#welcome-block {
+    overflow: hidden;
+    height: 200px;
+    white-space: nowrap;
+}
+
+#welcome .btn {
+    margin-right: 10px;
+    position: relative;
+    top: 30px;
+}
+
+#projects {
+    overflow: hidden;
+
+}
+
+#projects-block {
+    text-align: center;
+    position: relative;
+
+}
+
+#projects-block .card {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+
+}
+
+#projects-main {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.card {
+    transition: 0.3s;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card p {
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s;
+    text-align: center;
+    z-index: 9999;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    transition: 0.3s;
     cursor: pointer;
 }
 
+#news {
+    height: 1000px;
+    background-color: #16161c;
+    padding-top: 20px;
+    text-align: center;
+}
 
+#news-cat-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ecedee;
+    width: 0px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #000024, #6D019D);
+}
+
+::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+.dnone {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1366px) {
+    #projects .card {
+        height: 270px;
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+        vertical-align: top;
+    }
+}
+
+@media screen and (max-height: 414px) {
+    #top-welcome img {
+        height: 30%;
+        width: 30%;
+        margin-left: 0;
+    }
+
+    #top-welcome {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-37%);
+    }
+
+    #welcome-block {
+        position: relative;
+        top: 0px;
+    }
+
+    #welcome .btn {
+        top: 10px;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    #welcome-block {
+        position: relative;
+        top: 120px;
+    }
+
+    #news {
+        height: 650px !important;
+    }
+
+    .vk-news {
+        width: 300px !important;
+        margin-bottom: 50px;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 20px;
+    }
+
+    #top-welcome img {
+        margin-left: 14%;
+    }
+
+    .logo {
+        position: fixed;
+    }
+
+    #projects .card {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (width: 768px){
+     .vk-news {
+        width: 300px !important;
+        margin-bottom: 50px;
+        display: inline-block !important;
+        vertical-align: top;
+        margin-left: 20px;
+    }
+        .contacts {
+        display: none;
+    }
+
+    #news {
+        height: 600px;
+    }
+
+    #welcome img {
+        height: 100%;
+        width: 80%;
+    }
+
+    #top-welcome {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-37%);
+
+    }
+
+    #welcome .btn {
+        margin-left: 10px;
+    }
+
+    #lastcard {
+        margin-bottom: 20px !important;
+    }
+
+    #welcome .btn {
+        margin-right: 10px;
+        position: relative;
+        top: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .vk-news {
+        width: 300px !important;
+        margin-bottom: 50px;
+        display: block !important;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0px !important;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    #news {
+        height: 1000px;
+    }
+
+    #welcome img {
+        height: 100%;
+        width: 80%;
+    }
+
+    #top-welcome {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-37%);
+
+    }
+
+    #welcome .btn {
+        margin-left: 10px;
+    }
+
+    #lastcard {
+        margin-bottom: 20px !important;
+    }
+
+    #welcome .btn {
+        margin-right: 10px;
+        position: relative;
+        top: 10px;
+    }
+}
 
 @media screen and (min-width: 770px) {
     .menu-burger {
@@ -146,226 +470,14 @@ a:hover {
     }
 }
 
-.mobile-menu-move {
-    transition: 0.7s;
-    top: 0px !important;
-    color: black;
-}
-
-.mobile-menu {
+footer {
     position: absolute;
-    top: -85px;
-    background-color: white;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 70px;
-    transition: 0.7s;
-    padding-top: 15px;
-}
-
-
-.mobile-menu li {
-    text-align: center;
-    margin-right: 20px;
-    font-size: 24px;
-}
-.mobile-menus a{
-    color: black;
-}
-
-#welcome {
-    height: 100vh;
+    height: 100px;
+    background-color: #040405;
     color: white;
-    position: relative;
-    background: linear-gradient(to top, #000024, #6D019D);
-    user-select: none;
-    background-size: 100vh 200vh;
-}
-
-
-#projects {
-    overflow: hidden;
-
-}
-
-#projects-block {
-    text-align: center;
-    position: relative;
-
-}
-
-#projects-block .card {
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 50px;
-
-}
-
-#top-welcome {
-    transform: translateY(-50%);
-    position: relative;
-    top: 50%;
-    display: flex;
-}
-
-.btn {
-    background-color: rgba(255, 255, 255, 0.6);
-    color: black;
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    transition: 0.3s;
-    text-align: center;
-    z-index: 9999;
-    white-space: nowrap;
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#welcome-block {
-    overflow: hidden;
-    height: 200px;
-    white-space: nowrap;
-}
-
-#welcome .btn {
-    margin-right: 10px;
-    position: relative;
-    top: 30px;
-}
-
-.card {
-    transition: 0.3s;
-    text-align: center;
-    height: auto;
-    width: 250px;
-    height: 320px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-}
-
-.card .btn {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.card p {
-    padding: 10px;
-}
-
-::-webkit-scrollbar-button {
-    background-image: url('');
-    background-repeat: no-repeat;
-    width: 6px;
-    height: 0px
-}
-
-::-webkit-scrollbar-track {
-    background-color: #ecedee;
-    width: 0px;
-
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top, #000024, #6D019D);
-}
-
-::-webkit-resizer {
-    background-image: url('');
-    background-repeat: no-repeat;
-    width: 4px;
-    height: 0px
-}
-
-::-webkit-scrollbar {
-    width: 4px;
-}
-
-#projects-main {
-    text-align: center;
-    margin-top: 25px;
-    color: white;
-    font-size: 1.5em;
-    margin-bottom: 25px;
-}
-
-@media screen and (max-width: 768px) {
-    #projects-main {
-        visibility: hidden;
-    }
-
-    #welcome img {
-        height: 100%;
-        width: 80%;
-    }
-
-    #top-welcome {
-        display: block;
-        text-align: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-37%);
-
-    }
-
-    #projects {}
-
-    #welcome .btn {
-        margin-left: 10px;
-    }
-
-    #lastcard {
-        margin-bottom: 160px !important;
-    }
-    #welcome .btn {
-    margin-right: 10px;
-    position: relative;
-    top: 10px;
-}
-}
-
-@media screen and (min-width: 770px) {
-    #welcome-block {
-        position: relative;
-        top: 120px;
-    }
-
-    #top-welcome img {
-        margin-left: 14%;
-    }
-
-    .logo {
-        position: fixed;
-    }
-
-    #projects .card {
-        margin-bottom: 120px;
-    }
-
-    #projects {
-
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    #projects {
-    }
-}
-
-.dnone {
-    display: none;
 }
 
 #footer-text {
@@ -391,11 +503,4 @@ a:hover {
     position: relative;
     top: 15px;
     font-size: 1.3em;
-}
-a{
-    color:white;
-}
-@media screen and (width: 1024px){
-    #projects{
-    }
 }

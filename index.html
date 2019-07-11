@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/505beb7154.js"></script>
 </head>
 
-<body>
+<body id="no-scroll" class="no-scroll">
     <div class="wrapper">
         <div class="content">
             <nav id="nav">
@@ -18,21 +18,13 @@
                     <p class="logo">Ha0rej1</p>
                 </a>
                 <ul class="pc-menu">
-                   
-                        <li> <a href="#projects" onclick="showProjects()">Проекты  </a></li>
-                  
-                    
-                        <li><a href="#prefooter-contacts" onclick="showProjects()">Связаться  </a></li>
-                  
+                    <li> <a href="#inf" onclick="showinf()">Проекты </a></li>
+                    <li><a href="#prefooter-contacts" onclick="showinf()">Связаться </a></li>
                 </ul>
                 <a onclick="callmenu()"><i class="fas fa-bars menu-burger" id="burgermen"></i></a>
                 <ul id="mobmenu" class="mobile-menu">
-                   
-                        <li> <a href="#projects" onclick="showProjects()">Проекты</a></li>
-                    
-                    
-                        <li><a href="#prefooter-contacts" onclick="showProjects()">Связаться  </a></li>
-                  
+                    <li> <a href="#inf" onclick="showinf()">Проекты</a></li>
+                    <li><a href="#prefooter-contacts" onclick="showinf()">Связаться </a></li>
                 </ul>
             </nav>
             <div id="welcome">
@@ -40,10 +32,10 @@
                     <img src="img/macbook.png" width="50%" height="100%" alt="">
                     <div id="welcome-block">
                         <p>Lorem ipsum nulla enim in do <br>dolore do do <br> consectetur ullamco <br>enim id laboris sunt ut.</p>
-                        <a href="#projects" class="btn" onclick="showProjects()">
+                        <a href="#inf" class="btn" onclick="showinf()">
                             Подробнее
                         </a>
-                        <a href="#prefooter-contacts" class="btn" onclick="showProjects()">
+                        <a href="#prefooter-contacts" class="btn" onclick="showinf()">
                             Связаться
                         </a>
                     </div>
@@ -53,46 +45,65 @@
                     <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
                 </div>
             </div>
-            <div id="projects" class="dnone">
-                <p id="projects-main">Проекты</p>
-                <div id="projects-block">
-                    <div class="card" id="firstcard">
-                        <img src="img/kazkabel.png" alt="" width="100%">
-                        <p class="project-description">Казка.бел - озвученные белорусские сказки и предания<br>
-                            (Html, materialize css, js)</p>
-                        <a class="btn" href="https://kazkabelgroup.github.io">
-                            Перейти
-                        </a>
+            <div id="inf" class="dnone">
+                <div id="projects">
+                    <p id="projects-main">Проекты</p>
+                    <div id="projects-block">
+                        <div class="card" id="firstcard">
+                            <img src="img/kazkabel.png" alt="" width="100%">
+                            <p class="project-description">Казка.бел - озвученные белорусские сказки и предания<br>
+                                (Html, materialize css, js)</p>
+                            <a class="btn" href="https://kazkabelgroup.github.io">
+                                Перейти
+                            </a>
+                        </div>
+                        <div class="card">
+                            <img src="img/ivanovskiy.png" alt="" width="100%">
+                            <p class="project-description">Ивановский - сайт про советского генерала <br>
+                                (Html, materialize.css, js)
+                            </p>
+                            <a class="btn" href="https://ivanovskiy.github.io">
+                                Перейти
+                            </a>
+                        </div>
+                        <div class="card" id="lastcard">
+                            <img src="img/aveweb.png" alt="" width="100%">
+                            <p class="project-description">Ave Diary - Электронный дневник <br>(Html, css)</p>
+                            <a class="btn" href="https://aveweb.xyz">
+                                Перейти
+                            </a>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="img/ivanovskiy.png" alt="" width="100%">
-                        <p class="project-description">Ивановский - сайт про советского генерала <br>
-                            (Html, materialize.css, js)
-                        </p>
-                        <a class="btn" href="https://ivanovskiy.github.io">
-                            Перейти
-                        </a>
-                    </div>
-                    <div class="card" id="lastcard">
-                        <img src="img/aveweb.png" alt="" width="100%">
-                        <p class="project-description">Ave Diary - Электронный дневник <br>(Html, css)</p>
-                        <a class="btn" href="https://aveweb.xyz">
-                            Перейти
-                        </a>
-                    </div>
+                </div>
+                <div id="news">
+                    <p id="news-cat-title">Новости</p>
+                    <div class="vk-news" id="vk_post_-184357478_3"></div>
+                    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?161"></script>
+                    <script type="text/javascript">
+                    (function() {
+                        VK.Widgets.Post("vk_post_-184357478_3", -184357478, 3, '3G7K0FNrJ_EJHmo1WewcQKVyfAc1');
+                    }());
+                    </script>
+                    <div class="vk-news" id="vk_post_-184357478_4"></div>
+                    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?161"></script>
+                    <script type="text/javascript">
+                    (function() {
+                        VK.Widgets.Post("vk_post_-184357478_4", -184357478, 4, 'mjT9XZoVPLN4wipZ3lv2oO-akqwQ');
+                    }());
+                    </script>
                 </div>
                 <footer>
                     <div class="prefooter">
                         <div id="prefooter-contacts">
                             <a href="https://t.me/ha0rej1" target="_blank"><i class="fab fa-telegram-plane"></i></a>
                             <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
-                            <a href="mailto:Rostik3021@gmail.com"я> <i class="fas fa-envelope"></i></a>
+                            <a href="mailto:Rostik3021@gmail.com" я> <i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                     <p id="footer-text">Ha0rej1 2019</p>
             </div>
+            </footer>
         </div>
-        </footer>
     </div>
     <!-- HelloPreload http://hello-site.ru/preloader/ -->
     <style type="text/css">
