@@ -11,6 +11,27 @@
 </head>
 
 <body id="no-scroll" class="no-scroll">
+
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+
+    <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none";
+            }
+        }, 16);
+    }
+    window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
+    </script>
+
     <div class="wrapper">
         <div class="content">
             <nav id="nav">
@@ -31,7 +52,8 @@
                 <div id="top-welcome">
                     <img src="img/macbook.png" width="50%" height="100%" alt="">
                     <div id="welcome-block">
-                        <p>Lorem ipsum nulla enim in do <br>dolore do do <br> consectetur ullamco <br>enim id laboris sunt ut.</p>
+                        <p>Привет! <br>Меня зовут Ростислав. <br>
+                            Я занимаюсь Web разработкой и <br> дизайном 2 года</p>
                         <a href="#inf" class="btn" onclick="showinf()">
                             Подробнее
                         </a>
@@ -77,20 +99,23 @@
                 </div>
                 <div id="news">
                     <p id="news-cat-title">Новости</p>
-                    <div class="vk-news" id="vk_post_-184357478_3"></div>
-                    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?161"></script>
-                    <script type="text/javascript">
-                    (function() {
-                        VK.Widgets.Post("vk_post_-184357478_3", -184357478, 3, '3G7K0FNrJ_EJHmo1WewcQKVyfAc1');
-                    }());
-                    </script>
-                    <div class="vk-news" id="vk_post_-184357478_4"></div>
-                    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?161"></script>
-                    <script type="text/javascript">
-                    (function() {
-                        VK.Widgets.Post("vk_post_-184357478_4", -184357478, 4, 'mjT9XZoVPLN4wipZ3lv2oO-akqwQ');
-                    }());
-                    </script>
+                    <div id="news-block">
+                        <div class="card">
+                            <p class="project-description">Новый сайт уже в разработке!<br>
+                                <img src="img/newwebsite.png" alt="" width="100%">
+                                <p class="news-date">16.07.2019</p>
+                        </div>
+                        <div class="card">
+                            <p class="project-description">Новый сайт уже в разработке!<br>
+                                <img src="img/newwebsite.png" alt="" width="100%">
+                                <p class="news-date">16.07.2019</p>
+                        </div>
+                        <div class="card">
+                            <p class="project-description">Новый сайт уже в разработке!<br>
+                                <img src="img/newwebsite.png" alt="" width="100%">
+                                <p class="news-date">16.07.2019</p>
+                        </div>
+                    </div>
                 </div>
                 <footer>
                     <div class="prefooter">
@@ -100,7 +125,7 @@
                             <a href="mailto:Rostik3021@gmail.com" я> <i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
-                    <p id="footer-text">Ha0rej1 2019</p>
+                    <p id="footer-text"><a href="#nav">Ha0rej1 2019</a></p>
             </div>
             </footer>
         </div>
@@ -124,26 +149,6 @@
         background-size: 41px;
     }
     </style>
-    <div id="hellopreloader">
-        <div id="hellopreloader_preload"></div>
-    </div>
-    <script type="text/javascript">
-    var hellopreloader = document.getElementById("hellopreloader_preload");
-
-    function fadeOutnojquery(el) {
-        el.style.opacity = 1;
-        var interhellopreloader = setInterval(function() {
-            el.style.opacity = el.style.opacity - 0.05;
-            if (el.style.opacity <= 0.05) {
-                clearInterval(interhellopreloader);
-                hellopreloader.style.display = "none";
-            }
-        }, 16);
-    }
-    window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
-    </script>
-    <!-- HelloPreload http://hello-site.ru/preloader/ -->
 </body>
 <script src="js/burger.js"></script>
-
 </html>

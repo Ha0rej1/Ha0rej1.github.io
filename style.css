@@ -155,25 +155,11 @@ i:hover {
 #welcome .btn {
     margin-right: 10px;
     position: relative;
-    top: 30px;
+    top: 10px;
 }
 
 #projects {
     overflow: hidden;
-
-}
-
-#projects-block {
-    text-align: center;
-    position: relative;
-
-}
-
-#projects-block .card {
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 50px;
 
 }
 
@@ -188,9 +174,6 @@ i:hover {
 .card {
     transition: 0.3s;
     text-align: center;
-    height: auto;
-    width: 250px;
-    height: 320px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 15px;
     overflow: hidden;
@@ -203,6 +186,20 @@ i:hover {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.card .news-date {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#news .card img {
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+#news .card p {}
 
 .card p {
     padding: 10px;
@@ -231,10 +228,8 @@ i:hover {
 }
 
 #news {
-    height: 1000px;
     background-color: #16161c;
     padding-top: 20px;
-    text-align: center;
 }
 
 #news-cat-title {
@@ -280,15 +275,7 @@ i:hover {
     overflow: hidden;
 }
 
-@media screen and (max-width: 1366px) {
-    #projects .card {
-        height: 270px;
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-        vertical-align: top;
-    }
-}
+@media screen and (max-width: 1366px) {}
 
 @media screen and (max-height: 414px) {
     #top-welcome img {
@@ -315,22 +302,33 @@ i:hover {
     }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
     #welcome-block {
         position: relative;
-        top: 120px;
+        margin-top: 10%;
     }
 
     #news {
-        height: 650px !important;
+        height: 500px;
     }
 
-    .vk-news {
-        width: 300px !important;
-        margin-bottom: 50px;
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 20px;
+    #news-block {
+        display: grid;
+        grid-template-rows: repeat(1, 300px);
+        grid-template-columns: repeat(3, 210px);
+        grid-gap: 20px;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    #projects-block {
+        display: grid;
+        grid-template-rows: repeat(1, 300px);
+        grid-template-columns: repeat(3, 210px);
+        grid-gap: 20px;
+        overflow-x: hidden;
+        justify-content: center;
+        margin-bottom: 20px;
     }
 
     #top-welcome img {
@@ -340,75 +338,27 @@ i:hover {
     .logo {
         position: fixed;
     }
-
-    #projects .card {
-        margin-bottom: 20px;
-    }
 }
-@media screen and (width: 768px){
-     .vk-news {
-        width: 300px !important;
-        margin-bottom: 50px;
-        display: inline-block !important;
-        vertical-align: top;
-        margin-left: 20px;
-    }
-        .contacts {
-        display: none;
-    }
 
-    #news {
-        height: 600px;
-    }
-
+@media screen and (width: 768px) {
     #welcome img {
-        height: 100%;
-        width: 80%;
+        margin-left: 10%;
     }
 
-    #top-welcome {
-        display: block;
-        text-align: center;
-        position: relative;
-        top: 50%;
-        transform: translateY(-37%);
-
-    }
-
-    #welcome .btn {
-        margin-left: 10px;
-    }
-
-    #lastcard {
-        margin-bottom: 20px !important;
-    }
-
-    #welcome .btn {
-        margin-right: 10px;
-        position: relative;
+    #welcome-block .btn {
         top: 10px;
     }
 }
-@media screen and (max-width: 767px) {
 
-    .vk-news {
-        width: 300px !important;
-        margin-bottom: 50px;
-        display: block !important;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-left: 0px !important;
+@media screen and (max-width: 767px) {
+    #news {
+        height: 1020px;
     }
 
     .contacts {
         display: none;
     }
 
-    #news {
-        height: 1000px;
-    }
-
     #welcome img {
         height: 100%;
         width: 80%;
@@ -436,9 +386,35 @@ i:hover {
         position: relative;
         top: 10px;
     }
+
+    #projects-block {
+        display: block;
+    }
+
+    #projects-block .card {
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+        width: 70%;
+        margin-bottom: 20px;
+        height: 270px !important;
+    }
+
+    #news-block {
+        display: block;
+    }
+
+    #news-block .card {
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+        width: 70%;
+        margin-bottom: 20px;
+        height: 270px !important;
+    }
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
     .menu-burger {
         display: none !important;
     }
@@ -449,7 +425,6 @@ i:hover {
 }
 
 @media screen and (max-width: 768px) {
-
     .pc-menu {
         display: none !important;
     }
@@ -501,6 +476,6 @@ footer {
     color: white;
     text-align: center;
     position: relative;
-    top: 15px;
+    top: 13px;
     font-size: 1.3em;
 }
