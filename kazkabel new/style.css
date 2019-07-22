@@ -68,19 +68,22 @@ nav{
 	}
 	#mob-nav-menu{
 		background-color: white;
-		top:-87px;
+		top:-138px;
 		position: fixed;
 		transition: 0.3s;
 		width: 100%;
 		-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
 		-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
 		box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.mob-nav-btn{
 		color: black;
 		font-size: 24px;
 		display: block;
 		text-align: center;
+		margin-bottom: 10px;
 	}
 	#burger{
 		color: white;
@@ -96,7 +99,7 @@ nav{
 	}
 	.burger-move{
 		transition: 0.3s !important;
-		top:110px !important;
+		top:158px !important;
 		color: #ff8f8f !important;
 	}
 	.burger-rotate-open{
@@ -237,9 +240,14 @@ li:before{
 	.project-select-card{
 		margin-bottom: 20px;
 		margin-right: 0;
+		width: 85%;
 	}
 	#projects-block{
 		top: 50px;
+	}
+	#projects{
+		padding-top:8vh;
+		padding-bottom: 8vh;
 	}
 }
 @media (min-width: 768px) and (max-width: 850px){
