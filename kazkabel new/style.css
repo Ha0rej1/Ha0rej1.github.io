@@ -1,0 +1,334 @@
+body{
+	font-family: 'San-Francisco-Light', sans-serif;
+	background-color: white;
+	height: 100%;
+}
+@font-face{
+	font-family: 'San-Francisco-Light';
+	src:url(fonts/SFProDisplay-Light.eot);
+	src:url(fonts/SFProDisplay-Light.ttf);
+}
+@font-face{
+	font-family: 'San-Francisco-UltraLight';
+	src:url(fonts/SFProDisplay-Ultralight.eot);
+	src:url(fonts/SFProDisplay-Ultralight.ttf);
+}
+*{
+	padding: 0;
+	margin:0;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+.container{
+	margin-left: 35px;
+	margin-right: 35px;
+}
+.btn{
+	padding: 10px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 25px;
+	color: black;
+	font-size: 20px;
+	-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+}
+
+/* Меню навигации*/
+nav{
+	position: absolute;
+	height: 70px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	font-family: 'San-Francisco-Light';
+
+}
+.nav-logo{
+	font-size: 20px;
+	position: absolute;
+	top: 23px;
+	left: 35px;
+	font-size: 20px;
+	
+}
+.nav-btn{
+	display: inline;
+	margin-left: 25px;
+	font-size: 20px;
+}
+@media screen and (max-width: 767px){
+	#pc-nav-menu{
+		display: none;
+	}
+	#mob-nav-menu{
+		background-color: white;
+		top:-87px;
+		position: fixed;
+		transition: 0.3s;
+		width: 100%;
+		-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+	}
+	.mob-nav-btn{
+		color: black;
+		font-size: 24px;
+		display: block;
+		text-align: center;
+	}
+	#burger{
+		color: white;
+		position: fixed;
+		right: 18px;
+		top: 21px;
+		font-size: 24px;
+		transition: 0.3s;
+	}
+	.mob-nav-menu-opened{
+		top: 0 !important;
+		transition: 0.3s !important;
+	}
+	.burger-move{
+		transition: 0.3s !important;
+		top:110px !important;
+		color: #ff8f8f !important;
+	}
+	.burger-rotate-open{
+		-webkit-animation: burger-rotate-open 0.3s linear;
+		-o-animation: burger-rotate-open 0.3s linear;
+		animation: burger-rotate-open 0.3s linear;
+	}
+	.burger-rotate-close{
+		-webkit-animation: burger-rotate-close 0.3s linear;
+		-o-animation: burger-rotate-close 0.3s linear;
+		animation: burger-rotate-close 0.3s linear;
+	}
+}
+@media screen and (min-width: 768px){
+	#pc-nav-menu{
+		position: absolute;
+		right: 35px;
+		top: 23px;
+	}
+	#mob-nav-menu{
+		display: none;
+	}
+	#burger{
+		display: none;
+	}
+	.nav-logo{
+		position: fixed;
+		transition: 0.1s;
+		opacity: 1;
+	}
+	.nav-logo:hover{
+		transition: 0.1s;
+		opacity: 0.7;
+	}
+	.nav-btn{
+		transition: 0.1s;
+		opacity: 1;
+	}
+	.nav-btn:hover{
+		transition: 0.1s;
+		opacity: 0.7;
+	}
+	.logo-name{
+		transition: 0.1s;
+		opacity: 1;
+	}
+	.logo-name:hover{
+		transition: 0.1s;
+		opacity: 0.7;
+	}
+}
+/* Меню навигации*/
+
+/*Главный блок*/
+#welcome{
+	height: 100vh;
+	width: 100%;
+	background-image: url(img/bg.jpg);
+	background-size: 100% 100%;
+
+}
+#welcome-block{
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 45vh;
+	font-weight: normal;
+	font-size: 24px;
+}
+#welcome-promo{
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 767px){
+	#welcome-block{
+		top: 35vh;
+	}
+}
+/*Главный блок*/
+
+/*Блок проектов*/
+#projects{
+	width: 100%;
+	background-image: url(img/bg2.jpg);
+	background-size: 100% 100%;	
+	position: relative;
+	padding-top:25vh;
+    padding-bottom:25vh;
+}
+#projects-block{
+	text-align: center;
+}
+#projects-promo{
+	font-size: 28px;
+	color: white;
+	margin-bottom: 50px;
+}
+.project-select-card{
+	background-color: rgba(255,255,255,0.7);
+	width: 230px;
+	height: 230px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	position: relative;
+	padding: 10px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+}
+.project-name{
+	text-align: center;
+	font-size: 24px;
+}
+.project-description{
+	text-align: left;
+	margin-top: 25px;
+}
+li{
+	list-style-type: none;
+}
+li:before{
+	content: "-";
+}
+.project-open{
+	width: 80px;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-image: url(img/bg2.jpg);
+	background-size: 200% 200%;
+
+}
+@media screen and (max-width: 767px){
+	.project-select-card{
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	#projects-block{
+		top: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 850px){
+	.project-select-card{
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+}
+/*Блок проектов*/
+
+/* Футер */
+footer{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	font-size: 20px;
+}
+.footer-date{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+/* Футер */
+::-webkit-scrollbar-button {
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 6px;
+	height: 0px
+}
+
+::-webkit-scrollbar-track {
+	background-color: #ecedee;
+
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #56999f;
+}
+
+::-webkit-resizer {
+	background-image: url('');
+	background-repeat: no-repeat;
+	width: 4px;
+	height: 0px
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+@keyframes burger-rotate-open{
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(45deg);
+	}
+	50%{
+		transform: rotate(90deg);
+	}
+	75%{
+		transform: rotate(135deg);
+	}
+	100%{
+		transform: rotate(180deg);
+	}
+}
+@keyframes burger-rotate-close{
+	0%{
+		transform: rotate(180deg);
+	}
+	25%{
+		transform: rotate(135deg);
+	}
+	50%{
+		transform: rotate(90deg);
+	}
+	75%{
+		transform: rotate(45deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+#hellopreloader{
+	background-image: url(img/bg2.jpg) !important;
+	background-size: 100% 100%;	
+}

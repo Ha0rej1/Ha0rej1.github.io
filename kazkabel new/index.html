@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<title>Ave Tales</title>
+	<script src="https://kit.fontawesome.com/505beb7154.js"></script>
+</head>
+<body>
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+	<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #636363 url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;background-size:41px;}</style>
+	<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+	<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+	<header>
+		<nav>
+			<div class="nav-logo"><a href="">Ave Tales</a></div>
+			<div id="pc-nav-menu">
+				<a class="nav-btn">Главная</a>
+				<a class="nav-btn">Проекты</a>
+				<a class="nav-btn">Контакты</a>
+			</div>
+			<div id="mob-nav-menu">
+				<a class="mob-nav-btn" onclick="closeMenu()">Главная</a>
+				<a class="mob-nav-btn" onclick="closeMenu()">Проекты</a>
+				<a class="mob-nav-btn" onclick="closeMenu()">Контакты</a>
+			</div>
+			<i class="fas fa-bars" id="burger" onclick="openMenu()"></i>
+		</nav>
+	</header>
+	<div class="content" onclick="closeMenu()">
+		<div id="welcome">
+			<div id="welcome-block" class="container">
+				<p id="welcome-promo">Ave Tales - сервис для прослушивания, чтения белорусских <br> народных сказок, легенд и преданий</p>
+				<a href="#projects" class="btn">Подробнее</a>
+			</div>
+		</div>
+
+
+
+
+		<div id="projects">
+			<div id="projects-block" class="container">
+				<p id="projects-promo">Выберите проект</p>
+				<div class="project-select-card">
+					<div class="project-name">Ave Tales Listen</div>
+					<div class="project-description">
+						<ul>
+ 							<li>Прослушивание сказок</li>
+ 							<li>Авторская озвучка</li>
+ 							<li>30+ сказок</li>
+ 							<li>Бесплатно</li>
+ 						</ul>
+					</div>
+					<a class="project-open btn">Слушать</a>
+				</div>
+				<div class="project-select-card">
+					<div class="project-name">Ave Tales Read</div>
+					<div class="project-description">
+ 						<ul>
+ 							<li>Чтение сказок</li>
+ 							<li>Разные режимы чтения</li>
+ 							<li>30+ сказок</li>
+ 							<li>Бесплатно</li>
+ 						</ul>
+					</div>
+					<a class="project-open btn">Читать</a>
+				</div>
+				<div class="project-select-card">
+					<div class="project-name">Ave Tales Calendar</div>
+					<div class="project-description">
+						<ul>
+ 							<li>Просмотр белорусских праздников</li>
+ 							<li>Бесплатно</li>
+ 						</ul>
+					</div>
+					<a class="project-open btn">Смотреть</a>
+				</div>
+			</div>
+			<footer>
+				<div class="footer-date">
+					<script>
+						new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
+					</script><a href="index.html"> &nbsp;Ave Team</a>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script src="js/burger.js"></script>
+</body>
+
+</html>
