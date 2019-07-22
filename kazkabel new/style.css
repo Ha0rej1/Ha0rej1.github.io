@@ -29,15 +29,36 @@ a{
 }
 .btn{
 	padding: 10px;
-	background-color: rgba(255,255,255,0.7);
+background-color: rgba(255,255,255,0.6);
 	border-radius: 25px;
 	color: black;
 	font-size: 20px;
-	-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
-}
+-webkit-box-shadow: 0px 0px 61px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 61px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 61px -12px rgba(0,0,0,0.75);
+transition: 0.3s;
+position: relative;
+top: 0;
 
+}
+.btn:hover{
+	position: relative;
+	top:15px;
+	transition: 0.3s;
+	-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+@media screen and (min-width: 768px;){
+	.btn:hover{
+	position: relative;
+	top:15px;
+	transition: 0.3s;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+}
 /* Меню навигации*/
 nav{
 	position: absolute;
@@ -186,7 +207,7 @@ nav{
 	background-size: 100% 100%;	
 	position: relative;
 	padding-top:25vh;
-    padding-bottom:25vh;
+    padding-bottom:26vh;
 }
 #projects-block{
 	text-align: center;
@@ -204,7 +225,7 @@ nav{
 	vertical-align: top;
 	margin-right: 15px;
 	position: relative;
-	padding: 10px;
+    padding-top: 10px;
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
@@ -218,23 +239,23 @@ nav{
 	text-align: left;
 	margin-top: 25px;
 }
-li{
+#projects li{
+	margin-left: 10px;
 	list-style-type: none;
 }
 li:before{
 	content: "-";
 }
 .project-open{
-	width: 85px;
 	color: white;
-	position: absolute;
-	bottom: 20px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
 	background-image: url(img/bg2.jpg);
 	background-size: 200% 200%;
 
+}
+.project-open-block{
+	position: absolute;
+	bottom: 35px;
+	width: 100%;
 }
 @media screen and (max-width: 767px){
 	.project-select-card{
@@ -266,10 +287,20 @@ footer{
 	width: 100%;
 	font-size: 20px;
 }
-.footer-date{
+.footer{
 	position: relative;
 	text-align: center;
 	color: white;
+	opacity: 1;
+	transition: 0.3s;
+}
+#footer-copyright:hover{
+	opacity: 0.7;
+	transition: 0.1s;
+}
+#footer-copyright{
+	opacity: 1;
+	transition: 0.1s;
 }
 /* Футер */
 ::-webkit-scrollbar-button {
