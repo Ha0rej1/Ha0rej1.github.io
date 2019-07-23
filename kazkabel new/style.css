@@ -2,6 +2,7 @@ body{
 	font-family: 'San-Francisco-Light', sans-serif;
 	background-color: white;
 	height: 100%;
+	user-select: none;
 }
 @font-face{
 	font-family: 'San-Francisco-Light';
@@ -27,6 +28,32 @@ a{
 	margin-left: 35px;
 	margin-right: 35px;
 }
+.card{
+	background-color: rgba(255,255,255,0.7);
+	vertical-align: top;
+	padding-top: 10px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
+}
+.card-name{
+	text-align: center;
+	font-size: 24px;
+}
+.card-description{
+	text-align: left;
+	margin-top: 25px;
+	font-size: 18px;
+}
+.card-avatar{
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
 .btn{
 	padding: 10px;
 background-color: rgba(255,255,255,0.6);
@@ -48,6 +75,9 @@ top: 0;
 	-webkit-box-shadow: none;
 -moz-box-shadow: none;
 box-shadow: none;
+}
+.content{
+	position: relative;
 }
 @media screen and (min-width: 768px;){
 	.btn:hover{
@@ -76,6 +106,7 @@ nav{
 	top: 23px;
 	left: 35px;
 	font-size: 20px;
+
 	
 }
 .nav-btn{
@@ -151,6 +182,9 @@ nav{
 		transition: 0.1s;
 		opacity: 1;
 	}
+	nav{
+		position: fixed !important;
+	}
 	.nav-logo:hover{
 		transition: 0.1s;
 		opacity: 0.7;
@@ -174,7 +208,7 @@ nav{
 }
 /* Меню навигации*/
 
-/*Главный блок*/
+/* Главный блок */
 #welcome{
 	height: 100vh;
 	width: 100%;
@@ -198,9 +232,9 @@ nav{
 		top: 35vh;
 	}
 }
-/*Главный блок*/
+/* Главный блок */
 
-/*Блок проектов*/
+/* Блок проектов */
 #projects{
 	width: 100%;
 	background-image: url(img/bg2.jpg);
@@ -218,7 +252,6 @@ nav{
 	margin-bottom: 50px;
 }
 .project-select-card{
-	background-color: rgba(255,255,255,0.7);
 	width: 230px;
 	height: 230px;
 	display: inline-block;
@@ -226,18 +259,6 @@ nav{
 	margin-right: 15px;
 	position: relative;
     padding-top: 10px;
-	border-radius: 15px;
-	-webkit-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
-}
-.project-name{
-	text-align: center;
-	font-size: 24px;
-}
-.project-description{
-	text-align: left;
-	margin-top: 25px;
 }
 #projects li{
 	margin-left: 10px;
@@ -278,21 +299,92 @@ li:before{
 		margin-bottom: 20px;
 	}
 }
-/*Блок проектов*/
+/* Блок проектов */
+
+/* Контакты */
+#contacts{
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	background-image: url(img/bg3.jpg);
+	text-align: center;
+}
+#contacts-scroll{
+		overflow-x: scroll;
+	white-space: nowrap;
+	padding-left: 17px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+#contacts-header{
+	margin-bottom: 20px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+#contacts .card{
+	display: inline-block;
+	width: 300px;
+	height: 85px;
+	margin-right: 15px;
+	position: relative;
+	padding-bottom: 10px;
+}
+#contacts .card-name{
+	text-align: left;
+	margin-left: 50px;
+	margin-top: 13px;
+	color:white;
+	font-size: 20px;
+}
+#contacts .card-description{
+	margin-left: 50px;
+	position: absolute;
+	bottom: 19px;
+}
+#contacts .card-contacts{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+#contacts .card-contacts img{
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+}
+#contacts .card-bg{
+	background-image: url(img/bg2.jpg);
+	background-size: 100% 250%;
+	height: 50px;
+    position: absolute;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 14px 14px 0px 0px;
+	-webkit-box-shadow: 0px 95px 124px -48px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 95px 124px -48px rgba(0,0,0,0.75);
+box-shadow: 0px 95px 124px -48px rgba(0,0,0,0.75);
+}
+@media screen and (min-width: 850px){
+	#contacts-scroll{
+		overflow-x:hidden;
+	}
+}
+@media screen and (max-width: 768px){
+	#contacts .card{
+		width: 95%;
+	}
+}
+
+/* Контакты */
 
 /* Футер */
 footer{
 	position: absolute;
-	bottom: 15px;
+	bottom: 20px;
 	width: 100%;
 	font-size: 20px;
-}
-.footer{
-	position: relative;
 	text-align: center;
-	color: white;
-	opacity: 1;
-	transition: 0.3s;
 }
 #footer-copyright:hover{
 	opacity: 0.7;
@@ -327,11 +419,12 @@ footer{
 	background-image: url('');
 	background-repeat: no-repeat;
 	width: 4px;
-	height: 0px
+	height: 0px;
 }
 
 ::-webkit-scrollbar {
 	width: 4px;
+	height: 1px;
 }
 @keyframes burger-rotate-open{
 	0%{

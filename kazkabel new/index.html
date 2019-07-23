@@ -16,11 +16,11 @@
 	<!-- HelloPreload http://hello-site.ru/preloader/ -->
 	<header>
 		<nav>
-			<div class="nav-logo"><a href="">Ave Tales</a></div>
+			<div class="nav-logo"><a href="#welcome">Ave Tales</a></div>
 			<div id="pc-nav-menu">
-				<a class="nav-btn">Главная</a>
-				<a class="nav-btn">Проекты</a>
-				<a class="nav-btn">Контакты</a>
+				<a class="nav-btn" href="#welcome">Главная</a>
+				<a class="nav-btn" href="#projects">Проекты</a>
+				<a class="nav-btn" href="#contacts">Контакты</a>
 			</div>
 			<div id="mob-nav-menu">
 				<a class="mob-nav-btn" onclick="closeMenu()">Главная</a>
@@ -44,57 +44,97 @@
 		<div id="projects">
 			<div id="projects-block" class="container">
 				<p id="projects-promo">Выберите проект</p>
-				<div class="project-select-card">
-					<div class="project-name">Ave Tales Listen</div>
-					<div class="project-description">
+				<div class="project-select-card card">
+					<div class="card-name">Ave Tales Listen</div>
+					<div class="card-description">
 						<ul>
- 							<li>Прослушивание сказок</li>
- 							<li>Авторская озвучка</li>
- 							<li>30+ сказок</li>
- 							<li>Бесплатно</li>
- 						</ul>
+							<li>Прослушивание сказок</li>
+							<li>Авторская озвучка</li>
+							<li>30+ сказок</li>
+							<li>Бесплатно</li>
+						</ul>
 					</div>
 					<div class="project-open-block">
-					<a class="project-open btn">Слушать</a>
-				</div>
-				</div>
-				<div class="project-select-card">
-					<div class="project-name">Ave Tales Read</div>
-					<div class="project-description">
- 						<ul>
- 							<li>Чтение сказок</li>
- 							<li>Разные режимы чтения</li>
- 							<li>30+ сказок</li>
- 							<li>Бесплатно</li>
- 						</ul>
+						<a class="project-open btn">Слушать</a>
 					</div>
-					<div class="project-open-block">
-					<a class="project-open btn">Читать</a>
 				</div>
-				</div>
-				<div class="project-select-card">
-					<div class="project-name">Ave Tales Calendar</div>
-					<div class="project-description">
+				<div class="project-select-card card">
+					<div class="card-name">Ave Tales Read</div>
+					<div class="card-description">
 						<ul>
- 							<li>Просмотр белорусских праздников</li>
- 							<li>Бесплатно</li>
- 						</ul>
+							<li>Чтение сказок</li>
+							<li>Разные режимы чтения</li>
+							<li>30+ сказок</li>
+							<li>Бесплатно</li>
+						</ul>
 					</div>
 					<div class="project-open-block">
-					<a class="project-open btn">Смотреть</a>
+						<a class="project-open btn">Читать</a>
+					</div>
+				</div>
+				<div class="project-select-card card">
+					<div class="card-name">Ave Tales Calendar</div>
+					<div class="card-description">
+						<ul>
+							<li>Просмотр белорусских праздников</li>
+							<li>Бесплатно</li>
+						</ul>
+					</div>
+					<div class="project-open-block">
+						<a class="project-open btn">Смотреть</a>
 					</div>
 				</div>
 			</div>
-			<footer>
-				<div class="footer">
-					<a href="index.html" id="footer-copyright">
-					<script>
-						new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
-					</script>&nbsp;Ave Team
-				</a>
-				</div>
-			</footer>
+			
 		</div>
+		<div id="contacts">
+			<div id="contacts-header">Контакты</div>
+			<div id="contacts-scroll">
+				<div class="card">
+					<div class="card-bg"><div class="card-name">Ave Team</div></div>
+					<img src="img/ave.png" alt="" class="card-avatar">
+					<div class="card-contacts">
+						<a href="t.me/aveteam" target="_blank"><img src="img/telegram.png" alt=""></a>
+					</div>
+					<div class="card-description">
+						Our team
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-bg"><div class="card-name">Ha0rej1</div></div>
+
+					<img src="img/rostik.jpg" alt="" class="card-avatar">
+					<div class="card-contacts">
+						<a href="t.me/ha0rej1" target="_blank"><img src="img/telegram.png" alt=""></a>
+					</div>
+					<div class="card-description">
+						Front-end
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-bg">
+						<div class="card-name">DanilSay</div>
+
+					</div>
+					<a href="t.me/danilsay" target="_blank"><img src="img/danilsay.jpg" alt="" class="card-avatar"></a>
+					<div class="card-contacts">
+						<img src="img/telegram.png" alt="">
+					</div>
+
+					<div class="card-description">
+						Back-end
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+
+			<a href="#welcome" id="footer-copyright">
+				<script>
+					new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
+				</script>&nbsp;Ave Team
+			</a>
+		</footer>
 	</div>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script src="js/burger.js"></script>
