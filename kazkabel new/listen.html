@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<title>Ave Tales</title>
+	<script src="https://kit.fontawesome.com/505beb7154.js"></script>
+</head>
+<body>
+	
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+	<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #7000a8 url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;background-size:41px;}</style>
+	<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+	<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
+	<!-- HelloPreload http://hello-site.ru/preloader/ -->
+
+	<header>
+		<nav>
+			<div class="nav-logo"><a href="index.html">Ave Tales</a></div>
+			<div id="pc-nav-menu">
+				<a class="nav-btn" href="index.html">Главная</a>
+				<a class="nav-btn" href="index.html#projects">Проекты</a>
+				<a class="nav-btn" href="index.html#contacts">Контакты</a>
+			</div>
+			<div id="mob-nav-menu">
+				<a class="mob-nav-btn" href="index.html" onclick="closeMenu()">Главная</a>
+				<a class="mob-nav-btn" href="index.html#projects" onclick="closeMenu()">Проекты</a>
+				<a class="mob-nav-btn" href="index.html#contacts" onclick="closeMenu()">Контакты</a>
+			</div>
+			<i class="fas fa-bars" id="burger" onclick="openMenu()"></i>
+		</nav>
+	</header>
+	<div class="content" onclick="closeMenu()">
+		<div id="listen">
+			<div class="text-header">Ave Tales Listen</div>
+			<div class="card">
+				<div class="btns-block">
+					<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+					<div class="tale-download scale-animation" ><a href="sound/tales/dvakam.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+					<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				</div>
+				<div class="tale-name">Два камяні</div>
+				<audio class="audfix" src="sound/tales/dvakam.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/dvamar.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Два маразы</div>
+				<audio class="audfix" src="sound/tales/dvamar.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/zhor.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Жораў и чапля</div>
+				<audio class="audfix" src="sound/tales/zhor.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/zaya.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Зайчыкі</div>
+				<audio class="audfix" src="sound/tales/zaya.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/katok.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Каток - Залаты лабок</div>
+				<audio class="audfix" src="sound/tales/katok.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/kot.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+								<div class="tale-name">Кот, ліса, воўк</div>
+				<audio class="audfix" src="sound/tales/kot.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/ryaba.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Курачка рабка</div>
+      <audio class="audfix" src="sound/tales/ryaba.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/lis.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Ліса і цецярук</div>
+				<audio class="audfix" src="sound/tales/lis.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/ley.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Леў і Воўк</div>
+      <audio class="audfix" src="sound/tales/ley.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/slyh.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Людзей слухай, а свой розум май</div>
+				<audio class="audfix" src="sound/tales/slyh.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/gop.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Не кажы гоп, пакуль не пераскочыш</div>
+				<audio class="audfix" src="sound/tales/gop.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/neds.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Недалiкатны сын</div>
+				<audio class="audfix" src="sound/tales/neds.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/pan.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name" >Паганы пан</div>
+				<audio src="sound/tales/pan.mp3" controls="controls"></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/zyaz.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Пра што кукуе зязюля</div>
+				<audio class="audfix" src="sound/tales/zyaz.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/bagat.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Прагны багацей</div>
+				<audio class="audfix" src="sound/tales/bagat.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/kyl.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Сынок з кулачок</div>
+				<audio class="audfix" src="sound/tales/kyl.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/pey.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Як курачка пеўніка ратавала</div>
+				<audio class="audfix" src="sound/tales/pey.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/dachk.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Як лянiвая дачка рабіць навучылася</div>
+				<audio class="audfix" src="sound/tales/dachk.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/myzh.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Як мужык хітра гуся падзяліў</div>
+				<audio class="audfix" src="sound/tales/myzh.mp3" controls></audio>
+				<hr>	
+				<div class="btns-block"><div class="tale-avatar" ><i class="fas fa-music"></i></div>
+				<div class="tale-download scale-animation" ><a href="sound/tales/vinsh.mp3" download><i class="fas fa-arrow-down"></i></a></div>
+				<div class="tale-read scale-animation"><i class="fas fa-book"></i></div></div>
+				<div class="tale-name">Як пана віншавалі</div>
+				<audio class="audfix" src="sound/tales/vinsh.mp3" controls></audio>
+			</div>
+		</div>
+
+
+		<footer>
+
+			<a href="index.html" id="footer-copyright">
+				<script>
+					new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
+				</script>&nbsp;Ave Team
+			</a>
+		</footer>
+	</div>
+	<script src="js/burger.js"></script>
+</body>
+
+</html>

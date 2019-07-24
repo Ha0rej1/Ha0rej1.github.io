@@ -37,6 +37,21 @@ a{
 	-moz-box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 58px -19px rgba(0,0,0,0.75);
 }
+.bottom-animation:hover{
+	transform: translateY(-10px);
+	transition: 0.3s;
+}
+.bottom-animation{
+	transition: 0.3s;
+}
+.scale-animation{
+	transition: 0.3s;
+	transform: scale(1);
+}
+.scale-animation:hover{
+	transition: 0.3s;
+	transform: scale(1.1);
+}
 .card-name{
 	text-align: center;
 	font-size: 24px;
@@ -78,6 +93,12 @@ box-shadow: none;
 }
 .content{
 	position: relative;
+}
+.text-header{
+	margin-bottom: 20px;
+	color: white;
+	font-size: 24px;
+	text-align: center;
 }
 @media screen and (min-width: 768px;){
 	.btn:hover{
@@ -315,12 +336,7 @@ li:before{
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
-#contacts-header{
-	margin-bottom: 20px;
-	color: white;
-	font-size: 20px;
-	text-align: center;
-}
+
 #contacts .card{
 	display: inline-block;
 	width: 300px;
@@ -377,6 +393,90 @@ box-shadow: 0px 95px 124px -48px rgba(0,0,0,0.75);
 }
 
 /* Контакты */
+
+/* Listen */
+#listen{
+	background-image: url(img/bg2.jpg);
+	background-size: 150% 200%;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
+	width: 100%;
+}
+#listen .card{
+	margin: 0 auto;
+	width: 60%;
+	text-align: left;
+}
+#listen audio{
+	width: 60%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+#listen hr{
+	margin-bottom: 10px;
+	border:0.5px solid gray;
+}
+.tale-name{
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+#listen .tale-avatar {
+		color: white;
+		background-image: url(img/bg2.jpg);
+		background-size: 250% 250%;
+		border-radius: 100px;
+		height: 40px;
+		text-align: center;
+		width: 40px;
+		font-size: 20px;
+		margin-left: 10px;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	#listen .tale-avatar i{
+		margin-top: 11px;
+		margin-right: 3px;
+	}
+	#listen .tale-download{
+		color: white;
+		background-image: url(img/bg3.jpg);
+		background-size: 250% 250%;
+		border-radius: 100px;
+		height: 40px;
+		text-align: center;
+		width: 40px;
+		font-size: 20px;
+		margin-left: 5px;
+		display: inline-block;
+	}
+	#listen .tale-download i{
+		margin-top: 11px;
+	}
+	#listen .tale-read{
+		color: white;
+		background-image: url(img/bg.jpg);
+		background-size: 250% 250%;
+		border-radius: 100px;
+		height: 40px;
+		text-align: center;
+		width: 40px;
+		font-size: 20px;
+		margin-left: 5px;
+		display: inline-block;
+	}
+	#listen .tale-read i{
+		margin-top: 11px;
+	}
+@media screen and (max-width: 767px){
+	#listen .card{
+		width: 85%;
+	}
+	#listen audio{
+		width: 75%;
+	}
+}
+/* Listen */
 
 /* Футер */
 footer{
