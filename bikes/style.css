@@ -1,0 +1,316 @@
+*:focus{
+	outline: none;
+}
+body{
+	margin:0;
+	padding-top: 100px;
+	padding-bottom: 300px;
+	font-family: 'Open Sans', sans-serif;
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: relative;
+
+}
+img{
+	user-select: none;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+	margin:0;
+}
+#wrapper{
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+a{
+	text-decoration: none;
+	user-select: none;
+	cursor: pointer;
+	display: inline-block;
+}
+.btn{
+	padding: 10px;
+	border-radius: 25px;
+	color: black;
+	background-color: rgba(255,255,255,0.8);
+}
+/* Navigation bar */
+nav{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.2em;
+	user-select: none;
+	border-radius: 0px 0px 25px 25px;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+
+}
+nav #logo{
+	margin-left:0;
+	display: inline-block;
+	color:black;
+}
+nav #logo #text-gradient{
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+nav #pcnav{
+	list-style: none;
+	float: right;
+	display: inline-block;
+}
+nav #pcnav li{
+	display: inline-block;
+	margin-left: 15px;
+	color:black !important;
+}
+nav a{
+	color:black;
+}
+nav #mobnav ul{
+	list-style: none;
+	text-align: center;
+}
+#burger{
+	color: black;
+	position: absolute;
+	right: 30px;
+	top: 1.2em;
+}
+#mobnav{
+	position: absolute;
+	top:-100px;
+	background-color: white;
+	list-style: none;
+}
+@media screen and (min-width: 768px){
+	#mobnav{
+		display: none;
+	}
+	#burger{
+		display: none;
+	}
+}
+@media screen and (max-width: 767px){
+	#pcnav{
+		display: none !important;
+	}
+}
+/* Navigation bar */
+/* Main block */
+main{
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	padding: 15px;
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	position: relative;
+
+}
+#welcome{
+	text-align: center;
+	color:white;
+	padding: 15px;
+	padding-bottom: 30px;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	border-radius: 25px;
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#welcome h1{
+	font-weight: normal;
+	margin:0;
+}
+#welcome hr{
+	background-color:#8E2DE2;
+	height: 5px;
+	border-radius: 25px;
+	width: 60%;
+}
+#welcome i{
+	font-size: 3em;
+	margin-bottom: 30px;
+	margin:10px;
+}
+#welcome .btn{
+	margin: 5px;
+}
+#brends{
+	margin: 0;
+	padding:15px;
+	text-align: center;
+}
+#brends img{
+	vertical-align: middle;
+	margin-top: 10px;
+}
+@media screen and (max-width: 767px){
+	#brends img{
+		height: 70%;
+		width: 70%;
+	}
+}
+#topbics{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: row wrap;
+	align-items: stretch;
+}
+#topbics .top{
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	border-radius: 25px;
+	text-align: center;
+	padding: 15px;
+}
+#topbics .top img{
+	border-radius: 25px;
+	width: 100%;
+}
+#topbics .top-block:first-child{
+	margin-right: 15px;
+}
+.product-description{
+	text-align: left;
+}
+#topbics .product-exist{
+	text-align: center;
+	margin-bottom: 10px;
+}
+#topbics .top-title{
+	text-align: center;
+}
+.top .btn{
+	text-align: center;
+	margin-top: 100px: 
+}
+@media screen and (max-width: 767px){
+	#topbics{
+		display: block;
+	}
+	#topbics .top-block:first-child{
+		margin-right: 0;
+	}
+}
+/* Main block */
+
+/* Footer */
+footer{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: #FFFFFF;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 1.2em;
+	user-select: none;
+	border-radius: 25px 25px 0px 0px;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.31);
+}
+footer a{
+	color:black;
+}
+footer figure{
+	margin-left: 0;
+	display: inline-block;
+}
+footer ul{
+	list-style: none;
+	float: right;
+	display: inline-block;
+	margin-left: 0;
+	padding: 0;
+}
+footer ul li{
+	display: inline-block;
+	margin-left: 15px;
+	color:black !important;
+}
+footer i{
+	margin-left: 5px;
+	color:#8E2DE2;
+}
+@media screen and (max-width: 1257px){
+	footer ul li{
+		margin-left: 0;
+	}
+
+}
+@media screen and (max-width: 1190px){
+	footer ul{
+		float: left;
+		margin-top: 0;
+	}
+	
+}
+/* Footer */
+::-webkit-resizer {
+	background-image: url(style.css);
+	width: 4px;
+	height: 0px;
+	background-repeat: no-repeat;
+}
+::-webkit-resizer {
+	background-image: url(style.css);
+	width: 4px;
+	height: 0px;
+	background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+::-webkit-scrollbar-button {
+	background-image: url(style.css);
+	width: 6px;
+	height: 0px;
+	background-repeat: no-repeat;
+}
+::-webkit-scrollbar-button {
+	background-image: url(style.css);
+	width: 6px;
+	height: 0px;
+	background-repeat: no-repeat;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #754e8e;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #754e8e;
+}
+::-webkit-scrollbar-track {
+	background-color: rgb(236, 237, 238);
+}
+::-webkit-scrollbar-track {
+	background-color: rgb(236, 237, 238);
+}
