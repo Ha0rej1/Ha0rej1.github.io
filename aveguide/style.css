@@ -131,7 +131,9 @@ box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
 /* Guides navigation  */
 
 /* Guides */
-
+.Guide-block p{
+	margin: 20px;
+}
 @media screen and (max-width: 768px){
 #sidebar{
 	position: relative;
@@ -160,7 +162,7 @@ box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
 	box-shadow: 0px 0px 30px 5px rgba(0,94,255,1);
 	min-height: 30vh;
 	transition: 0.3s;
-	text-align: left;
+	text-align: center;
 	line-height: 30px;
 	margin: 0 auto !important;
 	margin-top:10% !important;
@@ -199,7 +201,7 @@ body{
 box-shadow: 0px 10px 15px 0px rgba(0,51,255,0.29);
 	min-height: 30vh;
 	transition: 0.3s;
-	text-align: left;
+	text-align: center;
 	line-height: 30px;
 	
 }
@@ -207,7 +209,7 @@ box-shadow: 0px 10px 15px 0px rgba(0,51,255,0.29);
 .Guide img{
 	width:  80%;
 	margin-top:7px;
-	border-radius: 15px;
+	border-radius: 3px;
 	-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
