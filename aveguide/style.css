@@ -12,12 +12,10 @@ html, body{
 }
 
 body{
-	background: #0575E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-color: white;
 
 	height: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a{
@@ -41,18 +39,24 @@ nav{
 /* Sidebar */
 
 #sidebar{
-	background-color: #FFFFFF;
+	background: #673AB7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 	width:20vw;
 	height: 95vh;
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
+-moz-box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
+box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
 	position: fixed;
 	top: 50%;
 	left: 0;
 	border-radius: 0px 25px 25px 0px;
 	transform: translateY(-50%);
 	padding: 10px;
+	color: white;
 }
 
 #sidebar .link{
@@ -104,7 +108,7 @@ nav{
 /* Sidebar icons */
 
 .link:hover{
-	background-color: #f1f1f1;
+	background-color: rgba(0,0,0,0.1);
 	transition: 0.3s;
 	cursor: pointer;
 }
@@ -144,16 +148,19 @@ nav{
 }
 .Guide-block{
 	color: black;
-	background-color: #FFFFFF;
+	background: #6441A5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2a0845, #6441A5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2a0845, #6441A5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 	width: 85% !important;
 	border-radius: 25px;
 	padding: 10px;
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px 0px 30px 5px rgba(0,94,255,1);
+	-moz-box-shadow: 0px 0px 30px 5px rgba(0,94,255,1);
+	box-shadow: 0px 0px 30px 5px rgba(0,94,255,1);
 	min-height: 30vh;
 	transition: 0.3s;
-	text-align: center;
+	text-align: left;
 	line-height: 30px;
 	margin: 0 auto !important;
 	margin-top:10% !important;
@@ -176,18 +183,23 @@ body{
 }
 
 .Guide-block{
-	color: black;
-	background-color: #FFFFFF;
+	color: white;
+	
+	background: #1488CC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
 	width: 60vw;
 	border-radius: 25px;
 	padding: 10px;
 	margin-top: 5vh;
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(0,51,255,0.29);
+-moz-box-shadow: 0px 10px 15px 0px rgba(0,51,255,0.29);
+box-shadow: 0px 10px 15px 0px rgba(0,51,255,0.29);
 	min-height: 30vh;
 	transition: 0.3s;
-	text-align: center;
+	text-align: left;
 	line-height: 30px;
 	
 }
@@ -196,10 +208,9 @@ body{
 	width:  80%;
 	margin-top:7px;
 	border-radius: 15px;
--webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.08);
--moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.08);
-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.08);
-
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
 }
 
 
@@ -209,6 +220,7 @@ box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.08);
 
 .Guide .header{
 	font-size: 1.3em;
+	margin:0;
 }
 p{
 }
