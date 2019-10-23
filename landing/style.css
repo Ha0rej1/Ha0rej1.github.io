@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    height: 1100%;
+    background: #EEF2F5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Navigation */
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li{
+    margin: 0 10px;
+    color: black;
+}
+
+nav{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+#logo{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+#logo-container{
+    display: flex;
+    color: black;
+    margin: 10px;
+}
+
+/* Navigation */
+
+/* Website construction */
+
+    /* Welcome block */
+        #welcome{
+            text-align: center;
+        }
+    /* Welcome block */
+    
+    /* Welcome-projects*/
+        #welcome-projects{
+            text-align: center;
+            margin-bottom: -5px;
+        }
+    /*Welcome-projects*/
+
+    /* Main */
+        .block{
+            margin: 0 auto;
+            width: fit-content;
+            padding: 10px;
+
+        }
+        #aboutave{
+            background-color: #e4e4e4;
+            padding:5%;
+        }
+        #aboutave p{
+            width: 85%;
+        }
+        #projects-index{
+            padding: 5%;
+            display: flex;
+            align-items: center;
+        }
+        #projects{
+            padding: 5%;
+            align-items: center;
+        }
+        .projects-block{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        .projects-block.left-rel{
+            margin-right: 30px;
+        }
+        .projects-block.right-rel{
+            margin-left: 30px;
+        }
+        .project-block{
+            background-color: #00B4F0;
+            color: white;
+            border-radius: 25px;
+            padding: 20px;
+            width: fit-content;
+            margin-right: 5%;
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+        }
+        .blue-project{
+            background: #2980d1;
+            background: -webkit-linear-gradient(to bottom, #2980d1, #194369);
+            background: linear-gradient(to bottom, #2980d1, #194369);
+        }
+        .purple-project{
+            background: #513482;
+            background: -webkit-linear-gradient(to top, #513482, #8a4aa5);
+            background: linear-gradient(to top, #513482, #8a4aa5);
+        }
+        #contact{
+            padding: 5%;
+            background: #e4e4e4;
+        }
+        #contact h1{
+            font-size: 36px;
+        }
+        #contact p:hover{
+            font-size: 32px;
+            transition: 0.3s;
+        }
+        #contact p{
+            transition: 0.3s;
+            display: block;
+        }
+    /* Main */
+
+    /* Adaptation */
+
+        @media screen and (max-width:768px){
+            #projects{
+                display: block;
+            }
+            #projects-index{
+                display: block;
+            }
+            .projects-block{
+                display: block;
+            }
+            .projects-block.left-rel{
+                margin: 0;
+            }
+            .projects-block.right-rel{
+                margin: 0;
+            }
+            #welcome-projects{
+                margin-top: 100px;
+                margin-bottom: -5px;
+            }
+            #welcome-projects img{
+                width:100%;
+            }
+            #welcome{
+                margin-top: 100px;
+                margin-bottom: 100px
+            }
+            #welcome img{
+                width: 100%;
+            }
+            .project-block{
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+            #aboutave{
+                border-radius: 30px;
+            }
+            #contact{
+                border-radius: 30px 30px 0px 0px;
+            }
+            #pcnav{
+                display: none;
+            }
+            #more-projects{
+                margin-bottom: 10px;
+            }
+        }
+
+    /* Adaptation */
+
+/* Website construction */
