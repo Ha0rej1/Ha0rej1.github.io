@@ -87,6 +87,9 @@ nav{
         #aboutave p{
             width: 85%;
         }
+        #aboutave h1{
+            font-size: 2.5em;
+        }
         #projects-index{
             padding: 5%;
             display: flex;
@@ -101,10 +104,10 @@ nav{
             margin-bottom: 30px;
         }
         .projects-block.left-rel{
-            margin-right: 30px;
+            margin-right: 0px;
         }
         .projects-block.right-rel{
-            margin-left: 30px;
+            margin-left: 0px;
         }
         .project-block{
             background-color: #00B4F0;
@@ -126,6 +129,20 @@ nav{
             background: #513482;
             background: -webkit-linear-gradient(to top, #513482, #8a4aa5);
             background: linear-gradient(to top, #513482, #8a4aa5);
+        }
+        .gray-project{
+            background: none;
+            color: black;
+        }
+        .green-project{
+            background: #1D976C;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #93F9B9, #1D976C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: black;
+        }
+        .black-project{
+            color: white;
+            background-color: black;
         }
         #contact{
             padding: 5%;
@@ -197,3 +214,26 @@ nav{
     /* Adaptation */
 
 /* Website construction */
+
+::-webkit-resizer {
+    background-image: url(style.css);
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    background-image: url(style.css);
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #00B4F0;
+}
+::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+}
