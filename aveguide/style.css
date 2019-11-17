@@ -133,6 +133,7 @@ box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
 /* Guides */
 .Guide-block p{
 	margin: 20px;
+	font-size: 1.2em;
 }
 @media screen and (max-width: 768px){
 #sidebar{
