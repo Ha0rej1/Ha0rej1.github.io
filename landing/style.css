@@ -7,7 +7,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    height: 1100%;
+    height: 100%;
     background: #EEF2F5;
 }
 
@@ -92,12 +92,12 @@ nav{
         }
         #projects-index{
             padding: 5%;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
             align-items: center;
         }
         #projects{
             padding: 5%;
-            align-items: center;
             display: grid;
             grid-template-columns: repeat(4, 25%);
         }
@@ -106,8 +106,6 @@ nav{
             color: white;
             border-radius: 25px;
             padding: 20px;
-            width: fit-content;
-            margin-right: 5%;
             margin: 5% 5%;
             -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
             -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
@@ -144,12 +142,7 @@ nav{
         #contact h1{
             font-size: 36px;
         }
-        #contact p:hover{
-            font-size: 32px;
-            transition: 0.3s;
-        }
         #contact p{
-            transition: 0.3s;
             display: block;
         }
     /* Main */
@@ -162,15 +155,6 @@ nav{
             }
             #projects-index{
                 display: block;
-            }
-            .projects-block{
-                display: block;
-            }
-            .projects-block.left-rel{
-                margin: 0;
-            }
-            .projects-block.right-rel{
-                margin: 0;
             }
             #welcome-projects{
                 margin-top: 100px;
