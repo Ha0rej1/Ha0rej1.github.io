@@ -98,16 +98,8 @@ nav{
         #projects{
             padding: 5%;
             align-items: center;
-        }
-        .projects-block{
-            display: flex;
-            margin-bottom: 30px;
-        }
-        .projects-block.left-rel{
-            margin-right: 0px;
-        }
-        .projects-block.right-rel{
-            margin-left: 0px;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
         }
         .project-block{
             background-color: #00B4F0;
@@ -116,6 +108,7 @@ nav{
             padding: 20px;
             width: fit-content;
             margin-right: 5%;
+            margin: 5% 5%;
             -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
             -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
             box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
