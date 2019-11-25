@@ -22,13 +22,13 @@ a{
 
 /* Navigation */
 
-nav ul{
+#pcnav{
     display: flex;
     list-style: none;
     margin: 10px;
 }
 
-nav ul li{
+#pcnav li{
     margin: 0 10px;
     color: black;
 }
@@ -58,6 +58,41 @@ nav{
     margin: 15px;
     align-items: center;
 }
+
+
+/* Mob Nav */
+    #mobnav{
+        list-style: none;
+        width: 100%;
+        background: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 70px;
+        padding-bottom: 30px;
+        transition: 0.5s;
+    }
+    .mobnavclosed{
+        top: -243px !important;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+        transition:0.5s;
+    }
+    #burger{
+        margin-right: 10px;
+        color: #929193;
+        transition: 0.5s;
+        position: relative;
+    }
+    .burger-opened{
+        position: relative;
+        top: 170px;
+        z-index: 999;
+        color: red;
+        transition: 0.5s !important;
+
+    }
+/* Mob Nab */
 
 /* Navigation */
 
@@ -146,16 +181,31 @@ nav{
             padding: 5%;
             background: #e4e4e4;
         }
+        #contact a:hover{
+            color: #2980d1;
+            transition: 0.5s;
+            cursor: pointer;
+        }
         #contact h1{
             font-size: 36px;
         }
         #contact p{
             display: block;
         }
+        #contact a{
+            transition: 0.5s;
+        }
     /* Main */
 
     /* Adaptation */
-
+        @media screen and (min-width: 768px){
+            #mobnav{
+                display: none;
+            }
+            .fa-bars{
+                display: none !important;
+            }
+        }
         @media screen and (max-width:768px){
             #projects{
                 display: block;
@@ -199,6 +249,21 @@ nav{
 
 /* Website construction */
 
+/* Hover */
+
+.slideup{
+    transition: 0.3s;
+    position: relative;
+    bottom: 0px;
+}
+.slideup:hover{
+    transition: 0.3s;
+    position: relative;
+    bottom: 7px;
+}
+
+/* Hover */
+
 ::-webkit-resizer {
     background-image: url(style.css);
     background-repeat: no-repeat;
@@ -221,3 +286,4 @@ nav{
 ::-webkit-scrollbar-track {
     background-color: #e4e4e4;
 }
+

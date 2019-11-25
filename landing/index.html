@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
     <title>Ave Team</title>
+    <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
       <!-- HelloPreload http://hello-site.ru/preloader/ -->
@@ -22,7 +24,13 @@
                 <img id="logo" src="img/logo.png" alt="">
                 <p>Ave Team</p>
             </figure></a>
+            <i id="burger" class="fas fa-bars" onclick="openmenu()"></i>
             <ul id="pcnav">
+                <a href="index.html"><li>Головна</li></a>
+                <a href="projects.html"><li>Проекти</li></a>
+                <a href="index.html#contact"><li>Контакти</li></a>
+            </ul>
+            <ul id="mobnav" class="mobnavclosed">
                 <a href="index.html"><li>Головна</li></a>
                 <a href="projects.html"><li>Проекти</li></a>
                 <a href="index.html#contact"><li>Контакти</li></a>
@@ -40,19 +48,19 @@
                 Ave Team - команда талановитих розробників з різних країн, обьедінённих <br> однією спільною метою - створювання сервісів для освіти</p>
         </article>
         <article id="projects-index">
-            <div class="project-block blue-project">
+            <div class="project-block slideup blue-project">
                 <h3>Ave Account</h3>
                 Це система загальних акаунтів для користування всіма сервісами Ave Team. Таким чином, користувач одного із сервісів Ave Team отримує на додачу і безліч інших.
             </div>
-            <div class="project-block blue-project">
+            <div class="project-block slideup blue-project">
                 <h3>Ave Diary</h3>
                 Електронний щоденник, покликаний спростити учням отримання інформації про домашнє завдання.
             </div>
-            <div class="project-block purple-project">
+            <div class="project-block slideup purple-project">
                 <h3>Ave Student</h3>
                 Електронна система для студентів, що допомагає дізнатися домашнє завдання, новини і заходи.
             </div>
-             <div class="project-block blue-project">
+             <div class="project-block slideup blue-project">
                 <h3>Ave Student&Diary Lite</h3>        
                 Спрощена версія сайту для швидкого отримання доступу без реєстрації
             </div>
@@ -61,7 +69,7 @@
         </article>
         <article id="contact">
 <h1>Зв'яжіться з нами!</h1>
-<p>Telegram - @aveteam</p>
+<p><a target="_blank" href="t.me/aveteam">Telegram - @aveteam</a></p>
 <p>Email - aveteam@gmail.com</p>
         </article>
         </section>
@@ -73,5 +81,6 @@
     <footer>
 
     </footer>
+        <script type="text/javascript" src="burger.js"></script>
 </body>
 </html>

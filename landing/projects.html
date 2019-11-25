@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
     <title>Ave Team</title>
+    <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -61,16 +62,16 @@
                 <img id="logo" src="img/logo.png" alt="">
                 <p>Ave Team</p>
             </figure></a>
+            <i id="burger" class="fas fa-bars" onclick="openmenu()"></i>
             <ul id="pcnav">
-                <a href="index.html">
-                    <li>Головна</li>
-                </a>
-                <a href="projects.html">
-                    <li>Проекти</li>
-                </a>
-                <a href="index.html#contact">
-                    <li>Контакти</li>
-                </a>
+                <a href="index.html"><li>Головна</li></a>
+                <a href="projects.html"><li>Проекти</li></a>
+                <a href="index.html#contact"><li>Контакти</li></a>
+            </ul>
+            <ul id="mobnav" class="mobnavclosed">
+                <a href="index.html"><li>Головна</li></a>
+                <a href="projects.html"><li>Проекти</li></a>
+                <a href="index.html#contact"><li>Контакти</li></a>
             </ul>
         </nav>
     </header>
@@ -85,120 +86,120 @@
             </article>
             <article id="projects">
 
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup blue-project">
                         <h3>Ave Account</h3>
                         Це система загальних акаунтів для користування всіма сервісами Ave Team. Таким чином, користувач одного із сервісів Ave Team отримує на додачу і безліч інших.
                     </div>
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup  blue-project">
                         <h3>Ave Diary</h3>
                         Електронний щоденник, покликаний спростити учням отримання інформації про домашнє завдання.
                     </div>
-                    <div class="project-block purple-project">
+                    <div class="project-block slideup purple-project">
                         <h3>Ave Diary Lite</h3>
                         Спрощена версія сайту для швидкого отримання доступу без реєстрації.
                     </div>
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup blue-project">
                         <h3>Ave Diary Bot for Telegram</h3>
                         Telegram бот для доступу до сервісу Ave Diary без реєстрації.
                     </div>
             
 
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup  blue-project">
                         <h3>Ave Diary Bot for Viber</h3>
                         Viber бот для доступу до сервісу Ave Diary без реєстрації.
                     </div>
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Diary Bot for Instagram</h3>
                         Instagram бот для доступу до сервісу Ave Diary без реєстрації.
                     </div>
-                    <div class="project-block purple-project">
+                    <div class="project-block slideup purple-project">
                         <h3>Ave Diary Lite App</h3>
                         Додаток для мобільних пристроїв для швидкого доступу до сервісу Ave Diary без реєстрації.
                     </div>
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Diary App</h3>
                         Додаток для мобільних пристроїв для швидкого доступу до сервісу Ave Diary.
                     </div>
             
 
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup blue-project">
                         <h3>Ave Teacher</h3>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Modi non neque iste eaque
                         consequatur? Enim nulla autem eum esse dolorum, <br> omnis quam, aliquam, officia et quasi
                         cupiditate. Harum, sequi non.
                     </div>
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup blue-project">
                         <h3>Ave Teacher Bot for Telegram</h3>
                         Telegram бот для доступу до сервісу Ave Teacher без реєстрації.
                     </div>
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Teacher Bot for Viber</h3>
                         Viber бот для доступу до сервісу Ave Teacher без реєстрації.
                     </div>
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Teacher App</h3>
                         Додаток для мобільних пристроїв для швидкого доступу до сервісу Ave Teacher.
                     </div>
             
 
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Student</h3>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Modi non neque iste eaque
                         consequatur? Enim nulla autem eum esse dolorum, <br> omnis quam, aliquam, officia et quasi
                         cupiditate. Harum, sequi non.
                     </div>
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup blue-project">
                         <h3>Ave Student Lite</h3>
                             Спрощена версія сайту для швидкого отримання доступу без реєстрації.
                     </div>
-                    <div class="project-block purple-project">
+                    <div class="project-block slideup purple-project">
                         <h3>Ave Student Bot for Telegram</h3>
                         Telegram бот для доступу до сервісу Ave Student без реєстрації.
                     </div>
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Student App</h3>
                         Додаток для мобільних пристроїв для швидкого доступу до сервісу Ave Student.
                     </div>
             
 
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Study</h3>
                         Платформа з завданнями і теорією за шкільною програмою та ін.
                     </div>
-                    <div class="project-block green-project">
+                    <div class="project-block slideup green-project">
                         <h3>Ave ZNO</h3>
                         Сервіс для підготовки до ЗНО
                     </div>
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Pets</h3>
                         В стадії планування
                     </div>
-                    <div class="project-block gray-project">
+                    <div class="project-block slideup gray-project">
                         <h3>Ave Books</h3>
                         Платформа для доступу до книг шкільної програми.
                     </div>
             
 
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup blue-project">
                         <h3>Ave PokeCodeZP</h3>
                         Бот для гри Pokemon GO
 
                     </div>
-                    <div class="project-block blue-project">
+                    <div class="project-block slideup blue-project">
                         <h3>NestZPBot</h3>
                         Бот для гри Pokemon GO
 
                     </div>
-                    <div class="project-block green-project">
+                    <div class="project-block slideup green-project">
                         <h3>Ave EcoBox</h3>
                         Проект по переробці одноразових пластикових карток (Скасовано)
                     </div>
-                    <div class="project-block black-project">
+                    <div class="project-block slideup black-project">
                         <h3>Ave Academy</h3>
                         Сервіс для навчання програмуванню.
                     </div>
 
-                    <div class="project-block purple-project">
+                    <div class="project-block slideup purple-project">
                         <h3>Ocirk</h3>
                         Соціальна сетка, що розробляється спільно з BCK Group.
 
@@ -206,9 +207,8 @@
             </article>
             <article id="contact">
                 <h1>Contact us!</h1>
-                <p>Telegram - @aveteam</p>
+                <p><a target="_blank" href="t.me/aveteam">Telegram - @aveteam</a></p>
                 <p>Email - aveteam@gmail.com</p>
-                <p>VKontakte - vk.com/aveteam</p>
             </article>
         </section>
 
