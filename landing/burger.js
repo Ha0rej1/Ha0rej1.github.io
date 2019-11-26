@@ -1,6 +1,7 @@
 var menu = document.getElementById('mobnav');
 var isOpened = false;
 var burger = document.getElementById('burger');
+
 function openmenu() {
 	if(isOpened){
 		isOpened = false;
@@ -12,4 +13,10 @@ function openmenu() {
 		menu.classList.remove("mobnavclosed");
 		burger.classList.add("burger-opened");
 	}
+}
+
+function closeMenu() {
+	isOpened = false;
+	menu.classList.add("mobnavclosed");
+	burger.classList.remove("burger-opened");
 }

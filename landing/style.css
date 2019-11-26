@@ -46,6 +46,7 @@ nav{
     padding: 0 5%;
 }
 
+
 #logo{
     width: 28px;
     height: 28px;
@@ -70,12 +71,12 @@ nav{
         left: 0;
         text-align: center;
         line-height: 70px;
-        padding-bottom: 30px;
         transition: 0.5s;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+        border-radius: 0px 0px 20px 20px;
     }
     .mobnavclosed{
         top: -243px !important;
-        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
         transition:0.5s;
     }
     #burger{
@@ -83,14 +84,19 @@ nav{
         color: #929193;
         transition: 0.5s;
         position: relative;
+        top:0;
     }
     .burger-opened{
         position: relative;
-        top: 170px;
+        top: 210px !important;
         z-index: 999;
-        color: red;
+        color: #ff6464 !important;
         transition: 0.5s !important;
-
+    }
+    #mobnav hr{
+        color: #f7f7f7;
+        width: 85%;
+        margin: 0 auto;
     }
 /* Mob Nab */
 
@@ -195,6 +201,9 @@ nav{
         #contact a{
             transition: 0.5s;
         }
+        .footer-icon{
+            margin-right: 5px;
+        }
     /* Main */
 
     /* Adaptation */
@@ -260,6 +269,14 @@ nav{
     transition: 0.3s;
     position: relative;
     bottom: 7px;
+}
+
+.opacity{
+    transition: 0.3s;
+}
+.opacity:hover{
+    transition: 0.3s;
+    opacity: 0.5;
 }
 
 /* Hover */

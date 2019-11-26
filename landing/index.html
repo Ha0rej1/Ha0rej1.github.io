@@ -26,14 +26,16 @@
             </figure></a>
             <i id="burger" class="fas fa-bars" onclick="openmenu()"></i>
             <ul id="pcnav">
-                <a href="index.html"><li>Головна</li></a>
-                <a href="projects.html"><li>Проекти</li></a>
-                <a href="index.html#contact"><li>Контакти</li></a>
+                <a class="opacity" href="index.html"><li>Головна</li></a>
+                <a class="opacity" href="projects.html"><li>Проекти</li></a>
+                <a class="opacity" href="#contact"><li>Контакти</li></a>
             </ul>
             <ul id="mobnav" class="mobnavclosed">
-                <a href="index.html"><li>Головна</li></a>
-                <a href="projects.html"><li>Проекти</li></a>
-                <a href="index.html#contact"><li>Контакти</li></a>
+                <a href="index.html" onclick="closeMenu()"><li>Головна</li></a>
+                <hr>
+                <a href="projects.html" onclick="closeMenu()"><li>Проекти</li></a>
+                <hr>
+                <a href="#contact" onclick="closeMenu()"><li>Контакти</li></a>
             </ul>
         </nav>
     </header>
@@ -64,23 +66,21 @@
                 <h3>Ave Student&Diary Lite</h3>        
                 Спрощена версія сайту для швидкого отримання доступу без реєстрації
             </div>
-            <p class="center" id="more-projects"><a href="projects.html">Більше</a></p>
+            <p class="opacity center" id="more-projects"><a href="projects.html">Більше</a></p>
 
         </article>
-        <article id="contact">
-<h1>Зв'яжіться з нами!</h1>
-<p><a target="_blank" href="t.me/aveteam">Telegram - @aveteam</a></p>
-<p>Email - aveteam@gmail.com</p>
-        </article>
+                <footer id="contact">
+    <h1>Зв'яжіться з нами!</h1>
+
+    <p><i class="footer-icon fab fa-telegram-plane"></i><a target="_blank" href="https://t.me/aveteam">Telegram - @aveteam</a></p>
+    <p><i class="footer-icon fas fa-envelope"></i>Email - aveteam@gmail.com</p>
+        </footer>
         </section>
 
 
 
 
     </div>
-    <footer>
-
-    </footer>
         <script type="text/javascript" src="burger.js"></script>
 </body>
 </html>
