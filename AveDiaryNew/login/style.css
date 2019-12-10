@@ -1,0 +1,95 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color:#2980D1;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity: 1;
+    cursor: pointer;
+}
+a:hover{
+    transition: 0.3s;
+    opacity: 0.6;
+}
+body{
+    background: linear-gradient(180deg, #2980D1 0%, #194369 100%);
+    background-size:100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#login-container{
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: -50px 50px 100px rgba(0, 0, 0, 0.25);
+    
+}
+#login{
+    width: 25%;
+}
+#project-name{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+input[type=text]{
+    font-size: 22px;
+    border: none;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: normal;;
+}
+input[type=password]{
+    font-size: 22px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #cecece;
+    font-weight: normal;
+    margin-bottom: 5px;
+
+}
+input[type=button]{
+    border: 1px solid #2980D1;
+    border-radius: 20px;
+    background: transparent;
+    color: #2980D1;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 10px 30px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    transition: 0.3s;    
+}
+input[type=button]:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+    transition: 0.3s;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+}
+input{
+    outline: none !important;
+}
+.input-container{
+    margin-bottom: 10px;
+}
+.help-link{
+
+}
+@media screen and (max-width: 768px){
+    #login{
+        width: 95%;
+    }
+}
