@@ -1,0 +1,144 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(180deg, #2980D1 0%, #194369 100%);
+    background-size:100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: 100% 120%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    color:#2980D1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#reg-block{
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: -50px 50px 100px rgba(0, 0, 0, 0.25);
+}
+
+#reg{
+    width: 400px;
+}
+
+#project-name{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.text-input{
+    font-size: 22px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #cecece;
+    font-weight: normal;
+    margin-bottom: 20px;
+    transition: 0.3s;
+
+}
+
+.button-input{
+    border: 1px solid #2980D1;
+    border-radius: 20px;
+    background: transparent;
+    color: #2980D1;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    transition: 0.3s;    
+}
+
+input{
+    outline: none !important;
+}
+
+.additional-text{
+    font-size: 14px;
+}
+
+#ave-logo{
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.birthday-container select{
+    background: transparent;
+    border: 1px solid #2980D1;
+    color: #2980D1;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.g-recaptcha {
+    transform:scale(0.70);
+    transform-origin:0 0;
+}
+select:focus{
+    outline: none !important;
+}
+/* Hover & focus effects */
+
+    .hover-link{
+        opacity: 1;
+        transition: 0.3s;
+    }
+    .button-input:hover{
+        background-color: #2980D1;;
+        color: white;
+        border-color: white;
+        transition: 0.3s;
+        box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .hover-link:hover{
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+    .text-input:focus{
+        border-bottom: 1px solid #2980D1;
+        transition: 0.3s;
+    }
+
+/* */
+
+/* Media */
+
+    @media screen and (max-width: 768px){
+        #reg{
+            width: 85%;
+        }
+        body{
+            height: 100%;
+            padding: 50px 0;
+        }
+    }
+    @media screen and (min-width: 768px){
+        #reg{
+            width: 450px
+        }
+    }
+    @media screen and (max-height: 500px){
+        body{
+            padding: 50px 0;
+        }
+    }
+/* */
