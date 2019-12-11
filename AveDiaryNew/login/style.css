@@ -3,17 +3,6 @@
     padding: 0;
 }
 
-a{
-    color:#2980D1;
-    text-decoration: none;
-    transition: 0.3s;
-    opacity: 1;
-    cursor: pointer;
-}
-a:hover{
-    transition: 0.3s;
-    opacity: 0.6;
-}
 body{
     background: linear-gradient(180deg, #2980D1 0%, #194369 100%);
     background-size:100vw 100vh;
@@ -21,25 +10,41 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 20px;
+    background-size: 100% 120%;
     font-family: 'Montserrat', sans-serif;
 }
 
-#login-container{
+a{
+    color:#2980D1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hover-link{
+    opacity: 1;
+    transition: 0.3s;
+}
+.hover-link:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#login-block{
     background-color: white;
     padding: 25px;
     border-radius: 25px;
     box-shadow: -50px 50px 100px rgba(0, 0, 0, 0.25);
-    
 }
 #login{
-    width: 25%;
+    width: 400px;
 }
 #project-name{
     text-align: center;
     color: white;
     font-size: 36px;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 input[type=text]{
@@ -48,7 +53,8 @@ input[type=text]{
     border-bottom: 1px solid #cecece;
     margin-bottom: 20px;
     width: 100%;
-    font-weight: normal;;
+    font-weight: normal;
+    transition: 0.3s;
 }
 input[type=password]{
     font-size: 22px;
@@ -57,6 +63,7 @@ input[type=password]{
     border-bottom: 1px solid #cecece;
     font-weight: normal;
     margin-bottom: 5px;
+    transition: 0.3s;
 
 }
 input[type=button]{
@@ -67,7 +74,7 @@ input[type=button]{
     cursor: pointer;
     font-size: 16px;
     margin-right: 5px;
-    padding: 10px 30px;
+    padding: 10px 15px;
     transition: 0.3s;
     margin-bottom: 20px;
     transition: 0.3s;    
@@ -88,8 +95,24 @@ input{
 .help-link{
 
 }
+input[type=text]:focus{
+    border-bottom: 1px solid #2980D1;
+    transition: 0.3s;
+}
+input[type=password]:focus{
+    border-bottom: 1px solid #2980D1;
+    transition: 0.3s;
+}
+.additional-text{
+    font-size: 14px;
+}
 @media screen and (max-width: 768px){
     #login{
-        width: 95%;
+        width: 85%;
     }
+}
+#ave-logo{
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 15px;
 }
