@@ -10,9 +10,9 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 20px;
     background-size: 100% 120%;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -116,9 +116,13 @@ input{
         }
     }
     @media screen and (min-width: 768px){
-        body{
-            overflow-y:hidden; 
+        #login{
+            width: 450px
         }
     }
-
+    @media screen and (max-height: 500px){
+        body{
+            padding: 50px 0;
+        }
+    }
 /* */
