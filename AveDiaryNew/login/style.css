@@ -111,6 +111,11 @@ input[type=password]:focus{
         width: 85%;
     }
 }
+@media screen and (min-width: 768px){
+    body{
+        overflow-y:hidden; 
+    }
+}
 #ave-logo{
     width: 30%;
     margin-top: 15px;
