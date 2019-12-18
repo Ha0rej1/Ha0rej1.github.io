@@ -15,15 +15,6 @@ function callmenu() {
 
     }
 }
-var inf = document.getElementById('inf');
-
-function showinf() {
-    inf.classList.remove('dnone');
-        open = false;
-    menu.classList.remove('mobile-menu-move');
-    burger.classList.remove('menu-burger-move');
-    noscroll.classList.remove('no-scroll');
-}
 
 
 /*function closemenu() {
