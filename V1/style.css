@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Welcome */
+
+#welcome {
+    background: linear-gradient(0deg, #98C3E8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    height: 100vh;
+    width: 100%;
+}
+
+#welcome nav {
+    font-size: 1.3em;
+    padding: 3% 2%;
+    font-family: 'Montserrat';
+}
+
+#welcome nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#welcome nav ul figure {
+    display: flex;
+}
+
+#welcome nav ul li {
+    margin: 0 10px;
+}
+
+#welcome-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 80vh;
+}
+
+#welcome-block {
+    margin: 16% 5%;
+    opacity: 0.99;
+}
+
+#welcome-block h1 {
+    font-family: 'Montserrat';
+    color: #1F3F68;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+#welcome-block p {
+    font-size: 1.1em;
+    font-family: 'Roboto';
+    margin: 30px 0;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+#welcome-block .btn {
+    border-radius: 10px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 48px;
+    width: fit-content;
+    display: block;
+}
+@media screen and (max-width: 768px){
+    #welcome-bg {
+        position: absolute;
+        right: 5%;
+        bottom: -25% !important;
+        width: 70% !important;
+    }
+}
+
+/* Welcome */
+
+/* About us */
+
+#about-us {
+
+}
+
+#about-us {}
+
+#about-us h1 {
+    font-size: 1.5em;
+    line-height: 46px;
+    /* or 128% */
+    letter-spacing: 0.05em;
+
+    /* blue_02 */
+    margin: 5%;
+    color: #316099;
+}
+
+#about-us .card {
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 10%;
+    width: fit-content;
+    position: relative;
+    margin: 35px 50px;
+}
+
+
+#about-us .card .card-header {
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    letter-spacing: 0.05em;
+
+    /* Blue_01 */
+    width: fit-content;
+    color: #1F3F68;
+}
+
+#about-us .card .card-description {
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    width: fit-content;
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+    /* Blue_01 */
+
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+#about-us .card img {
+
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+#about-us-block {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#cards-block {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#cards-block-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#cards-block-header {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+#about-us .btn-block {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#about-us .btn-block svg {
+    margin-left: 7px;
+    width: 30px;
+}
+
+#about-us .btn-block a {
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+
+    letter-spacing: 0.05em;
+
+    /* blue_04 */
+
+    color: #5A98D0;
+}
+
+#about-us .btn {}
+@media screen and (max-width: 768px){
+    #cards-block {
+        display: block !important;
+        width: 100%;
+
+    }
+    #cards-block .card {
+        margin: 0;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+    #cards-block-2 {
+        display: block !important;
+    }
+    #cards-block-header {
+        position: static !important;
+    }    
+    #about-us .card img {
+
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    
+    }
+    
+}
+
+/* About us */
+
+/* Projects */
+
+#projects {
+}
+
+#projects .flex-text {
+    display: flex;
+    margin: 100px 5%;
+}
+
+#projects .flex-text p {
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    letter-spacing: 0.05em;
+
+    /* Blue_01 */
+
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+#projects .flex-text h1 {
+    font-size: 36px;
+    line-height: 46px;
+    /* or 128% */
+    margin-right: 100px;
+    letter-spacing: 0.05em;
+
+    /* blue_02 */
+
+    color: #1F3F68;
+}
+
+#projects-block {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+#projects .card {
+    background: linear-gradient(89.97deg, #1F3F68 3.62%, rgba(31, 63, 104, 0.37) 97.78%);
+    padding: 5%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: right;
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+
+#projects .card-header {
+    font-size: 28px;
+    line-height: 46px;
+    /* identical to box height, or 164% */
+
+    letter-spacing: 0.05em;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+#projects .card-description {
+    line-height: 46px;
+    /* identical to box height, or 287% */
+    font-size: 16px;
+    letter-spacing: 0.05em;
+
+    /* white */
+
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+@media screen and (max-width: 768px){
+    #projects .flex-text {
+        display: block;
+        margin: 100px 5%;
+    }
+    #projects-flex {
+        display: block;
+    }
+#projects-block {
+    display: block;
+}
+#projects-block .card{
+    margin-bottom: 30px;
+}
+}
+/* Projects */
+
+/* Footer */
+
+footer {
+    background: #5A98D0;
+    border-radius: 100px 0px 0px 0px;
+}
+
+footer .header-block p {
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+    letter-spacing: 0.05em;
+
+    /* white */
+
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+footer .header-block h1 {
+    font-size: 2em;
+    line-height: 46px;
+    /* or 128% */
+
+    letter-spacing: 0.05em;
+
+    /* white */
+
+    color: #FFFFFF;
+    margin-right: 100px;
+}
+
+footer .header-block {
+    display: flex;
+    padding: 70px;
+}
+
+
+footer #clients-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 96px 213px;
+}
+
+footer #clients-block .block {
+    padding: 50px;
+
+}
+
+#pfooter {
+    width: 90%;
+    background: #316099;
+    border-radius: 0px 100px 0px 0px;
+    height: 1000px;
+    padding: 5%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#pfooter .header-block {
+    display: block;
+    padding: 0;
+}
+
+#pfooter .header-block p {
+    margin-top: 30px;
+}
+
+#pfooter .btn {
+    border-radius: 10px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 48px;
+    width: fit-content;
+    display: block;
+}
+
+#pfooter .header-block .btn {
+    margin-top: 30px;
+}
+
+#pfooter hr {
+    margin-top: 100px;
+    opacity: 0.4;
+    /* white */
+
+    border: 1px solid #FFFFFF;
+}
+#pfooter #footer-nav{
+    display: flex;
+    margin-top: 100px;
+    color: white;
+}
+#pfooter #footer-nav ul{
+    list-style: none;
+    font-size: 16px;
+line-height: 26px;
+/* or 162% */
+margin-right: 100px;
+
+letter-spacing: 0.05em;
+
+/* white */
+
+color: #FFFFFF;
+}
+#pfooter #footer-nav ul li{
+margin-bottom: 30px;
+}
+#pfooter #footer-nav ul .list-header{
+    margin-bottom: 30px;
+    font-size: 28px;
+line-height: 46px;
+/* identical to box height, or 164% */
+
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+    }
+#pfooter #footer-copyright{
+    font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+letter-spacing: 0.05em;
+
+/* white */
+
+color: #FFFFFF;
+opacity: 0.4;
+margin-top: 30px;
+}
+
+@media screen and (max-width: 768px){
+    footer .header-block {
+        display: block;
+        padding: 70px;
+}
+
+footer #clients-block {
+    display: block;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5%;
+}
+
+footer #clients-block .block {
+    padding: 50px;
+
+}
+#pfooter #footer-nav{
+    display: block;
+    margin-top: 100px;
+    color: white;
+}
+#pfooter #footer-nav ul{
+margin-right: 0;
+letter-spacing: 0.05em;
+
+/* white */
+
+color: #FFFFFF;
+}
+#pfooter #footer-nav ul li{
+margin-bottom: 30px;
+}
+#pfooter #footer-nav ul .list-header{
+    margin-bottom: 30px;
+    font-size: 28px;
+line-height: 46px;
+/* identical to box height, or 164% */
+
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+    }
+}
+/* Footer */
