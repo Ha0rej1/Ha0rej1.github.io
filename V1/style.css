@@ -29,26 +29,6 @@ a {
     width: 100%;
 }
 
-#welcome nav {
-    font-size: 1.3em;
-    padding: 3% 2%;
-    font-family: 'Montserrat';
-}
-
-#welcome nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-#welcome nav ul figure {
-    display: flex;
-}
-
-#welcome nav ul li {
-    margin: 0 10px;
-}
-
 #welcome-bg {
     position: absolute;
     right: 0;
@@ -88,10 +68,7 @@ a {
 }
 @media screen and (max-width: 768px){
     #welcome-bg {
-        position: absolute;
-        right: 5%;
-        bottom: -25% !important;
-        width: 70% !important;
+        display: none;
     }
 }
 
@@ -377,9 +354,9 @@ footer #clients-block {
     padding: 96px 213px;
 }
 
-footer #clients-block .block {
-    padding: 50px;
-
+footer #clients-block img{
+    width: 50%;
+    margin: 5%;
 }
 
 #pfooter {
@@ -480,7 +457,9 @@ footer #clients-block {
     text-align: center;
     padding: 5%;
 }
-
+#pfooter{
+    width: 100%;
+}
 footer #clients-block .block {
     padding: 50px;
 
@@ -513,3 +492,122 @@ color: #FFFFFF;
     }
 }
 /* Footer */
+
+
+
+
+
+
+
+
+
+/* Contacts */
+
+#contacts {
+    width: 100%;
+}
+
+#contacts-welcome {
+    height: 350px;
+    margin: 7% 0;
+    background-image: url(img/contactsbg.png);
+    background-size:100% 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#contacts-welcome h1 {
+    font-size: 2.5em;
+}
+#contacts-block{
+margin: 5%;
+display: flex;
+}
+#contacts-block div:first-child{
+    width: 500px;
+}
+#contacts-block div:last-child{
+    width: 70%;
+}
+#contacts-block iframe{
+    width:100%;
+    border-radius: 25px;
+
+    height: 400px;
+}
+#contacts-block ul{
+    list-style: none;
+}
+#contacts-block ul li{
+    margin: 10px 0;
+    font-family: 'Montserrat';
+}
+#contacts-block ul img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#contacts-block ul .list-icon{
+    display: flex;
+    align-items: center;
+}
+#contacts-block ul .list-header{
+    font-size: 1.5em;
+    font-family: 'Roboto';
+}
+#contacts-block img{
+    width: 70%;
+}
+nav {
+    font-size: 1.3em;
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 3% 2%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul figure {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 768px){
+    #contacts-block{
+        display: block;
+    }
+    #contacts-block div:first-child{
+        width: 100%;
+    }
+    #contacts-block div:last-child{
+        width: 100%;
+    }
+    #contacts-welcome{
+        background-size: 500% 120%;
+        margin-top: 50px;
+    }
+    #contacts-block iframe{
+        width:100%;
+    
+        height: 400px;
+    }
+    #contacts-block img{
+        width: 100%;
+    }
+}
+/* Contacts */
