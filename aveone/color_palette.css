@@ -1,19 +1,11 @@
 body {
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+
 }
 
 .accent-color-background {
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+    
     background-size: 100% 100%;
 }
 
@@ -35,12 +27,8 @@ body {
 
 /* Buttons */
 .btn-material {
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+    
     color: white;
 }
 
@@ -51,12 +39,8 @@ body {
 
 .btn-circle {
     color: white;
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+    
 }
 
 .btn-border:hover {
@@ -124,12 +108,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
 }
 
 ::-webkit-scrollbar-track {
