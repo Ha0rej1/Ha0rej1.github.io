@@ -28,6 +28,13 @@ a{
 	display: none;
 }
 
+.projectdescription{
+	border-right: 5px solid #673AB7;
+	padding-right: 10px;
+	margin-bottom: 50px;
+	font-size: 22px;
+}
+
 /* Navbar */
 
 nav{
@@ -213,6 +220,12 @@ body{
 .Guide p a{
 	color: #2980d1;
 }
+h1 a{
+	color: #2980d1;
+	display: block;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
 .Guide img{
 	width:  80%;
 	margin-top:7px;
@@ -244,6 +257,18 @@ p{
 	text-align: center;
 	width:100%;
 }
+footer .support{
+	opacity: 1;
+	transition: 0.3s;
+}
+footer .support:hover{
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.support i{
+	margin: 0 10px;
+}
+
 
 /* footer */
 
@@ -268,4 +293,21 @@ p{
 }
 ::-webkit-scrollbar-track {
     background-color: #ecedee;
+}
+.support-block{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.support-block i{
+	font-size: 32px;
+	margin-right: 10px;
+}
+.support-block .gotomain{
+	color: #2980d1;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
