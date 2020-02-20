@@ -1,0 +1,271 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+
+html, body{
+	scroll-behavior: smooth;
+}
+
+body{
+background-color: rgb(235, 235, 235);
+
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+.hidden{
+	display: none;
+}
+
+/* Navbar */
+
+nav{
+
+}
+
+/* Navbar */
+
+/* Sidebar */
+
+#sidebar{
+	background: #673AB7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	overflow-y: scroll;
+	width:20vw;
+	height: 100vh;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
+-moz-box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
+box-shadow: 0px 10px 15px 0px rgba(119,0,255,0.31);
+	position: fixed;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	padding: 10px;
+	color: white;
+}
+
+#sidebar .link{
+	line-height: 50px;
+}
+
+#sidebar figure{
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+}
+
+#sidebar .link .icon{
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	margin:0px 10px;
+}
+
+#sidebar hr{
+	width: 100%;
+	opacity: 0.3;
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+#sidebar ul{
+	list-style: none;
+	width: 100%;
+}
+#sidebar .fas{
+	font-size: 32px;
+}
+
+/* Sidebar icons */
+
+#sidebar .fa-door-open{
+	color: #676767;
+}
+#sidebar .fa-user-circle{
+	color: #2c96ce;
+}
+
+#sidebar .icon-holder{
+	height: 36px;
+	width: 36px;
+	margin-left:18px;
+}
+
+#sidebar li a{
+	transition: 0.3s;
+	opacity: 1;
+}
+#sidebar li a:hover{
+	transition: 0.3s;
+	opacity: 0.7;
+}
+
+/* Sidebar icons */
+
+.link:hover{
+	background-color: rgba(0,0,0,0.1);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.link{
+	transition: 0.3s;
+}
+/* Sidebar */
+
+/* Guides navigation  */
+.guides-nav{
+	margin-left: 50px;
+	margin-bottom:10px;
+	
+}
+
+.guides-nav ol{
+	margin-left:20px;
+}
+/* Guides navigation  */
+
+/* Guides */
+@media screen and (max-width: 1024px){
+#sidebar{
+	position: relative;
+	top: 0;
+	width:95%;
+	transform: none;
+	margin: 0 auto;
+	border-radius: 25px;
+	margin-top: 10%;
+	height: auto;
+	overflow-y: hidden;
+
+}
+#sidebar footer{
+	margin-top: 10px;
+}
+.Guide-block{
+	color: black;
+	border: 1px solid #cecece;
+	background-color: white;
+	width: 85% !important;
+	border-radius: 25px;
+	padding: 10px;
+	min-height: 30vh;
+	transition: 0.3s;
+	text-align: left;
+	line-height: 30px;
+	margin: 0 auto !important;
+	margin-top:10% !important;
+	padding: 20px;
+	
+}
+body{
+	padding: 0 !important;
+	margin-bottom: 10%;
+}
+.Guide img{
+	width: 95% !important;
+}
+}
+@media screen and (min-width:1024px){
+	body{
+		padding-left: 25vw;
+		padding-right: 25vw;
+		padding-bottom: 15vh;
+	}
+	#sidebar footer{
+		margin-top: 10px;
+	}
+	.Guide img{
+		margin-right: 5px;
+	}
+}
+
+.Guide-block{
+	color: black;
+	border: 1px solid #cecece;
+	background-color: white;
+	width: 60vw;
+	border-radius: 25px;
+	padding: 20px;
+	margin-top: 5vh;
+	min-height: 30vh;
+	transition: 0.3s;
+	text-align: left;
+	line-height: 30px;
+	
+}
+.Guide p a{
+	color: #2980d1;
+}
+.Guide img{
+	width:  80%;
+	margin-top:7px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 0px 1px #cecece;
+}
+
+.mobile-screenshot{
+	width: 30% !important;
+}
+
+.Guide .header{
+	font-size: 1.3em;
+	margin:0;
+	font-weight: bold;
+}
+.Guide h1{
+	font-weight: bold;
+	font-size: 24px;
+}
+p{
+}
+/* Guides */
+
+
+/* footer */
+
+#sidebar footer{
+	text-align: center;
+	width:100%;
+}
+
+/* footer */
+
+::-webkit-resizer {
+    background-image: url(style.css);
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    background-image: url(style.css);
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(76, 38, 143);
+}
+::-webkit-scrollbar-track {
+    background-color: #ecedee;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ave Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#512DA8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css">
+    <script src="https://kit.fontawesome.com/505beb7154.js"></script>
+
+</head>
+
+<body>
+    <!-- HelloPreload -->
+    <style type="text/css">
+        #hellopreloader>p {
+            display: none;
+        }
+
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #673AB7 url(http://hello-site.ru//main/images/preloads/ball-triangle.svg) center center no-repeat;
+            background-size: 41px;
+        }
+    </style>
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+        <div>
+            <script type="text/javascript">
+                var hellopreloader = document.getElementById("hellopreloader_preload");
+
+                function fadeOutnojquery(el) {
+                    el.style.opacity = 1;
+                    var interhellopreloader = setInterval(function () {
+                        el.style.opacity = el.style.opacity - 0.05;
+                        if (el.style.opacity <= 0.05) {
+                            clearInterval(interhellopreloader);
+                            hellopreloader.style.display = "none";
+                        }
+                    }, 16);
+                }
+                window.onload = function () {
+                    setTimeout(function () {
+                        fadeOutnojquery(hellopreloader);
+                    }, 1000);
+                };
+            </script>
+            <!-- HelloPreload -->
+            <header>
+                <nav>
+                </nav>
+            </header>
+            <section id="sidebar">
+                <ul>
+                    <li><a href="index.html">
+                            <figure class="link">
+                                <img class="icon" src="img/avediary.png" alt="">Ave Account
+                            </figure>
+                        </a></li>
+                    <hr>
+                    <li><a href="g-avediary.html">
+                            <figure class="link"><img class="icon" src="img/avediary.png" alt="">Ave Diary</figure>
+                        </a>
+                        <section class="guides-nav">
+                            <ol>
+                                <li><a href="#g-registration">Регистрация</a></li>
+                                <li><a href="#g-joinclass">Присоединиться к классу</a></li>
+                                <li><a href="#g-yousimp">Вы - обычный ученик</a>
+                                    <ol>
+                                        <li><a href="#g-first">Вы - впервые на сайте</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#g-youadm">Вы - модератор</a>
+                                    <ol>
+                                        <li><a href="#g-newkor">Принять нового ученика</a></li>
+                                        <li><a href="#g-changerozkl">Изменить расписание</a></li>
+                                        <li><a href="#g-addpr">Добавить предмет</a></li>
+                                        <li><a href="#g-adddzdat">Добавить задание на один предмет</a></li>
+                                        <li><a href="#g-adddzdiar">Добавить задание на несколько дней</a></li>
+                                        <li><a href="#g-litecon">Настройка доступа через Lite</a></li>
+                                        <li><a href="#g-editclass">Редактирование данных класса</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="#g-blacktheme">Ночная тема</a> </li>
+                            </ol>
+                        </section>
+                    </li>
+                    <hr>
+                    <li><a href="g-avediarylite.html">
+                            <figure class="link"><img class="icon" src="img/avediary.png" alt="">Ave Diary Lite</figure>
+                        </a></li>
+                    <hr>
+                    <li><a href="g-avediaryliteapp.html">
+                            <figure class="link"><img class="icon" src="img/teacher.png" alt="">Ave Diary Lite App
+                            </figure>
+                        </a></li>
+
+                    <hr>
+                    <li><a href="g-avediarybotfortelegram.html">
+                            <figure class="link"><img class="icon" src="img/bot.jpeg" alt="">Ave Diary Bot Telegram
+                            </figure>
+                        </a></li>
+                    <hr>
+                    <li><a href="g-avediarybotforviber.html">
+                            <figure class="link">
+                                <img class="icon" src="img/bot.jpeg" alt="">Ave Diary Bot Viber
+                            </figure>
+                        </a></li>
+                    <hr>
+                    <li><a href="g-avediarybotforinstagram.html">
+                            <figure class="link">
+                                <img class="icon" src="img/bot.jpeg" alt="">Ave Diary Bot Instagram
+                            </figure>
+                        </a></li>
+                    <hr>
+
+                </ul>
+                <footer>
+                    Ave Team
+                </footer>
+            </section>
+            <section class="Guide-block">
+                <article class="Guide">
+                    <h1>Ave Diary</h1>
+                    <p>
+                        Ave Diary - ваш простой электронный дневник, который поможет вам в оптимизации учебного
+                        процесса.
+                        <br><span class="header" id="g-registration">Реєстрація</span>
+                        <br>
+                        Вы - первый пользователь класса.
+                        <br>
+                        <img src="img/Guides/avediary/avediary1.png" alt="">
+                        <br>
+                        Войдите в свой аккаует, после чего увидите окно.
+                        <br>
+                        <img src="img/Guides/avediary/avediary2.png" alt="">
+                        <br>
+                        Если ваш класс ещё не зарегистрирован, нажмите “Зареєструвати мій клас”. Если ваш класс уже
+                        зарегистрирован, перейдите до следующего пункта инструкции.
+                        <br>
+                        <img src="img/Guides/avediary/avediary3.png" alt="">
+                        <br>
+                        <br>
+                        <img src="img/Guides/avediary/avediary4.png" alt="">
+                        <br>
+                        <br>
+                        <img src="img/Guides/avediary/avediary5.png" alt="">
+                        <br>
+                        Выберите свою страну, город и школу.
+                        <br>
+                        <img src="img/Guides/avediary/avediary6.png" alt="">
+                        <br>
+                        Выберите класс, придумайте логин класса. ВНИМАНИЕ! Логин класса очень важен, Поэтому обязательно
+                        запомните его и сделайте как можно проще. После этого выберите свою роль в классе.
+                        <br>
+                        <img src="img/Guides/avediary/avediary7.png" alt="">
+                        <br>
+                        Поздравляем, класс создан!
+                        <br><span class="header" id="g-joinclass">Присоединиться к классу</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary1.png" alt="">
+                        <br>
+                        Войдите в свой аккаунт, после чего увидите окно.
+                        <br>
+                        <img src="img/Guides/avediary/avediary2.png" alt="">
+                        <br>
+                        Если ваш класс уже зарегистрирован, нажмите “Мій клас вже зареєстровано”. Если ваш класс не
+                        зарегистрирован см. пункт выше.
+                        <br>
+                        <img src="img/Guides/avediary/avediary8.png" alt="">
+                        <br>
+                        Введите логин вашего класса
+                        <br>
+                        <img src="img/Guides/avediary/avediary9.png" alt="">
+                        <br>
+                        Ждите, пока модераторы примут вас.
+                        <br><span class="header" id="g-yousimp"> Вы - обычный ученик</span>
+                        <br><span id="g-first">Вы - впервые на сайте</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary10.png" alt="">
+                        <br>
+                        Это главная страница. На ней вы можете посмотреть домашнее задание, расписание на завтра,
+                        загрузить файлы с Ave Drive. Чтобы посмотреть все задания, нажмите “Все завдання”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary11.png" alt="">
+                        <br>
+                        Тут вы можете посмотреть все задания в виде дневника. Чтобы перелистывать страницы используйте стрелочки.
+                        <br><span class="header" id="g-youadm">Вы - модератор</span>
+                        <br>
+                        <span id="g-newkor">Принять нового ученика</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary17a.png" alt="">
+                        <br>
+                        На главной странице в меню у графы ученики написано количество новых учеников. Если нет ни одного
+                        запроса, то цифры нет. Для того, чтобы увидеть список учеников и новые запросы - нажмите на
+                        “Учні”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary12.png" alt="">
+                        <br>
+                        Для того, чтобы принять ученика - нажмите “Прийняти”, чтобы удалить запрос - нажмите “Видалити”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary13.png" alt="">
+                        <br>
+                        После чего выберите роль ученика и нажмите “Прийняти”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary14.png" alt="">
+                        <br>
+                        Нажмите “Повернутися”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary15.png" alt="">
+                        <br>
+                        Если запрос отправлен через Ave Teacher, то его можно принять только как модератора или удалить запрос.
+                        <br><span class="header" id="g-changerozkl">Изменить расписание</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary12.png" alt="">
+                        <br>
+                        <br>
+                        Чтобы изменить расписание нажмите “Змінити розклад”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary17.png" alt="">
+                        <br>
+                        Введите своё расписание и нажмите “Додати”.
+                        <br><span class="header" id="g-addpr">Добавить предмет</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary18.png" alt="">
+                        <br>
+                        <br>
+                        <img src="img/Guides/avediary/avediary19.png" alt="">
+                        <br>
+
+                        Чтобы добавить предмет нажмите “Додати предмет” при изменении расписания или на странице “Додати завдання”.
+                        <br><span class="header" id="g-adddzdat">Добавить задание на один предмет</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary12.png" alt="">
+                        <br>
+                        Чтобы добавить задание по дате нажмите “Додати завдання” на главной странице.
+                        <br>
+                        <img src="img/Guides/avediary/avediary19.png" alt="">
+                        <br>
+                        После чего введите задание, выберите предмет и дату, затем нажмите “Додати”.
+                        <br> <span class="header" id="g-adddzdiar">Добавить задание на несколько дней</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary12.png" alt="">
+                        <br>
+                        Чтобы добавить задание на несколько дней нажмите “Все завдання” на главной странице.
+                        <br>
+                        <img src="img/Guides/avediary/avediary20.png" alt="">
+                        <br>
+                        Введите задание, затем нажмите “Додати”.
+                        <br><span class="header" id="g-litecon">Настройка доступа через Lite</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary12.png" alt="">
+                        <br>
+                        Чтобы настроить доступ через Ave Diary Lite нажмите “Налаштувати доступ через Lite”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary22.png" alt="">
+                        <br>
+                        После чего выберите режим доступа
+                        <br><span class="header" id="g-editclass">Редактирование данных класса</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary12.png" alt="">
+                        <br>
+                        Чтобы изменить данные класса нажмите “Редагувати данні класу”.
+                        <br>
+                        <img src="img/Guides/avediary/avediary23.png" alt="">
+                        <br>
+                        После чего измените год обучения и букву.
+                        <br> <span class="header" id="g-blacktheme">Ночная тема (Функция временно недоступна)</span>
+                        <br>
+                        <img src="img/Guides/avediary/avediary12.png" alt="">
+                        <br>
+                        Чтобы включить ночную тему нажмите на луну.
+                        <br>
+                        <img src="img/Guides/avediary/avediary24.png" alt="">
+                        <br>
+                        Чтобы включить обычную тему нажмите на солнце.
+
+                    </p>
+                </article>
+            </section>
+            <script src="js/script.js"></script>
+</body>
+
+</html>
