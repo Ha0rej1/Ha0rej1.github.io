@@ -1,0 +1,56 @@
+*, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+.error-block{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+.error-block .error-code{
+    font-size: 3em;
+    margin-top: 50px;
+    font-style: italic;
+    color: rgb(94, 94, 94);
+}
+.error-block h1{
+    margin-bottom: 15px;
+}
+.error-block p{
+
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.btn{
+    margin: 50px auto;
+    color: #2980d1;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    font-size: 0.8em;
+}
