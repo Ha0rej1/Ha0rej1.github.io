@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0085FF">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
@@ -12,14 +13,14 @@
 </head>
 
 <body>
-    <nav class="docbar">
+    <nav class="dockbar">
         <a class="dochome docbtn pagechange" href="index.html"><i class="material-icons">home</i></a>
         <a class="doclist docbtn pagechange" href="tasklist.html"><i class="material-icons">format_list_bulleted</i></a>
         <a class="docstudents docbtn pagechange" href="students.html"><i class="material-icons">people</i></a>
         <a class="docsettings docbtn pagechange" href="settings.html"><i class="material-icons">settings</i></a>
     </nav>
     <h1 id="project-header"><a class="pagechange header-text" href="index.html">Ave Diary</a></h1>
-    <div class="animated page-animation fadeInUp faster">
+    <div class="animated homepage page-animation fadeInUp faster">
     <article class="block">
         <div class="hometask">
             <h3>Домашнее задание на завтра:</h2>
@@ -110,6 +111,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     $(".dochome").addClass("active");
+    
+    if(screen.width>=768){
+        $(".page-animation").removeClass("fadeInUp");
+        $(".page-animation").addClass("fadeInLeft");
+    }
+    
     $(document).ready(function() {
     
     $(function() {
@@ -128,7 +135,7 @@
      * @return {boolean}
      */
       function openUrl(a) {
-        var delay = 250, // Задержка 0.25 секунд
+        var delay = 350, // Задержка 0.25 секунд
           uri = a.attr('href'); // URL
       
          // Проверяем не начата ли загрузка какой-либо ссылки
