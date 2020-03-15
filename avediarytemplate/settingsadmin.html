@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Ave Diary</title>
+</head>
+
+<body>
+
+    <h1 id="project-header"><a class="pagechange" href="indexadmin.html"><i
+        class="material-icons back animated animated-btns fadeIn faster">arrow_back_ios</i></a><a
+    class="header-text pagechange" href="settingsadmin.html">Ave Diary</a></h1>
+    <nav class="docbar">
+        <a class="dochome docbtn pagechange" href="indexadmin.html"><i class="material-icons">home</i></a>
+        <a class="doclist docbtn pagechange" href="tasklistadmin.html"><i class="material-icons">format_list_bulleted</i></a>
+        <a class="docstudents docbtn pagechange" href="studentsadmin.html"><i class="material-icons">people</i></a>
+        <a class="docsettings docbtn pagechange" href="settingsadmin.html"><i class="material-icons">settings</i></a>
+    </nav>
+    <div class="animated page-animation fadeInUp faster">
+    <article class="block">
+      <div class="settings">
+        <h3>Мой профиль</h3>
+        <figure class="profile">
+        <figure class="profile-icon">
+            <i class="material-icons">
+                person
+                </i>
+            </figure>
+            <figure>
+            <p class="profile-name">ha0rej1 Данченко Ростислав</p>
+            <p class="profile-role">Модератор</p>
+            </figure>
+        </figure>
+        <figure class="options">
+        <h3>Настройки</h3>
+        <figure class="token">
+          <h4>Токен</h3>
+          <span class="field">
+            <span>s73asaf83asg7ag</span>
+            <a class="copy">Скопировать</a>
+          </span>
+        </figure>
+        <a class="option" href="#">Список подключенных ботов</a>
+        <a class="option red" href="#">Выйти из профиля</a>
+        <a class="option red" href="#">Покинуть класс</a>
+        </figure>
+    </div>
+    </article>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(".docsettings").addClass("active");
+    $(document).ready(function() {
+    
+    $(function() {
+    var flag = new Boolean(true); // Защитит от частого нажатия на кнопку
+    
+      // Клик
+      $('.pagechange').click(function(e) {
+        openUrl($(this));
+        e.preventDefault();
+      })
+    
+    /**
+     * Открывает ссылку с задержкой
+     * 
+     * @param {object} a - Нажатая кнопка
+     * @return {boolean}
+     */
+      function openUrl(a) {
+        var delay = 250, // Задержка 0.25 секунд
+          uri = a.attr('href'); // URL
+      
+         // Проверяем не начата ли загрузка какой-либо ссылки
+          if (flag == true) {
+            flag = false;
+          
+          // Добавляем анимации
+          $(".dochome").removeClass("active");
+                    $(".docstudents").removeClass("active");
+                    $(".docsettings").removeClass("active");
+                    $(".doclist").removeClass("active");
+                    $(".page-animation").removeClass("fadeInUp");
+                    $(".page-animation").addClass("fadeOutDown");
+                    $(".animated-btns").addClass("fadeOut");
+          
+            // С задержкой открываем URL, возвращая штатный текст кнопке, разрешаем открывать новые ссылки
+            setTimeout(function() {
+              flag = true;
+              
+              // Проверяем открыть ссылку в новом окне или в текущем
+              
+              window.location = uri;
+              return;
+              
+            }, delay);
+          }
+        
+        return;
+      }
+      
+    });
+    
+    });
+    </script>
+</html>
