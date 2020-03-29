@@ -1,0 +1,498 @@
+@font-face {
+    font-family: "Century Gothic";
+    src: url('fonts/CenturyGothic.ttf');
+}
+
+*, html{
+    margin: 0;
+    padding: 0;
+    outline: none !important; 
+}
+
+body{
+    font-family: 'Century Gothic', sans-serif;
+    background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
+    margin-bottom: 200px;
+    padding: 0 20px;
+    background-size: 100vh 100vh;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+    user-select: none;
+}
+
+#project-header{
+    font-weight: normal;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+#project-header .back{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#project-header .header-text{
+    margin: 0 auto;
+}
+
+/* Dockbar */
+
+.dockbar{
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    border-radius:25px;
+    padding: 10px 5px;
+    background: rgba(255, 255, 255, 0.95);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.dockbar i{
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.dockbar a{
+    color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+.dockbar .docbtn{
+    transition: 0.3s;
+    color: black;
+    text-shadow: none;
+
+}
+.dockbar .active{
+    transition: 0.3s;
+    color: #2980d1;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    animation: docbtnappear 0.2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+/* Docbar */
+
+/* Block */
+
+.block{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 30px 0;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    min-height: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Block */
+
+/* Main block */
+.block .hometask .task{
+    margin-top: 15px;
+    color: #797979;
+}
+
+.hometask{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.hometask h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block .schedule .lesson{
+    margin-top: 15px;
+    color: #797979;
+}
+
+.block .schedule{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.schedule h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Main block */
+
+/* Ave Drive */
+
+.ave_drive{
+    padding-bottom: 50px;
+}
+.ave_drive progress{
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.ave_drive .file-block{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 60px auto 30px; /* 3 столбца */
+    align-items: center;
+}
+.ave_drive .file-block i:first-child{
+    font-size: 3em;
+    color: #2980d1;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.ave_drive .file-block i:last-child{
+    font-size: 1.5em;
+    color: #2980D1;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+}
+.file-block .file-name{
+    font-size: 0.8em;
+}
+.file-block .file-autor{
+    font-size: 0.8em;
+    color: #7C7C7C;
+}
+.file-block .file-time{
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+}
+.file-block .file-icon{
+    background-color: rgb(228, 228, 228);
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.file-block .file-icon.file-type-txt{
+    background-color: rgb(228, 228, 228);
+    color: #FFFFFF;
+}
+.file-block .file-icon.file-type-doc{
+    background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%);
+    color: #FFFFFF;
+}
+.file-block .file-icon.file-type-xls{
+    background: linear-gradient(180deg, rgb(74, 223, 106) 0%, rgb(49, 175, 62) 100%);
+    color: #FFFFFF;
+}
+.file-block .file-icon.file-type-ppt{
+    background: linear-gradient(180deg, #FF5C00 0%, #FF6262 100%);
+    color: #FFFFFF;
+}
+.ave_drive .file-add{
+    text-align:center;
+    color: #000000;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+progress {
+    border-radius: 6px;
+    background-color: white;
+}
+progress::-webkit-progress-bar {
+    border-radius: 6px;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+progress::-webkit-progress-value {
+    background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%);
+    border-radius: 6px 0px 0px 6px;
+}
+
+/* Ave Drive */
+
+/* Students */
+
+.student{
+    display: grid;
+    margin: 10px 0;
+    grid-template-columns: 60px auto 25px; /* 3 столбца */
+    align-items: center;
+}
+
+.student .student-icon{
+    background-color: rgb(228, 228, 228);
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.students .leave{
+    text-align:center;
+    color: #FF6262;
+    margin-top: 30px;
+    display: block;
+    position: relative;
+}
+
+.students .student .student-name{
+    font-size: 0.8em;
+}
+.students .student .student-role{
+    font-size: 0.8em;
+    color: #7C7C7C;
+}
+/* Students */
+
+/* Tasklist */
+
+.tasklist .dayblock h3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasklist .dayblock .task{
+    color: #7C7C7C;
+    margin-top: 15px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasklist .dayblock .task i{
+    margin-left: 15px;
+}
+
+.tasklist .dayblock .lesson{
+    margin-top: 15px;
+}
+
+.tasklist .dayblock h3 .info{
+    display: flex;
+    align-content: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.tasklist .dayblock h3 .info .date{
+    margin-right: 10px;
+}
+
+.tasklist-options{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 15px;
+    color: white;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tasklist .lesson input{
+    padding:10px 5px;
+    margin-top: 15px;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+}
+
+.tasklist .lesson .task .edit{
+    -webkit-tap-highlight-color: transparent;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    
+}
+.tasklist .lesson .task .delete{
+    color: #FF6262;
+    -webkit-tap-highlight-color: transparent;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tasklist */
+
+/* Settings */
+
+/* Profile */
+
+.settings .profile{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    justify-content: flex-start;
+}
+
+.settings .profile .profile-icon{
+    background-color: rgb(228, 228, 228);
+    margin-right: 15px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.settings .profile .profile-name{
+    font-size: 0.9em;
+}
+.settings .profile .profile-role{
+    font-size: 0.9em;
+    color: #7C7C7C;
+}
+
+/* Profile */
+
+.settings .options .token{
+    margin-top:15px;
+    
+}
+.settings .options .token .field{
+    background-color: rgb(228, 228, 228);
+    padding: 5px;
+    display: flex;
+    margin-top: 15px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+.settings .options .token .copy{
+    color: #2980D1;
+}
+.settings .option{
+    margin-top: 15px;
+    display: block;
+    color: #2980D1;
+}
+.settings .option.red{
+    color: #FF6262;
+}
+
+/* Settings */
+
+@keyframes docbtnappear{
+    from{
+        text-shadow: unset;
+        color: black;
+    }
+    to{
+        color: #2980d1;
+        text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media screen and (min-width: 768px){
+    /* Dockbar */
+
+    .dockbar{
+        transform: none;
+        top: 50%;
+        transform: translateY(-50%);
+        width: fit-content;
+        border-radius: 15px;
+        left: 15px;
+        flex-direction: column;
+    }
+
+    .block{
+        width: 100%;
+        margin-right: 30px;
+    }
+    body{
+        margin-bottom: 0;
+        padding-left: 80px;
+    }
+    /* Dockbar */
+
+    /* Page structure */
+
+    .homepage{
+        display: flex;
+    }
+    .settingspage .block{
+        width: fit-content;
+        margin: 30px auto;
+    }
+    .tasklistpage{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 30px;
+        margin-left: 5%;
+    }
+    .studentspage .block{
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    #project-header .back{
+        display: none;
+    }
+    .tasklist-options{
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .tasklistpage .block{
+    }
+    .ave_drive .file-field{
+        overflow-y: scroll;
+        max-height: 350px;
+        min-height: 350px;
+        margin-top: 15px;
+        box-shadow: inset 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+        padding: 5px;
+    }
+    .ave_drive .task{
+        margin: 10px;
+    }
+    /* Page structure */
+
+}
+
+::-webkit-resizer {
+    background-image: url(style.css);
+    width: 4px;
+    height: 0px;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    background-image: url(style.css);
+    width: 6px;
+    height: 0px;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(216, 216, 216);
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
+}
