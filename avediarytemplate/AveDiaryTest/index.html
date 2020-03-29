@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ave Diary</title>
+    <script src="yopta.min.js"></script>
 </head>
 
 <body>
@@ -313,78 +314,95 @@
     if (fileblockscounter < 1) {
         document.getElementById("file-field").insertAdjacentHTML("afterbegin", "<p class='empty'>Тут пока пусто</p>");
     }
-    var deliting = false;
 
+    var deliting = false;
+    var t1 = 700; // | Задержка перед удалением анимации вибрации
+    var t2 = 500; // | Задержка после удаления анимации вибрации
+    var t3 = 400; // | Задержка перед удалением файла
+    var t4 = 2000; // | Задержка перед появлением дока
+    var t5 = t1 + t2 + t3 + t4 + 200; // Защита от нажатия
+    var t6 = 1500; // | Задержка перед спружиниванием мусорки
+    var t7 = 600; // | Задержка для удаления спружинивания мусорки
+    var t8 = 3500; // | Задержка перед исчезовением мусорки
+    var t9 = 200; // | Задержка перед удалением мусорки
     function deleteblock(a) {
-        if (deliting == false) { // Защита от даблклика
-            deliting = true; // Защита от даблклика
-            var deletebtns = document.getElementsByClassName("deletebtn"); // Защита от даблклика
-            for (var i = 0; i < deletebtns.length; i++) { // Защита от даблклика
-                deletebtns[i].style.opacity = 0.7; // Защита от даблклика
-            } // Защита от даблклика
-            push("<div><span class='material-icons'>delete</span> Удалено!</div> <a>Отмена</a>"); // Появление мусорки
+        if (deliting == false) { // Защита от нажатия
+            deliting = true;
+            var deletebtns = document.getElementsByClassName("deletebtn"); // Поиск кнопок удалить
+            for (var i = 0; i < deletebtns.length; i++) {
+                deletebtns[i].style.opacity = 0.7; // Прозрачность кнопок удалить
+            }
+
+            document.body.insertAdjacentHTML("beforeend",
+                `<div class="push customfadeInUp"><div><span class='material-icons'>delete</span> Удалено!</div><a>Отмена</a></div> `
+            ); // Создание мусорки
+            setTimeout(function () { // Задержка перед спружиниванием
+                $(".push").addClass("shakepush"); // Добавление класса спружинивания
+                $(".push").removeClass(
+                    "customfadeInUp"); // Удаление класса появления мусорки (Чтобы не было конфликтов)
+                setTimeout(function () { // Задержка для удаления спружинивания
+                    $(".push").removeClass(
+                        "shakepush"); // Удаление спружинивания (Чтобы не было конфликтов)
+                }, t7)
+            }, t6);
+
+            setTimeout(function () { // Задержка перед исчезновением мусорки
+                $(".push").addClass("customfadeOutDown"); // Исчезновение мусорки
+                setTimeout(function () { // Задержка перед удалением мусорки
+                    $(".push").remove(); // Удаление мусорки
+                }, 200);
+            }, t8);
+
             $(".dockbar").addClass("customfadeOutDown"); // Исчезновение докбара
             fileblocks[a].classList.add("shakefile"); // Вибрация файла
+
+            setTimeout(function () {
+                navigator.vibrate(25);
+                setTimeout(function () {
+                    navigator.vibrate(25);
+                    setTimeout(function () {
+                        navigator.vibrate(25);
+                    }, 100);
+                }, 100);
+            }, 100);
             setTimeout(function () { // Задержка перед удалением анимации вибрации
                 fileblocks[a].classList.remove("shakefile"); // Удаление анимации вибрации
-                navigator.vibrate(50); // Первая вибрация
                 setTimeout(function () { // Задержка после анимации вибрации
-                    fileblocks[a].insertAdjacentHTML("beforebegin", 
+                    fileblocks[a].insertAdjacentHTML("beforebegin",
                         "<div class='fileclone'></div>"); // Создание клона
-                    var fileblockpos = fileblocks[a].getBoundingClientRect(); // Переменная с позицией файла
-                    fileblocks[a].style.bottom = screen.height - fileblockpos.y - 90.4 + "px"; // Задана стартовая позиция
+                    var fileblockpos = fileblocks[a]
+                        .getBoundingClientRect(); // Переменная с позицией файла
+                    fileblocks[a].style.bottom = screen.height - fileblockpos.y - 90.4 +
+                        "px"; // Задана стартовая позиция
                     fileblocks[a].classList.add("fileblockdeleted"); // Анимаци падения
-                    setTimeout(function () { //Задержка перед удалением файла 
+                    setTimeout(function () { // Задержка перед удалением файла 
                         fileblocks[a].classList.add("fileblockdeletedend");
                         navigator.vibrate(50);
 
-                        setTimeout(function () { //Задержка перед исчезновением мусорки
-                        fileblockscounter--;
-                        $(".dockbar").removeClass("customfadeOutDown");
-                        $(".dockbar").addClass("customfadeInUp");
-                        if (fileblockscounter < 1) {
-                            document.getElementById("file-field").insertAdjacentHTML(
-                                "afterbegin",
-                                "<p class='empty'>Тут пока пусто</p>");
-
-                        }
-                    }, 2000);
-                    }, 400);
-                    
-
-                }, 500);
-
-            }, 700);
-            setTimeout(function () {
-                $(".deletebtn").removeClass("inactive");
+                        setTimeout(function () { // Задержка перед исчезновением мусорки
+                            fileblockscounter--; // Счётчик файлов --
+                            $(".dockbar").removeClass(
+                            "customfadeOutDown"); // Удаление анимации у докбара (Чтобы не было конфликтов)
+                            $(".dockbar").addClass(
+                            "customfadeInUp"); // Добавление анимации докбару
+                            if (fileblockscounter <
+                                1) { // Проверка на количество блоков
+                                document.getElementById("file-field")
+                                    .insertAdjacentHTML(
+                                        "afterbegin",
+                                        "<p class='empty'>Тут пока пусто</p>");
+                            }
+                        }, t4);
+                    }, t3);
+                }, t2);
+            }, t1);
+            setTimeout(function () { // Снятие защиты от нажатия
                 deliting = false;
                 for (var i = 0; i < deletebtns.length; i++) {
                     deletebtns[i].style.opacity = 1;
                 }
-            }, 3800)
+            }, t5);
         }
-    }
-
-    var pushcounter = -1;
-
-    function push(a) {
-        pushcounter++;
-        var savecounter = pushcounter;
-        document.body.insertAdjacentHTML("beforeend", `<div class="push customfadeInUp"></div>`);
-
-        var x = document.getElementsByClassName("push");
-        x[savecounter].insertAdjacentHTML("afterbegin", a);
-        setTimeout(function(){
-            x[savecounter].classList.add("shakepush");
-            x[savecounter].classList.remove("customfadeInUp");
-            setTimeout(function(){
-                x[savecounter].classList.remove("shakepush");   
-            },600)
-        } ,1500);
-        
-        setTimeout(function () {
-            x[savecounter].classList.add("customfadeOutDown");
-        }, 3500);
     }
 </script>
 <script>
