@@ -1,5 +1,6 @@
 .ave_drive{
     padding-bottom: 50px;
+    position: relative;
 }
 .ave_drive progress{
     width: 100%;
@@ -103,6 +104,7 @@ progress::-webkit-progress-value {
     overflow-y: scroll;
     height: 450px;
     margin-top: 15px;
+    overflow-x: hidden;
 }
 @media screen and (min-width: 768px){
     .ave_drive .file-field .empty{
@@ -120,5 +122,180 @@ progress::-webkit-progress-value {
 
     .ave_drive .task{
         margin: 10px;
+    }
+    
+}
+
+
+
+.customfadeInUp{
+    animation: customfadeInUp 0.3s ease-in;
+    animation-fill-mode: forwards;
+}
+.customfadeOutDown{
+    animation: customfadeOutDown 0.3s ease-in;
+    animation-fill-mode: forwards;
+}
+.trash{
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    border-radius:25px;
+    padding: 10px 5px;
+    background: linear-gradient(90deg, #FF5C00 0%, #FF6262 100%);
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+    height: 64px;
+    align-items: center;
+}
+.trash div{
+    display: flex;
+    align-items: center;
+}
+/* Push */
+
+::-webkit-resizer {
+    background-image: url(style.css);
+    width: 4px;
+    height: 0px;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    background-image: url(style.css);
+    width: 6px;
+    height: 0px;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.fileblockdeleted{
+    width: 88%;
+    z-index: 2;
+    box-sizing: border-box;
+    animation: fall 0.4s linear;
+    animation-fill-mode: forwards;
+    position: fixed;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 70px !important;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.fileblockdeletedend{
+    display: none !important;
+}
+
+@keyframes fall{
+    0%{
+
+    }
+    100%{
+        bottom: 50px;
+    }
+}
+
+@keyframes customfadeInUp{
+    0%{
+        opacity: 0;
+        transform: translate(-50%,100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-50%,0);
+        
+    }
+}
+
+
+@keyframes customfadeOutDown{
+    0%{
+        opacity: 1;
+        transform: translate(-50%,0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-50%,100px);
+        
+    }
+}
+
+@keyframes compression{
+    0%{
+        opacity: 0;
+        transform: scale(0.00001);
+    }
+    100%{
+        transform: scale(0.00001);
+        height: 0;
+        margin-bottom: 0;
+        opacity: 0;
+    }
+}
+.fileclone{
+    height: 50.4px;
+    margin-bottom: 10px;
+    animation: compression 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2.2s;
+}
+.shakefile{
+    animation: shakefile 0.7s ease-in-out;
+    position: relative !important;
+}
+
+@keyframes shakefile{
+    0%{
+        left: 0;
+        right: 0;
+    }
+    25%{
+        left: 15px;
+    }
+    50%{
+        left: -15px;
+    }
+    75%{
+        left: 15px;
+    }
+    100%{
+        left: 0;
+        right: 0;
+    }
+}
+
+.shaketrash{
+    animation: shaketrash 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes shaketrash{
+    0%{
+        transform: translate(-50%,0px);
+    }
+    25%{
+        transform: translate(-50%,10px);
+    }
+    75%{
+        transform: translate(-50%,-10px);
+    }
+    100%{
+        transform: translate(-50%,0px);
     }
 }

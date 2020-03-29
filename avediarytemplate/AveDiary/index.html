@@ -71,7 +71,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('0')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('0')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-doc">
@@ -88,7 +88,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('1')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('1')"><i class="material-icons">delete</i></a>
                 </div>
 
                 <div class="file-block">
@@ -106,7 +106,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('2')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('2')"><i class="material-icons">delete</i></a>
                 </div>
 
 
@@ -125,7 +125,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('3')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('3')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -142,7 +142,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('4')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('4')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -159,7 +159,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('5')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('5')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -176,7 +176,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('6')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('6')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -193,7 +193,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('7')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('7')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -210,7 +210,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('8')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('8')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -227,7 +227,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('9')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('9')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -244,7 +244,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('10')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('10')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -261,7 +261,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('11')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('11')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -278,7 +278,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('12')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('12')"><i class="material-icons">delete</i></a>
                 </div>
                 <div class="file-block">
                     <figure class="file-icon file-type-xls">
@@ -295,7 +295,7 @@
                             04.01.2020 20:02
                         </div>
                     </a>
-                    <a onclick="deleteblock('13')"><i class="material-icons">delete</i></a>
+                    <a class="deletebtn" onclick="deleteblock('13')"><i class="material-icons">delete</i></a>
                 </div>
             </figure>
             <a href="addfile.html">
@@ -307,22 +307,100 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
+    setTimeout(() => $(".homepage").removeClass("animated"), 500);
     var fileblocks = document.getElementsByClassName("file-block");
     var fileblockscounter = fileblocks.length;
     if (fileblockscounter < 1) {
         document.getElementById("file-field").insertAdjacentHTML("afterbegin", "<p class='empty'>Тут пока пусто</p>");
     }
 
+    var deliting = false;
+    var t1 = 700; // | Задержка перед удалением анимации вибрации
+    var t2 = 500; // | Задержка после удаления анимации вибрации
+    var t3 = 400; // | Задержка перед удалением файла
+    var t4 = 2000; // | Задержка перед появлением дока
+    var t5 = t1 + t2 + t3 + t4 + 200; // Защита от нажатия
+    var t6 = 1500; // | Задержка перед спружиниванием мусорки
+    var t7 = 600; // | Задержка для удаления спружинивания мусорки
+    var t8 = 3500; // | Задержка перед исчезовением мусорки
+    var t9 = 200; // | Задержка перед удалением мусорки
     function deleteblock(a) {
-        toast("<div>Удалено! |</div> <a class='link'>Отмена</a>");
-        var fileblocks = document.getElementsByClassName("file-block");
-        fileblocks[a].classList.add("fileblockdeleted");
-        setTimeout(() => fileblocks[a].classList.add("fileblockdeletedend"), 1500);
-        fileblockscounter--;
-        if (fileblockscounter < 1) {
-            document.getElementById("file-field").insertAdjacentHTML("afterbegin",
-                "<p class='empty'>Тут пока пусто</p>");
+        if (deliting == false) { // Защита от нажатия
+            deliting = true;
+            var deletebtns = document.getElementsByClassName("deletebtn"); // Поиск кнопок удалить
+            for (var i = 0; i < deletebtns.length; i++) {
+                deletebtns[i].style.opacity = 0.7; // Прозрачность кнопок удалить
+            }
 
+            document.body.insertAdjacentHTML("beforeend",
+                `<div class="trash customfadeInUp"><div><span class='material-icons'>delete</span> Удалено!</div><a>Отмена</a></div> `
+            ); // Создание мусорки
+            setTimeout(function () { // Задержка перед спружиниванием
+                $(".trash").addClass("shaketrash"); // Добавление класса спружинивания
+                $(".trash").removeClass(
+                    "customfadeInUp"); // Удаление класса появления мусорки (Чтобы не было конфликтов)
+                setTimeout(function () { // Задержка для удаления спружинивания
+                    $(".trash").removeClass(
+                        "shaketrash"); // Удаление спружинивания (Чтобы не было конфликтов)
+                }, t7)
+            }, t6);
+
+            setTimeout(function () { // Задержка перед исчезновением мусорки
+                $(".trash").addClass("customfadeOutDown"); // Исчезновение мусорки
+                setTimeout(function () { // Задержка перед удалением мусорки
+                    $(".trash").remove(); // Удаление мусорки
+                }, 200);
+            }, t8);
+
+            $(".dockbar").addClass("customfadeOutDown"); // Исчезновение докбара
+            fileblocks[a].classList.add("shakefile"); // Вибрация файла
+
+            setTimeout(function () {
+                navigator.vibrate(25);
+                setTimeout(function () {
+                    navigator.vibrate(25);
+                    setTimeout(function () {
+                        navigator.vibrate(25);
+                    }, 100);
+                }, 100);
+            }, 100);
+            setTimeout(function () { // Задержка перед удалением анимации вибрации
+                fileblocks[a].classList.remove("shakefile"); // Удаление анимации вибрации
+                setTimeout(function () { // Задержка после анимации вибрации
+                    fileblocks[a].insertAdjacentHTML("beforebegin",
+                        "<div class='fileclone'></div>"); // Создание клона
+                    var fileblockpos = fileblocks[a]
+                        .getBoundingClientRect(); // Переменная с позицией файла
+                    fileblocks[a].style.bottom = screen.height - fileblockpos.y - 90.4 +
+                        "px"; // Задана стартовая позиция
+                    fileblocks[a].classList.add("fileblockdeleted"); // Анимаци падения
+                    setTimeout(function () { // Задержка перед удалением файла 
+                        fileblocks[a].classList.add("fileblockdeletedend");
+                        navigator.vibrate(50);
+
+                        setTimeout(function () { // Задержка перед исчезновением мусорки
+                            fileblockscounter--; // Счётчик файлов --
+                            $(".dockbar").removeClass(
+                            "customfadeOutDown"); // Удаление анимации у докбара (Чтобы не было конфликтов)
+                            $(".dockbar").addClass(
+                            "customfadeInUp"); // Добавление анимации докбару
+                            if (fileblockscounter <
+                                1) { // Проверка на количество блоков
+                                document.getElementById("file-field")
+                                    .insertAdjacentHTML(
+                                        "afterbegin",
+                                        "<p class='empty'>Тут пока пусто</p>");
+                            }
+                        }, t4);
+                    }, t3);
+                }, t2);
+            }, t1);
+            setTimeout(function () { // Снятие защиты от нажатия
+                deliting = false;
+                for (var i = 0; i < deletebtns.length; i++) {
+                    deletebtns[i].style.opacity = 1;
+                }
+            }, t5);
         }
     }
 </script>

@@ -69,7 +69,7 @@ input[type=submit]{
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 999;
 }
 
 .dockbar i{
@@ -219,6 +219,7 @@ input[type=submit]{
     color: #000000;
     position: absolute;
     bottom: 15px;
+    z-index: 1;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -581,7 +582,7 @@ form a{
     color: white;
     display: flex;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 3;
     height: 64px;
     align-items: center;
 }
@@ -616,6 +617,7 @@ form a{
 
 .fileblockdeleted{
     width: 88%;
+    z-index: 2;
     box-sizing: border-box;
     animation: fall 0.4s linear;
     animation-fill-mode: forwards;
@@ -728,7 +730,4 @@ form a{
     100%{
         transform: translate(-50%,0px);
     }
-}
-.deletebtn.inactive{
-    color: rgb(131, 131, 131);
 }
