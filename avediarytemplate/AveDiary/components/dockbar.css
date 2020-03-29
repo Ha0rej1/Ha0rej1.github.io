@@ -1,0 +1,50 @@
+.dockbar{
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    border-radius:25px;
+    padding: 10px 5px;
+    background: rgba(255, 255, 255, 0.95);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.dockbar i{
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.dockbar a{
+    color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+.dockbar .docbtn{
+    transition: 0.3s;
+    color: black;
+    text-shadow: none;
+
+}
+.dockbar .active{
+    transition: 0.3s;
+    color: #2980d1;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    animation: docbtnappear 0.1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (min-width: 768px){
+    .dockbar{
+        transform: none;
+        top: 50%;
+        transform: translateY(-50%);
+        width: fit-content;
+        border-radius: 15px;
+        left: 15px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,35 @@
+.loadfile{
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.loadfile input[type=submit]{
+    margin-top: 10px;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #2980d1;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loadfile .field{
+    padding: 10px;
+    border: 1px solid #2980d1;
+    color: #2980d1;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+@media screen and (max-width: 768px){
+    .loadfile{
+        width: 100%;
+    }
+    .loadfile .field{
+        width: 100%;
+    }
+}

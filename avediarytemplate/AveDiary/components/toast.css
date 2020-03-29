@@ -1,0 +1,20 @@
+.toast{
+    width: fit-content;
+    position: fixed;
+    background-color: rgba(99, 99, 99, 0.9);
+    color: white;
+    box-shadow: none;
+    font-size: 1.3em;
+    z-index: 2;
+    left: 50%;
+    bottom: 35px;
+    transform: translateX(-50%);
+    user-select: none;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.toast .link{
+    margin-left: 5px;
+}

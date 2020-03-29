@@ -1,0 +1,111 @@
+@font-face{
+    font-family: "Century Gothic";
+    src: url('fonts/CenturyGothic.ttf')
+}
+
+*, html{
+    padding: 0;
+    margin: 0;
+    outline: none !important;
+}
+
+body{
+    font-family: "Century Gothic", sans-serif;
+    background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
+    padding: 0 20px;
+    background-size: 100vh 100vh;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+    user-select: none;
+}
+
+#project-header{
+    font-weight: normal;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Block */
+
+.block{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    margin: 30px 0;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    min-height: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Block */
+
+/* Main block */
+.block .hometask .task{
+    margin-top: 15px;
+    color: #797979;
+}
+
+.hometask{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.hometask h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block .hometask .task-date{
+    color: #000000;
+    display: block;
+}
+@media screen and (min-width: 768px){
+    .block.main{
+        width: fit-content;
+        margin: 30px auto;
+    }
+}
+
+/* Main block */
+
+
+::-webkit-resizer {
+    background-image: url(style.css);
+    width: 4px;
+    height: 0px;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    background-image: url(style.css);
+    width: 6px;
+    height: 0px;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(216, 216, 216);
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
+}
+
+

@@ -1,0 +1,124 @@
+.ave_drive{
+    padding-bottom: 50px;
+}
+.ave_drive progress{
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+}
+.fileblockdeleted{
+    animation: compression 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+
+.fileblockdeletedend{
+    animation: compressionended 0.3s linear;
+    animation-fill-mode: forwards;
+}
+.ave_drive .file-block{
+    display: grid;
+    margin-bottom: 10px;
+    grid-template-columns: 60px auto 30px; /* 3 столбца */
+    align-items: center;
+    height: 50.4px;
+}
+.ave_drive .file-block i:first-child{
+    font-size: 3em;
+    color: #2980d1;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.ave_drive .file-block i:last-child{
+    font-size: 1.5em;
+    color: #2980D1;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+}
+.file-block .file-name{
+    font-size: 0.8em;
+}
+.file-block .file-autor{
+    font-size: 0.8em;
+    color: #7C7C7C;
+}
+.file-block .file-time{
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+}
+.file-block .file-icon{
+    background-color: rgb(228, 228, 228);
+    color: #FFFFFF;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.file-block .file-icon.file-type-txt{
+    background-color: rgb(228, 228, 228);
+    color: #FFFFFF;
+}
+.file-block .file-icon.file-type-doc{
+    background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%);
+    color: #FFFFFF;
+}
+.file-block .file-icon.file-type-xls{
+    background: linear-gradient(180deg, rgb(74, 223, 106) 0%, rgb(49, 175, 62) 100%);
+    color: #FFFFFF;
+}
+.file-block .file-icon.file-type-ppt{
+    background: linear-gradient(180deg, #FF5C00 0%, #FF6262 100%);
+    color: #FFFFFF;
+}
+.ave_drive .file-add{
+    text-align:center;
+    color: #000000;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+progress {
+    border-radius: 6px;
+    background-color: white;
+}
+progress::-webkit-progress-bar {
+    border-radius: 6px;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+progress::-webkit-progress-value {
+    background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%);
+    border-radius: 6px 0px 0px 6px;
+}
+.ave_drive .file-field .empty{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.ave_drive .file-field{
+    overflow-y: scroll;
+    height: 450px;
+    margin-top: 15px;
+}
+@media screen and (min-width: 768px){
+    .ave_drive .file-field .empty{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: #7C7C7C;
+        transform: translate(-50%, -50%);
+    }
+    .ave_drive .file-field{
+        overflow-y: scroll;
+        padding: 5px;
+        padding-top: 0;
+    }
+
+    .ave_drive .task{
+        margin: 10px;
+    }
+}
