@@ -315,7 +315,6 @@
     }
     var deliting = false;
 
-
     function deleteblock(a) {
         if (deliting == false) { // Защита от даблклика
             deliting = true; // Защита от даблклика
@@ -323,12 +322,12 @@
             for (var i = 0; i < deletebtns.length; i++) { // Защита от даблклика
                 deletebtns[i].style.opacity = 0.7; // Защита от даблклика
             } // Защита от даблклика
-            navigator.vibrate(50); // Первая вибрация
             push("<div><span class='material-icons'>delete</span> Удалено!</div> <a>Отмена</a>"); // Появление мусорки
             $(".dockbar").addClass("customfadeOutDown"); // Исчезновение докбара
             fileblocks[a].classList.add("shakefile"); // Вибрация файла
             setTimeout(function () { // Задержка перед удалением анимации вибрации
                 fileblocks[a].classList.remove("shakefile"); // Удаление анимации вибрации
+                navigator.vibrate(50); // Первая вибрация
                 setTimeout(function () { // Задержка после анимации вибрации
                     fileblocks[a].insertAdjacentHTML("beforebegin", 
                         "<div class='fileclone'></div>"); // Создание клона
