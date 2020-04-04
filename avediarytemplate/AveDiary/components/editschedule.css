@@ -1,0 +1,53 @@
+.editschedule{
+    margin: 30px auto;
+}
+@media screen and (min-width:1024px){
+    .editschedule{
+        width: fit-content;
+    }
+    .editschedule ul li{
+        display: flex;
+    }
+}
+@media screen and (max-width: 768px){
+    .editschedule ul li{
+        display: block;
+    }
+    .editschedule ul li select{
+        display: block;
+        width: 100%;
+        margin: 10px 0 !important;
+    }
+    .editschedule ul li{
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #cecece;
+        background-color: #f9f9f9;
+        margin: 10px 0;
+    }
+}
+.editschedule ul{
+    list-style: none;
+    box-sizing: border-box;
+}
+.editschedule ul li{
+    align-items: center;
+    box-sizing: border-box;
+}
+.editschedule ul li select{
+    margin: 5px 10px;
+}
+.editschedule ul li .group{
+    display: flex;
+    align-items: center;
+}
+select{
+    padding: 10px 15px;
+    padding-left: 0px;
+    width: 150px;
+    color: #4d4d4d;
+    border: none;
+    background: transparent;
+    border-style: unset;
+    border-bottom: 1px solid #cecece;
+}

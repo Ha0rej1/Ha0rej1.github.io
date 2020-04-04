@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="animate.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ave Diary</title>
+    <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <h1 id="project-header"><a class="pagechange" href="index.html"><i
         class="material-icons back animated animated-btns fadeIn faster">arrow_back_ios</i></a><a
-    class="header-text pagechange" href="settings.html">Ave Diary</a></h1>
-    <nav class="dockbar">
+    class="header-text pagechange" href="index.html">Ave Diary</a></h1>
+    <nav id="dockbar">
         <a class="dochome docbtn pagechange" href="index.html"><i class="material-icons">home</i></a>
         <a class="doclist docbtn pagechange" href="tasklist.html"><i class="material-icons">format_list_bulleted</i></a>
         <a class="docstudents docbtn pagechange" href="students.html"><i class="material-icons">people</i></a>
         <a class="docsettings docbtn pagechange" href="settings.html"><i class="material-icons">settings</i></a>
     </nav>
-    <div class="animated settingspage page-animation fadeInUp faster">
+    <div class="animated settingspage horizontal-page page-animation fadeInUp faster">
       <article class="block">
         <div class="settings">
           <h3>Мой профиль</h3>
@@ -47,11 +48,46 @@
               <a class="copy">Скопировать</a>
             </span>
           </figure>
-          <a class="option" href="#">Список подключенных ботов</a>
           <a class="option red" href="#">Выйти из профиля</a>
           <a class="option red" href="#">Покинуть класс</a>
           </figure>
       </div>
+      </article>
+      <article class="block bots">
+        <h3>Подключенные боты</h3>
+        <figure class="bot">
+          <figure class="bot-icon">
+            <i class="fab fa-telegram-plane"></i>
+              </figure>
+              <figure>
+              <p class="bot-name">Telegram</p>
+              </figure>
+              <i class="material-icons">
+                delete
+            </i>
+          </figure>
+          <figure class="bot">
+            <figure class="bot-icon">
+              <i class="fab fa-viber"></i>
+                </figure>
+                <figure>
+                <p class="bot-name">Viber</p>
+                </figure>
+                <i class="material-icons">
+                  delete
+              </i>
+            </figure>
+            <figure class="bot">
+              <figure class="bot-icon">
+                <i class="fab fa-instagram"></i>
+                  </figure>
+                  <figure>
+                  <p class="bot-name">Instagram</p>
+                  </figure>
+                  <i class="material-icons">
+                    delete
+                </i>
+              </figure>
       </article>
     </div>
 </body>

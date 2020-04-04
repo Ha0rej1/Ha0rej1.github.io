@@ -214,7 +214,6 @@ input[type=submit]{
 /* Settings */
 
 /* Profile */
-
 .settings .profile{
     display: flex;
     align-items: center;
@@ -253,8 +252,34 @@ input[type=submit]{
     padding: 5px;
     display: flex;
     margin-top: 15px;
+    margin-bottom: 15px;
     border-radius: 5px;
+    width: 250px;
     justify-content: space-between;
+}
+
+
+.bots .bot{
+    display: grid;
+    grid-template-columns: 60px auto 25px;
+    width: 100%;
+    align-items: center;
+    margin: 15px 0;
+}
+.bots .bot-icon{
+    background-color: rgb(228, 228, 228);
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.bots .bot-name{
+    font-size: 0.9em;
 }
 .settings .options .token .copy{
     color: #2980D1;
@@ -281,7 +306,11 @@ input[type=submit]{
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .bots{
+        width: 30%;
+    }
+    
     .block{
         width: 100%;
         margin-right: 30px;
@@ -293,13 +322,10 @@ input[type=submit]{
 
     /* Page structure */
 
-    .homepage{
+    .horizontal-page{
         display: flex;
     }
-    .settingspage .block{
-        width: fit-content;
-        margin: 30px auto;
-    }
+
     .adddzpage .block{
         width: fit-content;
         margin: 30px auto;
@@ -326,6 +352,9 @@ input[type=submit]{
     .tasklistpage .block{
     }
     /* Page structure */
+    .settings{
+        width: 100%;
+    }
 
 }
 

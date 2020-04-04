@@ -22,7 +22,6 @@
     margin-bottom: 10px;
     grid-template-columns: 60px auto 30px; /* 3 столбца */
     align-items: center;
-    height: 50.4px;
 }
 .ave_drive .file-block i:first-child{
     font-size: 3em;
@@ -106,7 +105,7 @@ progress::-webkit-progress-value {
     margin-top: 15px;
     overflow-x: hidden;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px) and (orientation: landscape){
     .ave_drive .file-field .empty{
         position: absolute;
         left: 50%;
@@ -129,15 +128,16 @@ progress::-webkit-progress-value {
 
 
 .customfadeInUp{
-    animation: customfadeInUp 0.3s ease-in;
+    animation: customfadeInUp 0.2s ease-in;
     animation-fill-mode: forwards;
 }
 .customfadeOutDown{
-    animation: customfadeOutDown 0.3s ease-in;
+    animation: customfadeOutDown 0.2s ease-in;
     animation-fill-mode: forwards;
 }
-.trash{
+#trash{
     position: fixed;
+    opacity: 0;
     bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
@@ -149,15 +149,16 @@ progress::-webkit-progress-value {
     box-sizing: border-box;
     color: white;
     display: flex;
-    justify-content: space-around;
+    padding-left: 15px;
     z-index: 3;
     height: 64px;
     align-items: center;
+    pointer-events: none;
 }
-.trash div{
-    display: flex;
-    align-items: center;
+#trash span{
+    margin-right: 7px;
 }
+
 /* Push */
 
 ::-webkit-resizer {
@@ -183,31 +184,30 @@ progress::-webkit-progress-value {
     background: transparent;
 }
 
-.fileblockdeleted{
-    width: 88%;
-    z-index: 2;
-    box-sizing: border-box;
-    animation: fall 0.4s linear;
-    animation-fill-mode: forwards;
-    position: fixed;
-    padding: 10px;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    height: 70px !important;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-.fileblockdeletedend{
-    display: none !important;
-}
-
 @keyframes fall{
     0%{
-
+        width: 88%;
+        z-index: 2;
+        box-sizing: border-box;
+        position: fixed;
+        padding: 10px;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        height: 70px !important;
+        left: 50%;
+        transform: translateX(-50%);
     }
     100%{
+        width: 88%;
+        z-index: 2;
+        box-sizing: border-box;
+        position: fixed;
+        padding: 10px;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        height: 70px !important;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: 50px;
     }
 }
@@ -254,16 +254,13 @@ progress::-webkit-progress-value {
     margin-bottom: 10px;
     animation: compression 0.5s ease-in-out;
     animation-fill-mode: forwards;
-    animation-delay: 2.2s;
-}
-.shakefile{
-    animation: shakefile 0.7s ease-in-out;
-    position: relative !important;
+    animation-delay: 0.3s;
 }
 
 @keyframes shakefile{
     0%{
         left: 0;
+        position: relative;
         right: 0;
     }
     25%{
@@ -280,11 +277,6 @@ progress::-webkit-progress-value {
         right: 0;
     }
 }
-
-.shaketrash{
-    animation: shaketrash 0.5s ease-in-out;
-    animation-fill-mode: forwards;
-}
 @keyframes shaketrash{
     0%{
         transform: translate(-50%,0px);
@@ -298,4 +290,30 @@ progress::-webkit-progress-value {
     100%{
         transform: translate(-50%,0px);
     }
+}
+
+
+
+
+.animatetrash{
+    animation-name: customfadeInUp, shaketrash, customfadeOutDown;
+    animation-duration: 0.2s,0.5s, 0.2s;
+    animation-delay:0s,1.2s, 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+.animatedock{
+    animation-name:customfadeOutDown, customfadeInUp;
+    animation-duration: 0.2s, 0.2s;
+    animation-delay: 0s, 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.animatefile{
+    animation-name: shakefile, fall;
+    animation-duration: 0.5s,0.4s;
+    animation-delay: 0s, 0.8s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }

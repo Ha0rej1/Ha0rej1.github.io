@@ -35,12 +35,12 @@ input[type=submit]{
 
 #project-header{
     font-weight: normal;
-    margin: 0 auto;
+    margin-left: 15px;
     display: block;
     width: 100%;
     margin-top: 30px;
     color: white;
-    text-align: center;
+    text-align: left;
     position: relative;
     -webkit-tap-highlight-color: transparent;
 }
