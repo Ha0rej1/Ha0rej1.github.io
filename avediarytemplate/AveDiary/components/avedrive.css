@@ -124,17 +124,6 @@ progress::-webkit-progress-value {
     }
     
 }
-
-
-
-.customfadeInUp{
-    animation: customfadeInUp 0.2s ease-in;
-    animation-fill-mode: forwards;
-}
-.customfadeOutDown{
-    animation: customfadeOutDown 0.2s ease-in;
-    animation-fill-mode: forwards;
-}
 #trash{
     position: fixed;
     opacity: 0;
@@ -149,14 +138,14 @@ progress::-webkit-progress-value {
     box-sizing: border-box;
     color: white;
     display: flex;
-    padding-left: 15px;
     z-index: 3;
     height: 64px;
+    justify-content: center;
     align-items: center;
     pointer-events: none;
 }
 #trash span{
-    margin-right: 7px;
+    margin-right: 5px;
 }
 
 /* Push */
