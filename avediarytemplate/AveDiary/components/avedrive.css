@@ -100,8 +100,8 @@ progress::-webkit-progress-value {
     transform: translate(-50%, -50%);
 }
 .ave_drive .file-field{
-    overflow-y: scroll;
-    height: 450px;
+    height: auto;
+    overflow-y: auto;
     margin-top: 15px;
     overflow-x: hidden;
 }
@@ -117,6 +117,8 @@ progress::-webkit-progress-value {
         overflow-y: scroll;
         padding: 5px;
         padding-top: 0;
+        height: 300px;
+        overflow-y: scroll;
     }
 
     .ave_drive .task{

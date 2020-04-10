@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="components/dockbar.css">
     <link rel="stylesheet" href="components/avedrive.css">
     <link rel="stylesheet" href="components/toast.css">
+    <link rel="stylesheet" href="themes/dark.css">
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
     <script src="js/toast.js"></script>
     <title>Ave Diary</title>
 </head>
@@ -26,34 +28,44 @@
     </nav>
     <h1 id="project-header"><a class="pagechange header-text" href="index.html">Ave Diary</a></h1>
     <div class="animated homepage page-animation fadeInUp horizontal-page faster">
-        <article class="block">
-            <div class="hometask">
-                <h3>Домашнее задание на завтра: <a href="adddz.html" class="addtask pagechange"><i
-                            class="material-icons">
-                            add
-                        </i></a></h3>
-                <p class="task">Алгебра: 3.195 3.194(а,б) 3.195(а,б)</p>
-                <p class="task">Русская литература: Гоголь Шинель читать</p>
-                <p class="task">Химия: p26</p>
-                <p class="task">История: p35 з.7</p>
-                <p class="task">Биология: p30</p>
-            </div>
+        <article id="mainblock" class="block">
             <div class="schedule">
-                <h3>Расписание на завтра: <a href="editschedule.html" class="addtask pagechange"><i
-                            class="material-icons">
-                            edit
-                        </i></a></h3>
-                <p class="lesson">1. Алгебра</p>
-                <p class="lesson">2. Русская литература</p>
-                <p class="lesson">3. Химия</p>
-                <p class="lesson">4. История</p>
-                <p class="lesson">5. Биология</p>
+                <h3>Расписание на завтра:
+                    <div>
+                        <a href="editschedule.html" class="addtask pagechange">
+                            <i class="material-icons">edit</i>
+                        </a>
+                        <a href="adddz.html" class="addtask pagechange">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                </h3>
+                <p class="lesson">1. Алгебра: 3.195 3.194(а,б) 3.195(а,б)</p>
+                <p class="lesson">2. Русская литература: Гоголь Шинель читать</p>
+                <p class="lesson">3. Химия: p26</p>
+                <p class="lesson">4. История: p35 з.7</p>
+                <p class="lesson">5. Биология: p30</p>
             </div>
             <div class="school-info">
                 <p>Беларусь, Вiцебск, Сярэдняя школа нумар 46 горада Вiцебска, 9-Б</p>
             </div>
+            <div class="trybots">
+                <h3>Попробуй наших ботов!
+                </h3>
+                <div class="bots-guide">
+                    <a href="">
+                        <i class="telegram-color fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="">
+                        <i class="viber-color fab fa-viber"></i>
+                    </a>
+                    <a href="">
+                        <i class="instagram-color fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </article>
-        <article class="ave_drive block">
+        <article id="avedrive" class="ave_drive block">
             <h3>Ave Drive | 110.2мб / 1024мб</h3>
             <progress max="100" value="30"></progress>
             <figure class="file-field" id="file-field">
@@ -330,7 +342,6 @@
 
     function deleteblock(element) {
         let t4 = 2400; // | Задержка перед появлением дока
-        let t5 = t4 + 200; // Защита от нажатия
 
         let a = element.getAttribute("data-fileID"); // Номер файла
         let trash = document.getElementById("trash"); // Мусорка
@@ -352,7 +363,7 @@
         // Задана стартовая позиция
         setTimeout(() => fileblocks[a].style.display = "none", 1200); // Спрятать файл
         setTimeout(() => fileblocks[a].insertAdjacentHTML("beforebegin", "<div class='fileclone'></div>"), 800); // клон
-        setTimeout(function () { // Задержка перед исчезновением мусорки
+        setTimeout(function () { // Снятие защиты от нажатия
             fileblockscounter--; // Счётчик файлов --
             dockbar.classList.remove("animatedock");
             trash.classList.remove("animatetrash");
@@ -360,15 +371,13 @@
                 document.getElementById("file-field").insertAdjacentHTML("afterbegin",
                     "<p class='empty'>Тут пока пусто</p>");
             }
-        }, t4);
-        setTimeout(function () { // Снятие защиты от нажатия
             for (let deletebtn of deletebtns) {
                 deletebtn.style.opacity = 1;
             }
             for (let deletebtn of deletebtns) {
                 deletebtn.addEventListener('click', handler);
             }
-        }, t5);
+        }, t4);
     }
 </script>
 <script>
@@ -377,7 +386,17 @@
     if (screen.width >= 768) {
         $(".page-animation").removeClass("fadeInUp");
         $(".page-animation").addClass("fadeInLeft");
+
     }
+    document.addEventListener("DOMContentLoaded", function (event) {
+        if (screen.width >= 768) {
+        let drive = document.getElementById("avedrive");
+        let mainblock = document.getElementById("mainblock");
+        let field = document.getElementById("file-field");
+        setTimeout(() => field.style.height = "85%", 100);
+        setTimeout(() => drive.style.height = mainblock.offsetHeight + "px", 100);
+    }
+    });
 
     $(document).ready(function () {
 

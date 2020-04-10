@@ -8,15 +8,19 @@
     padding: 0;
     outline: none !important; 
 }
-
+html{
+    min-height: 100vh;
+}
 body{
     font-family: 'Century Gothic', sans-serif;
     background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
-    margin-bottom: 200px;
-    padding: 0 20px;
-    background-size: 100vh 100vh;
+    padding: 30px 20px;
+    margin-bottom: 150px;
+    
+    background-size: 100vw 100vh;
     background-attachment: fixed;
     overflow-y: scroll;
+    background-repeat: no-repeat;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -27,6 +31,7 @@ a{
     text-decoration: none;
     color: unset;
     user-select: none;
+    cursor: pointer;
 }
 
 input[type=submit]{
@@ -38,7 +43,6 @@ input[type=submit]{
     margin: 0 auto;
     display: block;
     width: 100%;
-    margin-top: 30px;
     color: white;
     text-align: center;
     position: relative;
@@ -70,21 +74,6 @@ input[type=submit]{
 /* Block */
 
 /* Main block */
-.block .hometask .task{
-    margin-top: 15px;
-    color: #797979;
-}
-
-.hometask{
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-}
-.hometask h3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .block .schedule .lesson{
     margin-top: 15px;
     color: #797979;
@@ -100,7 +89,11 @@ input[type=submit]{
     justify-content: space-between;
     align-items: center;
 }
-
+.school-info{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
 /* Main block */
 
 
@@ -110,12 +103,51 @@ input[type=submit]{
 .student{
     display: grid;
     margin: 10px 0;
-    grid-template-columns: 60px auto 25px; /* 3 столбца */
+    grid-template-columns: 60px auto 50px; /* 3 столбца */
     align-items: center;
 }
-
+.students-field{
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right:15px;
+}
+.students .student .options{
+    display: flex;
+}
+.students .student .options i:last-child{
+    margin-left: 5px;
+}
+.students .student .teacher{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+@media screen and (max-width: 1024px){
+    .students-field{
+        height: auto;
+        overflow-y: hidden;
+    }
+}
+.students .student .moderator{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.students .student .parent{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
 .student .student-icon{
-    background-color: rgb(228, 228, 228);
+    background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color: #FFFFFF;
     border-radius: 50%;
     width: 50px;
@@ -281,6 +313,33 @@ input[type=submit]{
 .bots .bot-name{
     font-size: 0.9em;
 }
+#mainblock{
+    height: fit-content;
+}
+/* s */
+.trybots h3{
+
+}
+.trybots .bots-guide{
+    display: flex;
+}
+.trybots{
+
+}
+.trybots .bots-guide i{
+    background-color: rgb(228, 228, 228);
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+/* s */
 .settings .options .token .copy{
     color: #2980D1;
 }
@@ -310,11 +369,15 @@ input[type=submit]{
     .bots{
         width: 30%;
     }
-    
     .block{
         width: 100%;
         margin-right: 30px;
     }
+    .horizontal-page .block{
+        width: 40%;
+        margin-right: 30px;
+    }
+   
     body{
         margin-bottom: 0;
         padding-left: 80px;
@@ -324,6 +387,7 @@ input[type=submit]{
 
     .horizontal-page{
         display: flex;
+        justify-content: center;
     }
 
     .adddzpage .block{
@@ -479,3 +543,26 @@ form a{
         opacity: 0;
     }
 }
+
+
+
+/* palette */
+.viber-color{
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.telegram-color{
+    background: #00B4DB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.instagram-color{
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+/* palette */
