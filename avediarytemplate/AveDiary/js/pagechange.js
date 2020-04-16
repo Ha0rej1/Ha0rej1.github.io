@@ -1,41 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#0085FF">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="components/dockbar.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="components/loadfile.css">
-    <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Ave Diary</title>
-</head>
-
-<body>
-    <nav id="dockbar">
-        <a class="dochome docbtn pagechange" href="index.html"><i class="material-icons">home</i></a>
-        <a class="doclist docbtn pagechange" href="tasklist.html"><i class="material-icons">format_list_bulleted</i></a>
-        <a class="docstudents docbtn pagechange" href="students.html"><i class="material-icons">people</i></a>
-        <a class="docsettings docbtn pagechange" href="settings.html"><i class="material-icons">settings</i></a>
-    </nav>
-    <h1 id="project-header"><a class="pagechange" href="index.html"><i
-        class="material-icons back animated animated-btns fadeIn faster">arrow_back_ios</i></a><a class="pagechange header-text" href="index.html">Ave Diary</a></h1>
-    <div class="animated page-animation fadeInUp faster">
-        <form class="block loadfile">
-            <div class="field"><p>organika.ppt</p></div>
-            <input type="submit" value="Добавить">
-        </form>
-    </div>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    if (screen.width >= 768) {
-        $(".page-animation").removeClass("fadeInUp");
-        $(".page-animation").addClass("fadeInLeft");
-    }
 
     $(document).ready(function () {
 
@@ -63,6 +25,7 @@
                     flag = false;
 
                     // Добавляем анимации
+                    $(".homepage").addClass("animated");
                     $(".dochome").removeClass("active");
                     $(".docstudents").removeClass("active");
                     $(".docsettings").removeClass("active");
@@ -70,7 +33,6 @@
                     $(".page-animation").removeClass("fadeInUp");
                     $(".page-animation").addClass("fadeOutDown");
                     $(".animated-btns").addClass("fadeOut");
-
                     // С задержкой открываем URL, возвращая штатный текст кнопке, разрешаем открывать новые ссылки
                     setTimeout(function () {
                         flag = true;
@@ -89,6 +51,3 @@
         });
 
     });
-</script>
-
-</html>

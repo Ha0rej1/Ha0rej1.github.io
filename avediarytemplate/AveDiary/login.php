@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="components/login.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="animate.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon/Ave Diary.png">
+    <?php require_once "locales/RU-ru.php";?>
 </head>
     <body>
         <article class="animated faster" id="login">
@@ -20,8 +22,8 @@
                     <a class="additional-text hover-link" href="">Я не помню пароль</a>
                 </div>
                 <p class="additional-text">Используя проект вы соглашаетесь с <a class="hover-link" href="">политикой конфиденциальности</a></p>
-                <a class="hide" href="index.html"><input class="button-input" type="button" value="Войти"></a>
-                <a href="reg.html"><input class="button-input" type="button" value="Регистрация"></a>
+                <a class="hide" href="index.php"><input class="button-input" type="button" value="Войти"></a>
+                <a href="reg.php"><input class="button-input" type="button" value="Регистрация"></a>
                 <br>
                 <a class="additional-text hover-link" href="">Как пользоваться Ave Diary?</a>
                 <br>

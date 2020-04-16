@@ -3,22 +3,46 @@
     src: url('fonts/CenturyGothic.ttf');
 }
 
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none !important;
+} 
+
 *, html{
     margin: 0;
     padding: 0;
     outline: none !important; 
+    -webkit-tap-highlight-color: transparent;
 }
 html{
     min-height: 100vh;
 }
+body:before {
+    content: '';
+    background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
+    background-size: 100vw 120vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#background-wrapper{
+    
+    
+    background-attachment: fixed;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+}
 body{
     font-family: 'Century Gothic', sans-serif;
-    background: linear-gradient(180deg, #0085FF 0%, #003464 100%);
+    
     padding: 30px 20px;
     margin-bottom: 150px;
     
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
     overflow-y: scroll;
     background-repeat: no-repeat;
 }
@@ -39,9 +63,6 @@ input[type=submit]{
 }
 
 #project-header{
-    font-weight: normal;
-    margin: 0 auto;
-    display: block;
     width: 100%;
     color: white;
     text-align: center;
@@ -52,6 +73,7 @@ input[type=submit]{
     position: absolute;
     left: 15px;
     top: 50%;
+    font-size: 0.7em;
     transform: translateY(-50%);
 }
 #project-header .header-text{
@@ -70,6 +92,7 @@ input[type=submit]{
     box-sizing: border-box;
     position: relative;
 }
+
 
 /* Block */
 
@@ -95,84 +118,6 @@ input[type=submit]{
     margin-bottom: 15px;
 }
 /* Main block */
-
-
-
-/* Students */
-
-.student{
-    display: grid;
-    margin: 10px 0;
-    grid-template-columns: 60px auto 50px; /* 3 столбца */
-    align-items: center;
-}
-.students-field{
-    height: 450px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    padding-right:15px;
-}
-.students .student .options{
-    display: flex;
-}
-.students .student .options i:last-child{
-    margin-left: 5px;
-}
-.students .student .teacher{
-    background: #FDC830;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
-@media screen and (max-width: 1024px){
-    .students-field{
-        height: auto;
-        overflow-y: hidden;
-    }
-}
-.students .student .moderator{
-    background: #FDC830;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
-.students .student .parent{
-    background: #FDC830;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
-}
-.student .student-icon{
-    background: #36D1DC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    color: #FFFFFF;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-}
-.students .leave{
-    text-align:center;
-    color: #FF6262;
-    margin-top: 30px;
-    display: block;
-    position: relative;
-}
-
-.students .student .student-name{
-    font-size: 0.8em;
-}
-.students .student .student-role{
-    font-size: 0.8em;
-    color: #7C7C7C;
-}
-/* Students */
 
 /* Tasklist */
 
@@ -201,9 +146,6 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
     display: flex;
     align-content: center;
     -webkit-tap-highlight-color: transparent;
-}
-.tasklist .dayblock h3 .info .date{
-    margin-right: 10px;
 }
 
 .tasklist-options{
@@ -243,76 +185,9 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
 
 /* Tasklist */
 
-/* Settings */
-
-/* Profile */
-.settings .profile{
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
-    justify-content: flex-start;
-}
-
-.settings .profile .profile-icon{
-    background-color: rgb(228, 228, 228);
-    margin-right: 15px;
-    color: #FFFFFF;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-}
-.settings .profile .profile-name{
-    font-size: 0.9em;
-}
-.settings .profile .profile-role{
-    font-size: 0.9em;
-    color: #7C7C7C;
-}
-
-/* Profile */
-
-.settings .options .token{
-    margin-top:15px;
-    
-}
-.settings .options .token .field{
-    background-color: rgb(228, 228, 228);
-    padding: 5px;
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    width: 250px;
-    justify-content: space-between;
-}
 
 
-.bots .bot{
-    display: grid;
-    grid-template-columns: 60px auto 25px;
-    width: 100%;
-    align-items: center;
-    margin: 15px 0;
-}
-.bots .bot-icon{
-    background-color: rgb(228, 228, 228);
-    margin-right: 15px;
-    color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-}
-.bots .bot-name{
-    font-size: 0.9em;
-}
+
 #mainblock{
     height: fit-content;
 }
@@ -339,20 +214,7 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
     margin-top: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
 }
-/* s */
-.settings .options .token .copy{
-    color: #2980D1;
-}
-.settings .option{
-    margin-top: 15px;
-    display: block;
-    color: #2980D1;
-}
-.settings .option.red{
-    color: #FF6262;
-}
 
-/* Settings */
 
 @keyframes docbtnappear{
     from{
@@ -416,10 +278,6 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
     .tasklistpage .block{
     }
     /* Page structure */
-    .settings{
-        width: 100%;
-    }
-
 }
 
 
@@ -566,3 +424,4 @@ background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, F
     
 }
 /* palette */
+

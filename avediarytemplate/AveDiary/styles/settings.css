@@ -1,0 +1,135 @@
+.settings .profile{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    justify-content: flex-start;
+}
+
+.settings .profile .profile-icon{
+    background-color: rgb(228, 228, 228);
+    margin-right: 15px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.settings .profile .profile-name{
+    font-size: 0.9em;
+}
+.settings .profile .profile-role{
+    font-size: 0.9em;
+    color: #7C7C7C;
+}
+
+.settings .options .token{
+    margin-top:15px;
+    
+}
+.settings .options .token .field{
+    background-color: rgb(228, 228, 228);
+    padding: 5px;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.settings .options .token .copy{
+    color: #2980D1;
+}
+.settings .option{
+    margin-top: 15px;
+    display: block;
+    color: #2980D1;
+}
+.settings .option.red{
+    color: #FF6262;
+}
+
+
+
+@media screen and (min-width: 1024px) and (orientation: landscape){
+    .settings{
+        width: 100%;
+    }
+}
+
+.delanimation{
+    animation-name: disappearing, compression;
+    animation-duration: 0.5s, 0.5s;
+    animation-delay: 0s,0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes disappearing{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes compression{
+    0%{
+        height: 50px;
+    }
+    100%{
+        transform: scaleY(0.00001);
+        height: 0;
+        margin-top: 0;
+    }
+}    
+
+.bots .bot{
+    display: grid;
+    grid-template-columns: 60px auto 25px;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.bots .bot-icon{
+    background-color: rgb(228, 228, 228);
+    margin-right: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.bots .bot-name{
+    font-size: 0.9em;
+}
+.bots .empty{
+    position: absolute;
+    transform: translate(-50%,-0%);
+    top: 50%;
+    left: 50%;
+    color: #7C7C7C;
+}
+.bots{
+    min-height: 120.6px;
+}
+
+.settings .profile-icon.moderator{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.settings .profile-icon.parent{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}

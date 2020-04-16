@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" href="components/reg.css">
+    <link rel="stylesheet" href="styles/reg.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon/Ave Diary.png">
+    <?php require_once "locales/RU-ru.php";?>
 </head>
     <body>
         <article id="reg">

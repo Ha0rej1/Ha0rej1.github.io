@@ -2,30 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#0085FF">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="components/dockbar.css">
-    <link rel="stylesheet" href="components/editschedule.css">
-    <link rel="stylesheet" href="animate.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Ave Diary</title>
-    <script src="https://kit.fontawesome.com/505beb7154.js" crossorigin="anonymous"></script>
+    <?php require "head.php"; ?>
+    <link rel="stylesheet" href="styles/editschedule.css">
 </head>
 
 <body>
 
-    <h1 id="project-header"><a class="pagechange" href="index.html"><i
-        class="material-icons back animated animated-btns fadeIn faster">arrow_back_ios</i></a><a
-    class="header-text pagechange" href="index.html">Ave Diary</a></h1>
-    <nav id="dockbar">
-        <a class="dochome docbtn pagechange" href="index.html"><i class="material-icons">home</i></a>
-        <a class="doclist docbtn pagechange" href="tasklist.html"><i class="material-icons">format_list_bulleted</i></a>
-        <a class="docstudents docbtn pagechange" href="students.html"><i class="material-icons">people</i></a>
-        <a class="docsettings docbtn pagechange" href="settings.html"><i class="material-icons">settings</i></a>
-    </nav>
-    <div class="animated settingspage horizontal-page page-animation fadeInUp faster">
+    <h1 id="project-header"><a class="pagechange" href="index.php"><i
+        class="icon-arrow-back back animated animated-btns fadeIn faster"></i></a><a
+    class="header-text pagechange" href="index.php">Ave Diary</a></h1>
+    <?php require_once "dockbar.php";?>
+    <div class="animated settingspage page-animation fadeInUp faster">
       <form class="block editschedule">
           <h3>Изменить расписание</h3>
           <a href="#">Добавить предмет</a>
@@ -198,63 +185,6 @@
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    if(screen.width>=768){
-        $(".page-animation").removeClass("fadeInUp");
-        $(".page-animation").addClass("fadeInLeft");
-    }
-
-    $(document).ready(function() {
-    
-    $(function() {
-    var flag = new Boolean(true); // Защитит от частого нажатия на кнопку
-    
-      // Клик
-      $('.pagechange').click(function(e) {
-        openUrl($(this));
-        e.preventDefault();
-      })
-    
-    /**
-     * Открывает ссылку с задержкой
-     * 
-     * @param {object} a - Нажатая кнопка
-     * @return {boolean}
-     */
-      function openUrl(a) {
-        var delay = 350, // Задержка 0.25 секунд
-          uri = a.attr('href'); // URL
-      
-         // Проверяем не начата ли загрузка какой-либо ссылки
-          if (flag == true) {
-            flag = false;
-          
-          // Добавляем анимации
-          $(".dochome").removeClass("active");
-                    $(".docstudents").removeClass("active");
-                    $(".docsettings").removeClass("active");
-                    $(".doclist").removeClass("active");
-                    $(".page-animation").removeClass("fadeInUp");
-                    $(".page-animation").addClass("fadeOutDown");
-                    $(".animated-btns").addClass("fadeOut");
-          
-            // С задержкой открываем URL, возвращая штатный текст кнопке, разрешаем открывать новые ссылки
-            setTimeout(function() {
-              flag = true;
-              
-              // Проверяем открыть ссылку в новом окне или в текущем
-              
-              window.location = uri;
-              return;
-              
-            }, delay);
-          }
-        
-        return;
-      }
-      
-    });
-    
-    });
-    </script>
+<script src="js/horizontalpage.js"></script>
+<script src="js/pagechange.js"></script>
 </html>

@@ -1,0 +1,116 @@
+.student{
+    display: grid;
+    margin-bottom: 10px;
+    grid-template-columns: 60px auto 50px; /* 3 столбца */
+    align-items: center;
+}
+.students{
+    padding-bottom: 30px;
+}
+#students-field{
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-right:15px;
+}
+.students .student .options{
+    display: flex;
+}
+.students .student .options i:last-child{
+    margin-left: 5px;
+}
+.students .student .teacher{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+@media screen and (max-width: 1024px){
+    #students-field{
+        height: auto;
+        overflow-y: hidden;
+    }
+}
+.students .student .moderator{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.students .student .parent{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+.student .student-icon{
+    background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.students .leave{
+    text-align:center;
+    color: #FF6262;
+    margin-top: 30px;
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.students .student .student-name{
+    font-size: 0.8em;
+}
+.students .student .student-role{
+    font-size: 0.8em;
+    color: #7C7C7C;
+}
+.delanimation{
+    animation-name: disappearing, compression;
+    animation-duration: 0.5s, 0.5s;
+    animation-delay: 0s,0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes disappearing{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes compression{
+    0%{
+        height: 50px;
+    }
+    100%{
+        transform: scaleY(0.00001);
+        height: 0;
+        margin-bottom: 0;
+    }
+}    
+
+#students-field .empty{
+    position: absolute;
+    transform: translate(-50%,-0%);
+    top: 50%;
+    left: 50%;
+    color: #7C7C7C;
+}
+.students{
+    min-height: 120.6px;
+}
+

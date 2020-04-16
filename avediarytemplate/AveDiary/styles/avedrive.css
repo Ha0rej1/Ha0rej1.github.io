@@ -11,7 +11,9 @@
     animation: compression 0.2s linear;
     animation-fill-mode: forwards;
 }
-
+.deletebtn{
+    -webkit-tap-highlight-color: transparent;
+}
 
 .fileblockdeletedend{
     animation: compressionended 0.3s linear;
@@ -22,6 +24,7 @@
     margin-bottom: 10px;
     grid-template-columns: 60px auto 30px; /* 3 столбца */
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
 }
 .ave_drive .file-block i:first-child{
     font-size: 3em;
@@ -46,6 +49,7 @@
     color: rgb(0, 0, 0);
 }
 .file-block .file-icon{
+    user-select: none;
     background-color: rgb(228, 228, 228);
     color: #FFFFFF;
     border-radius: 10px;
@@ -241,7 +245,7 @@ progress::-webkit-progress-value {
     }
 }
 .fileclone{
-    height: 50.4px;
+    height: 53px;
     margin-bottom: 10px;
     animation: compression 0.5s ease-in-out;
     animation-fill-mode: forwards;
@@ -308,3 +312,29 @@ progress::-webkit-progress-value {
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
+
+.delanimation{
+    animation-name: disappearing, compression1;
+    animation-duration: 0.5s, 0.5s;
+    animation-delay: 0s,0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes disappearing{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+@keyframes compression1{
+    0%{
+        height: 50px;
+    }
+    100%{
+        transform: scaleY(0.00001);
+        height: 0;
+        margin-bottom: 0;
+    }
+}    
