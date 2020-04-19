@@ -23,6 +23,9 @@ function deleteblock(element) {
         deletebtn.removeEventListener('click', handler); // Удаление проверки клика
     }
         students[a].classList.add("delanimation");
+        for (let student of students) {
+            student.classList.add("shadowanimation");
+        }
         studentscounter--;
  // Счётчик файлов --
         if (studentscounter < 1) { // Проверка на количество блоков
@@ -42,5 +45,8 @@ function deleteblock(element) {
             deletebtns[a].removeEventListener('click', handler);
             students[a].style.display = "none";
             toast("Удалён");
+            for (let student of students) {
+                student.classList.remove("shadowanimation");
+            }
         },1000);       
 }

@@ -1,8 +1,15 @@
 .student{
     display: grid;
     margin-bottom: 10px;
-    grid-template-columns: 60px auto 50px; /* 3 столбца */
+    grid-template-columns: 60px auto 20px;
+ /* 3 столбца */
     align-items: center;
+    transition: 0.5s;
+    will-change: opacity, transform;
+}
+.student .student-role i{
+    margin-left: 5px;
+    color: #9b9b9b;
 }
 .students{
     padding-bottom: 30px;
@@ -14,11 +21,11 @@
     padding-top: 10px;
     padding-right:15px;
 }
-.students .student .options{
-    display: flex;
+.students .student .deletebtn{
+    font-size: 1.5em;
+    color: #2980D1;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
-.students .student .options i:last-child{
-    margin-left: 5px;
 }
 .students .student .teacher{
     background: #FDC830;  /* fallback for old browsers */
@@ -30,6 +37,22 @@
     #students-field{
         height: auto;
         overflow-y: hidden;
+        padding-right: 0;
+        overflow: visible;
+    }
+    .student{
+        display: grid;
+        margin-bottom: 15px;
+        grid-template-columns: 60px auto 20px; /* 3 столбца */
+        align-items: center;
+
+    }
+}
+@media screen and (min-width: 1024px){
+    .studentspage .block{
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 30px;
     }
 }
 .students .student .moderator{
@@ -76,6 +99,7 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
 .students .student .student-role{
     font-size: 0.8em;
     color: #7C7C7C;
+    user-select: none;
 }
 .delanimation{
     animation-name: disappearing, compression;
@@ -100,9 +124,13 @@ background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, F
         transform: scaleY(0.00001);
         height: 0;
         margin-bottom: 0;
+        padding:0;
     }
 }    
-
+.student.shadowanimation{
+    transition: 0.5S;
+    box-shadow: none;
+}
 #students-field .empty{
     position: absolute;
     transform: translate(-50%,-0%);

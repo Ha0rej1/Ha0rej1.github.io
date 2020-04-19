@@ -25,14 +25,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Классный руководитель</p>
+                            <p class="student-role">Классный руководитель<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                            <a class="deletebtn" data-studentID="0" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="0" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon moderator">
@@ -41,14 +37,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик-модератор</p>
+                            <p class="student-role">Ученик-модератор<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="1" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="1" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon parent">
@@ -57,14 +49,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Родитель</p>
+                            <p class="student-role">Родитель<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="2" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="2" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -73,14 +61,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="3" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="3" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -89,14 +73,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="4" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="4" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -105,14 +85,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="5" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="5" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -121,14 +97,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="6" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="6" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -137,14 +109,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="7" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="7" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -153,14 +121,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="8" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="8" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -169,14 +133,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="9" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="9" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -185,14 +145,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="10" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="10" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -201,14 +157,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
-                                <a class="deletebtn" data-studentID="11" href="#"><i class="icon-trash">
-                                </i></a>
-                        </div>
+                        <a class="deletebtn" data-studentID="11" href="#"><i class="icon-trash">
+                        </i></a>
                     </div>
                     <div class="student">
                         <figure class="student-icon">
@@ -217,14 +169,10 @@
                         </figure>
                         <figure>
                             <p class="student-name">ha0rej1 Данченко Ростислав</p>
-                            <p class="student-role">Ученик</p>
+                            <p class="student-role">Ученик<a href="#"><i class="icon-edit"></i></a></p>
                         </figure>
-                        <div class="options">
-                            <a href="#"><i class="icon-edit">
-                                </i></a>
                                 <a class="deletebtn" data-studentID="12" href="#"><i class="icon-trash">
                                 </i></a>
-                        </div>
                     </div>
                 </div>
                 <a href="#" class="leave">Покинуть класс</a>
