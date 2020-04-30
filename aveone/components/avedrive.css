@@ -1,0 +1,540 @@
+.ave_drive {
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.ave_drive progress {
+  width: 100%;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.ave_drive .fileblockdeleted {
+  -webkit-animation: compression 0.2s linear;
+          animation: compression 0.2s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ave_drive .deletebtn {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ave_drive .fileblockdeletedend {
+  -webkit-animation: compressionended 0.3s linear;
+          animation: compressionended 0.3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.ave_drive .file-block {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 10px;
+  -ms-grid-columns: 60px auto 30px;
+      grid-template-columns: 60px auto 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-tap-highlight-color: transparent;
+  will-change: transform, opacity, box-shadow;
+}
+
+.ave_drive .file-block i:first-child {
+  font-size: 3em;
+  color: #2980d1;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ave_drive .file-block i:last-child {
+  font-size: 1.5em;
+  color: #2980D1;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ave_drive .file-block .file-name {
+  font-size: 0.8em;
+}
+
+.ave_drive .file-block .file-autor {
+  font-size: 0.8em;
+  color: #7C7C7C;
+}
+
+.ave_drive .file-block .file-time {
+  font-size: 0.8em;
+  color: black;
+}
+
+.ave_drive .file-block .file-icon {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #e4e4e4;
+  color: #FFFFFF;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ave_drive .file-block .file-icon.file-type-txt {
+  background-color: #e4e4e4;
+  color: #FFFFFF;
+}
+
+.ave_drive .file-block .file-icon.file-type-doc {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0066FF), to(#00A3FF));
+  background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%);
+  color: #FFFFFF;
+}
+
+.ave_drive .file-block .file-icon.file-type-xls {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4adf6a), to(#31af3e));
+  background: linear-gradient(180deg, #4adf6a 0%, #31af3e 100%);
+  color: #FFFFFF;
+}
+
+.ave_drive .file-block .file-icon.file-type-ppt {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF5C00), to(#FF6262));
+  background: linear-gradient(180deg, #FF5C00 0%, #FF6262 100%);
+  color: #FFFFFF;
+}
+
+.ave_drive .file-add {
+  color: #000000;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.ave_drive progress {
+  border-radius: 6px;
+  background-color: white;
+}
+
+.ave_drive progress::-webkit-progress-bar {
+  border-radius: 6px;
+  background-color: #e4e4e4;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ave_drive progress::-webkit-progress-value {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0066FF), to(#00A3FF));
+  background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%);
+  border-radius: 6px 0px 0px 6px;
+}
+
+.ave_drive .file-field {
+  height: auto;
+  overflow-y: auto;
+  margin-top: 15px;
+  overflow-x: hidden;
+}
+
+.ave_drive .file-field .empty {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .ave_drive .file-field .empty {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #7C7C7C;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .ave_drive .file-field {
+    overflow-y: scroll;
+    padding: 5px;
+    padding-top: 0;
+    height: 300px;
+    overflow-y: scroll;
+  }
+  .ave_drive .task {
+    margin: 10px;
+  }
+}
+
+#trash {
+  position: fixed;
+  opacity: 0;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 90%;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  padding: 10px 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#FF5C00), to(#FF6262));
+  background: linear-gradient(90deg, #FF5C00 0%, #FF6262 100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  height: 64px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+}
+
+#trash span {
+  margin-right: 5px;
+}
+
+/* Push */
+@-webkit-keyframes fall {
+  0% {
+    width: 88%;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 70px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    width: 88%;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 70px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 50px;
+  }
+}
+@keyframes fall {
+  0% {
+    width: 88%;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 70px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  100% {
+    width: 88%;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    height: 70px !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 50px;
+  }
+}
+
+@-webkit-keyframes customfadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 100px);
+            transform: translate(-50%, 100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes customfadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 100px);
+            transform: translate(-50%, 100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@-webkit-keyframes customfadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 100px);
+            transform: translate(-50%, 100px);
+  }
+}
+
+@keyframes customfadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, 100px);
+            transform: translate(-50%, 100px);
+  }
+}
+
+@-webkit-keyframes compression {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes compression {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    height: 0;
+    margin-bottom: 0;
+    opacity: 0;
+  }
+}
+
+.fileclone {
+  height: 504px;
+  margin-bottom: 10px;
+  -webkit-animation: compression 05s ease-in-out;
+          animation: compression 05s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 03s;
+          animation-delay: 03s;
+}
+
+@-webkit-keyframes shakefile {
+  0% {
+    left: 0;
+    position: relative;
+    right: 0;
+  }
+  25% {
+    left: 15px;
+  }
+  50% {
+    left: -15px;
+  }
+  75% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+    right: 0;
+  }
+}
+
+@keyframes shakefile {
+  0% {
+    left: 0;
+    position: relative;
+    right: 0;
+  }
+  25% {
+    left: 15px;
+  }
+  50% {
+    left: -15px;
+  }
+  75% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+    right: 0;
+  }
+}
+
+@-webkit-keyframes shaketrash {
+  0% {
+    -webkit-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  75% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+  }
+}
+
+@keyframes shaketrash {
+  0% {
+    -webkit-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+  }
+  25% {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  75% {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+  }
+}
+
+.animatetrash {
+  -webkit-animation-name: customfadeInUp, shaketrash, customfadeOutDown;
+          animation-name: customfadeInUp, shaketrash, customfadeOutDown;
+  -webkit-animation-duration: 0.2s,0.5s, 0.2s;
+          animation-duration: 0.2s,0.5s, 0.2s;
+  -webkit-animation-delay: 0s,1.2s, 2s;
+          animation-delay: 0s,1.2s, 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+.animatedock {
+  -webkit-animation-duration: 0.2s, 0.2s;
+          animation-duration: 0.2s, 0.2s;
+  -webkit-animation-delay: 0s, 2s;
+          animation-delay: 0s, 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.animatefile {
+  -webkit-animation-name: shakefile, fall;
+          animation-name: shakefile, fall;
+  -webkit-animation-duration: 0.5s,0.4s;
+          animation-duration: 0.5s,0.4s;
+  -webkit-animation-delay: 0s, 0.8s;
+          animation-delay: 0s, 0.8s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.delanimation {
+  -webkit-animation-name: disappearing, compression1;
+          animation-name: disappearing, compression1;
+  -webkit-animation-duration: 0.5s, 0.5s;
+          animation-duration: 0.5s, 0.5s;
+  -webkit-animation-delay: 0s,0.5s;
+          animation-delay: 0s,0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes disappearing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes disappearing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes compression1 {
+  0% {
+    height: 50px;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    height: 0;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes compression1 {
+  0% {
+    height: 50px;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    height: 0;
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=avedrive.css.map */

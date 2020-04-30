@@ -1,0 +1,177 @@
+body.dark {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#121212), to(#121212));
+  background-image: linear-gradient(to bottom, #121212, #121212);
+}
+
+body.dark .headermenu a {
+  color: #FFF;
+}
+
+body.dark .accent-color-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#121212), to(#121212));
+  background-image: linear-gradient(to bottom, #121212, #121212);
+  background-size: 100% 100%;
+}
+
+body.dark .headermenu {
+  color: #FFFFFF;
+}
+
+body.dark .accent-color-text {
+  color: #2980d1;
+}
+
+body.dark .marked {
+  background-color: #FFFFFF;
+}
+
+body.dark i.active {
+  color: #2980d1;
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .block {
+  background-color: #363636;
+  color: #FFFFFF;
+}
+
+body.dark #project-name {
+  color: #FFFFFF;
+}
+
+body.dark .viber-color {
+  background: #9D50BB;
+  background: -webkit-gradient(linear, left top, right top, from(#6E48AA), to(#9D50BB));
+  background: linear-gradient(to right, #6E48AA, #9D50BB);
+}
+
+body.dark .telegram-color {
+  background: #00B4DB;
+  background: -webkit-gradient(linear, left top, right top, from(#0083B0), to(#00B4DB));
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+}
+
+body.dark .instagram-color {
+  background: #f46b45;
+  background: -webkit-gradient(linear, left top, right top, from(#eea849), to(#f46b45));
+  background: linear-gradient(to right, #eea849, #f46b45);
+}
+
+body.dark .code {
+  color: #000000;
+}
+
+body.dark .link {
+  color: #2980d1;
+}
+
+body.dark ::-webkit-resizer {
+  background-image: url(style.css);
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px;
+}
+
+body.dark ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+body.dark ::-webkit-scrollbar-button {
+  background-image: url(style.css);
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2980d1), color-stop(#2370b6), color-stop(#1f619b), color-stop(#1c5282), to(#194369));
+  background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+}
+
+body.dark ::-webkit-scrollbar-track {
+  background-color: #ecedee;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2980d1), color-stop(#2370b6), color-stop(#1f619b), color-stop(#1c5282), to(#194369));
+  background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+}
+
+.accent-color-background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2980d1), color-stop(#2370b6), color-stop(#1f619b), color-stop(#1c5282), to(#194369));
+  background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+  background-size: 100% 100%;
+}
+
+.accent-color-text {
+  color: #2980d1;
+}
+
+.marked {
+  background-color: #FFFFFF;
+}
+
+i.active {
+  color: #2980d1;
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.block {
+  background-color: #FFFFFF;
+}
+
+#project-name {
+  color: #FFFFFF;
+}
+
+::-webkit-resizer {
+  background-image: url(style.css);
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-button {
+  background-image: url(style.css);
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2980d1), color-stop(#2370b6), color-stop(#1f619b), color-stop(#1c5282), to(#194369));
+  background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee;
+}
+
+.viber-color {
+  background: #9D50BB;
+  background: -webkit-gradient(linear, left top, right top, from(#6E48AA), to(#9D50BB));
+  background: linear-gradient(to right, #6E48AA, #9D50BB);
+}
+
+.telegram-color {
+  background: #00B4DB;
+  background: -webkit-gradient(linear, left top, right top, from(#0083B0), to(#00B4DB));
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+}
+
+.instagram-color {
+  background: #f46b45;
+  background: -webkit-gradient(linear, left top, right top, from(#eea849), to(#f46b45));
+  background: linear-gradient(to right, #eea849, #f46b45);
+}
+
+.link {
+  color: #2980d1;
+}
+/*# sourceMappingURL=colorsbase.css.map */

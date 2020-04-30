@@ -1,0 +1,50 @@
+@import 'colors'
+.toast
+    width: fit-content
+    position: fixed
+    color: white
+    box-shadow: none
+    font-size: 1.3em
+    z-index: 2
+    left: 50%
+    bottom: 35px
+    transform: translateX(-50%)
+    user-select: none
+    padding: 10px
+    border-radius: 25px
+    display: flex
+    justify-content: space-between
+    will-change: transform
+    .link
+        margin-left: 5px
+    &.customfadeInUp
+        animation: customfadeInUp 0.3s ease-in
+        animation-fill-mode: forwards
+    &.customfadeOutDown
+        animation: customfadeOutDown 0.3s ease-in
+        animation-fill-mode: forwards
+
+@keyframes customfadeInUp
+    0%
+        opacity: 0
+        transform: translate(-50%,100px)
+    100%
+        opacity: 1
+        transform: translate(-50%,0)
+
+@keyframes customfadeOutDown
+    0%
+        opacity: 1
+        transform: translate(-50%,0)
+    100%
+        opacity: 0
+        transform: translate(-50%,100px)
+
+.toast
+    background: $toastbg
+    color: $toastcolor
+
+body.dark
+    .toast
+        background: $darktoastbg
+        color: $darktoastcolor

@@ -1,0 +1,300 @@
+@import 'colors'
+.ave_drive
+    padding-bottom: 50px
+    position: relative
+    progress
+        width: 100%
+        height: 20px
+        margin-top: 5px
+    .fileblockdeleted
+        animation: compression 0.2s linear
+        animation-fill-mode: forwards
+    .deletebtn
+        -webkit-tap-highlight-color: transparent
+
+
+    .fileblockdeletedend
+        animation: compressionended 0.3s linear
+        animation-fill-mode: forwards
+    .file-block
+        display: grid
+        margin-bottom: 10px
+        grid-template-columns: 60px auto 30px
+        align-items: center
+        -webkit-tap-highlight-color: transparent
+        will-change: transform, opacity, box-shadow
+        i:first-child
+            font-size: 3em
+            color: #2980d1
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2)
+        i:last-child
+            font-size: 1.5em
+            color: #2980D1
+            text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2)
+        .file-name
+            font-size: 0.8em
+        .file-autor
+            font-size: 0.8em
+            color: #7C7C7C
+        .file-time
+            font-size: 0.8em
+            color: rgb(0, 0, 0)
+        .file-icon
+            user-select: none
+            background-color: rgb(228, 228, 228)
+            color: #FFFFFF
+            border-radius: 10px
+            width: 50px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
+        .file-icon.file-type-txt
+            background-color: rgb(228, 228, 228)
+            color: #FFFFFF
+        .file-icon.file-type-doc
+            background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%)
+            color: #FFFFFF
+        .file-icon.file-type-xls
+            background: linear-gradient(180deg, rgb(74, 223, 106) 0%, rgb(49, 175, 62) 100%)
+            color: #FFFFFF
+        .file-icon.file-type-ppt
+            background: linear-gradient(180deg, #FF5C00 0%, #FF6262 100%)
+            color: #FFFFFF
+    .file-add
+        text-align:center
+        color: #000000
+        position: absolute
+        bottom: 15px
+        left: 50%
+        transform: translateX(-50%)
+    progress 
+        border-radius: 6px
+        background-color: white
+
+    progress::-webkit-progress-bar 
+        border-radius: 6px
+        background-color: rgb(228, 228, 228)
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05)
+
+    progress::-webkit-progress-value 
+        background: linear-gradient(180deg, #0066FF 0%, #00A3FF 100%)
+        border-radius: 6px 0px 0px 6px
+
+    .file-field 
+        height: auto
+        overflow-y: auto
+        margin-top: 15px
+        overflow-x: hidden
+        .empty
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+
+@media screen and (min-width: 1024px) and (orientation: landscape)
+    .ave_drive .file-field .empty
+        position: absolute
+        left: 50%
+        top: 50%
+        color: #7C7C7C
+        transform: translate(-50%, -50%)
+    
+    .ave_drive .file-field
+        overflow-y: scroll
+        padding: 5px
+        padding-top: 0
+        height: 300px
+        overflow-y: scroll
+    
+
+    .ave_drive .task
+        margin: 10px
+    
+    
+
+#trash
+    position: fixed
+    opacity: 0
+    bottom: 25px
+    left: 50%
+    transform: translateX(-50%)
+    width: 90%
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5)
+    border-radius: 25px
+    padding: 10px 5px
+    background: linear-gradient(90deg, #FF5C00 0%, #FF6262 100%)
+    box-sizing: border-box
+    color: white
+    display: flex
+    z-index: 3
+    height: 64px
+    justify-content: center
+    align-items: center
+    pointer-events: none
+
+#trash span
+    margin-right: 5px
+
+
+/* Push */
+@keyframes fall
+    0%
+        width: 88%
+        z-index: 2
+        box-sizing: border-box
+        position: fixed
+        padding: 10px
+        background-color: #FFFFFF
+        border-radius: 15px
+        height: 70px !important
+        left: 50%
+        transform: translateX(-50%)
+    
+    100%
+        width: 88%
+        z-index: 2
+        box-sizing: border-box
+        position: fixed
+        padding: 10px
+        background-color: #FFFFFF
+        border-radius: 15px
+        height: 70px !important
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 50px
+    
+
+
+@keyframes customfadeInUp
+    0%
+        opacity: 0
+        transform: translate(-50%,100px)
+    
+    100%
+        opacity: 1
+        transform: translate(-50%,0)
+        
+    
+
+
+
+@keyframes customfadeOutDown
+    0%
+        opacity: 1
+        transform: translate(-50%,0)
+    
+    100%
+        opacity: 0
+        transform: translate(-50%,100px)
+        
+    
+
+
+@keyframes compression
+    0%
+        opacity: 0
+        transform: scale(000001)
+    
+    100%
+        transform: scale(000001)
+        height: 0
+        margin-bottom: 0
+        opacity: 0
+    
+
+.fileclone
+    height: 504px
+    margin-bottom: 10px
+    animation: compression 05s ease-in-out
+    animation-fill-mode: forwards
+    animation-delay: 03s
+
+
+@keyframes shakefile
+    0%
+        left: 0
+        position: relative
+        right: 0
+    
+    25%
+        left: 15px
+    
+    50%
+        left: -15px
+    
+    75%
+        left: 15px
+    
+    100%
+        left: 0
+        right: 0
+    
+
+@keyframes shaketrash
+    0%
+        transform: translate(-50%,0px)
+    
+    25%
+        transform: translate(-50%,10px)
+    
+    75%
+        transform: translate(-50%,-10px)
+    
+    100%
+        transform: translate(-50%,0px)
+    
+
+
+
+
+
+.animatetrash
+    animation-name: customfadeInUp, shaketrash, customfadeOutDown
+    animation-duration: 0.2s,0.5s, 0.2s
+    animation-delay: 0s,1.2s, 2s
+    animation-timing-function: ease-in
+    animation-fill-mode: forwards
+    opacity: 1
+
+.animatedock
+    animation-name:customfadeOutDown, customfadeInUp
+    animation-duration: 0.2s, 0.2s
+    animation-delay: 0s, 2s
+    animation-timing-function: ease-in
+    animation-fill-mode: forwards
+
+.animatefile
+    animation-name: shakefile, fall
+    animation-duration: 0.5s,0.4s
+    animation-delay: 0s, 0.8s
+    animation-timing-function: ease-in
+    animation-fill-mode: forwards
+
+
+.delanimation
+    animation-name: disappearing, compression1
+    animation-duration: 0.5s, 0.5s
+    animation-delay: 0s,0.5s
+    animation-fill-mode: forwards
+
+@keyframes disappearing
+    0%
+        opacity: 1
+    
+    100%
+        opacity: 0
+    
+
+
+@keyframes compression1
+    0%
+        height: 50px
+    
+    100%
+        transform: scaleY(000001)
+        height: 0
+        margin-bottom: 0
+    
+    

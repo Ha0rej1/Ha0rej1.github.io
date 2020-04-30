@@ -1,0 +1,20 @@
+@import 'colors'
+#gotop
+    position: fixed
+    bottom: 10px
+    right: 10px
+    opacity: 0
+    transition: 0.3s
+    transform: scale(1.2)
+    &.gotop-show
+        opacity: 1;
+        transition: 0.3s;
+
+#gotop
+    background: $gotopbackground
+    color: $gotopcolor
+
+body.dark
+    #gotop
+        background: $darkgotopbackground
+        color: $darkgotopcolor

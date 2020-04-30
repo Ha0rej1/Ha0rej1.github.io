@@ -1,0 +1,89 @@
+@import 'colors'
+.btn-border
+    padding: 8px
+    display: block
+    width: fit-content
+    border-radius: 20px
+    margin: 10px 0
+    transition: 0.3s
+    cursor: pointer
+    user-select: none
+
+.btn-material
+    padding: 10px
+    display: block
+    width: fit-content
+    border-radius: 20px
+    margin: 10px 0
+    transition: 0.3s
+    cursor: pointer
+    user-select: none
+    
+.btn-circle
+    padding: 10px
+    font-size: 26px
+    text-align: center
+    display: block
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    margin: 10px 0
+    transition: 0.3s
+    line-height: 22px
+    cursor: pointer
+    user-select: none
+
+.btn:active
+    transition: 0.3s
+    opacity: 0.7 !important
+
+.btn-material 
+    background-color: $accent-color
+    color: white
+
+.btn-border 
+    border: 1px solid $accent-color
+    color: $accent-color
+
+.btn-circle 
+    color: white
+    background-color: $accent-color
+
+.btn-border:hover 
+    background-color: $accent-color
+    color: white
+    transition: 0.3s
+
+.btn-circle:hover 
+    transition: 0.3s
+    opacity: 0.8
+
+.btn-material:hover 
+    transition: 0.3s
+    opacity: 0.8
+
+body.dark
+    .btn-material 
+        background-color: $darkaccent-color
+        color: white
+
+    .btn-border 
+        border: 1px solid $darkaccent-color
+        color: $darkaccent-color
+
+    .btn-circle 
+        color: white
+        background-color: $darkaccent-color
+
+    .btn-border:hover 
+        background-color: $darkaccent-color
+        color: white
+        transition: 0.3s
+
+    .btn-circle:hover 
+        transition: 0.3s
+        opacity: 0.8
+
+    .btn-material:hover 
+        transition: 0.3s
+        opacity: 0.8

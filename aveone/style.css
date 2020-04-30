@@ -1,27 +1,39 @@
-body {
-    font-family: 'Century Gothic', sans-serif;
-}
 @font-face {
-    font-family: 'Century Gothic'; /* Гарнитура шрифта */
-    src: url('11528.ttf'); /* Для остальных браузеров */
-   }
+  font-family: 'Century Gothic';
+  src: url("11528.ttf");
+}
+
+body {
+  font-family: "Century Gothic", sans-serif;
+}
+
 .btns-block {
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btns-block .btn {
-    margin-right: 10px;
-}
-
-.block .project-name {
-    color: black;
+  margin-right: 10px;
 }
 
 .flex-block {
-    display: flex;
-    flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flex-block .block {
-    margin-right: 10px;
+  margin-right: 10px;
 }
+
+#icons i {
+  font-size: 2em;
+}
+
+#students {
+  margin: 30px 0;
+}
+/*# sourceMappingURL=style.css.map */

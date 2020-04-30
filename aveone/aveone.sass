@@ -1,0 +1,96 @@
+@import 'components/base'
+@import 'components/buttons'
+@import 'components/shadows'
+@import 'components/inputs'
+@import 'components/footer'
+@import 'components/gotop'
+@import 'components/dockbar'
+@import 'components/studentslist'
+@import 'components/toast'
+@import 'components/animations.sass'
+@import 'components/avedrive'
+@import 'components/colors'
+@import 'colorsbase'
+body
+    font-family: $font
+
+*, html
+    margin: 0
+    padding: 0
+    scroll-behavior: smooth
+
+.wrapper
+    padding: 5vh 15vw
+
+@media screen and ( max-width: 768px)
+    wrapper
+        padding: 5vh 5vw
+
+h1, h2, h3, h4, h5, h6
+    font-weight: normal
+    margin-bottom: 10px
+a
+    text-decoration: none
+    color: black
+
+#project-name
+    font-weight: normal
+    margin: 0 auto
+    text-align: center
+    margin-bottom: 30px
+
+.headermenu
+    display: flex
+    justify-content: center
+    ul
+        list-style: none
+        display: flex
+        li
+            margin: 0 30px
+
+.block
+    border-radius: $radius
+    padding: $padding
+    margin: 10px 0
+    transition: 0.3s
+
+.fit-width
+    width: fit-content
+
+.fit-height
+    height: fit-content
+
+.fit
+    height: fit-content
+    width: fit-content
+.code
+    background-color: #cecece
+    padding: 10px
+    border-radius: 0px 20px 20px 0px
+    border-left: 3px solid #2980d1
+    margin-bottom: 10px
+    margin-top: 10px
+.black
+    color: black !important
+.white
+    color: white !important
+
+.text-center
+    text-align: center
+    
+.text-left
+    text-align: left
+    
+.text-right
+    text-align: right
+
+.red
+    color: $red
+
+.blue
+    color: $blue
+.icon-shadow
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+@media screen and (max-width: 768px)
+    .wrapper
+        padding: 5vh 5vw

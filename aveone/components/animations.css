@@ -1,0 +1,62 @@
+.hover-opacity {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.hover-opacity:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.hover-slide {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  top: 0;
+}
+
+.hover-slide:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  top: 5px;
+}
+
+.noshadow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.noshadow:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.hover-shadow {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hover-scale {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hover-scale:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+/*# sourceMappingURL=animations.css.map */

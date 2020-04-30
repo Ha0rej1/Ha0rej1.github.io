@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAEQ,MAFF,CACF,gBAAgB,CACZ,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,IAAI;CAAG;;AAJ9B,AAKQ,MALF,CACF,gBAAgB,CAIZ,KAAK,CAAC;EACF,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "footer.sass",
+        "colors.sass"
+    ],
+    "names": [],
+    "file": "footer.css"
+}

@@ -1,0 +1,66 @@
+.students-list .student {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 10px;
+  -ms-grid-columns: 60px auto 20px;
+      grid-template-columns: 60px auto 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  will-change: opacity, transform;
+}
+
+.students-list .student .student-role {
+  color: #636363;
+}
+
+.students-list .student .student-role i {
+  margin-left: 5px;
+  color: #9b9b9b;
+}
+
+.students-list .student .deletebtn {
+  font-size: 1.5em;
+  color: #2980D1;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.students-list .student .teacher {
+  background: #FDC830;
+  background: -webkit-gradient(linear, left top, right top, from(#F37335), to(#FDC830));
+  background: linear-gradient(to right, #F37335, #FDC830);
+}
+
+.students-list .student .moderator {
+  background: #FDC830;
+  background: -webkit-gradient(linear, left top, right top, from(#F37335), to(#FDC830));
+  background: linear-gradient(to right, #F37335, #FDC830);
+}
+
+.students-list .student .parent {
+  background: #FDC830;
+  background: -webkit-gradient(linear, left top, right top, from(#F37335), to(#FDC830));
+  background: linear-gradient(to right, #F37335, #FDC830);
+}
+
+.students-list .student .student-icon {
+  background: #36D1DC;
+  background: -webkit-gradient(linear, left top, right top, from(#5B86E5), to(#36D1DC));
+  background: linear-gradient(to right, #5B86E5, #36D1DC);
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+/*# sourceMappingURL=studentslist.css.map */
