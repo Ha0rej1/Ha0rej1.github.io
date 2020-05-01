@@ -1,0 +1,127 @@
+.btn-border {
+  padding: 8px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  margin: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-material {
+  padding: 10px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  margin: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn-circle {
+  padding: 10px;
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 22px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn:active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.7 !important;
+}
+
+.btn-material {
+  background-color: #2980d1;
+  color: white;
+}
+
+.btn-border {
+  border: 1px solid #2980d1;
+  color: #2980d1;
+}
+
+.btn-circle {
+  color: white;
+  background-color: #2980d1;
+}
+
+.btn-border:hover {
+  background-color: #2980d1;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-circle:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.btn-material:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+body.dark .btn-material {
+  background-color: #2980d1;
+  color: white;
+}
+
+body.dark .btn-border {
+  border: 1px solid #2980d1;
+  color: #2980d1;
+}
+
+body.dark .btn-circle {
+  color: white;
+  background-color: #2980d1;
+}
+
+body.dark .btn-border:hover {
+  background-color: #2980d1;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body.dark .btn-circle:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+body.dark .btn-material:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=buttons.css.map */

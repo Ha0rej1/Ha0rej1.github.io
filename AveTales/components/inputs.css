@@ -1,0 +1,75 @@
+.input-material {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0;
+}
+
+.input-border {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0;
+}
+
+.input {
+  padding: 10px 5px;
+  margin: 10px 0;
+  border-radius: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+
+input, textarea:focus {
+  outline: none;
+}
+
+.input-material {
+  background-color: white;
+  border: 2px solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-material:focus {
+  border: 2px solid #2980d1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-border {
+  background-color: transparent;
+  border: 2px solid #2980d1 !important;
+  color: #2980d1;
+}
+
+.input-border:focus {
+  border: 2px solid #1a61a3 !important;
+}
+
+body.dark .input-material {
+  background-color: white;
+  border: 2px solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body.dark .input-material:focus {
+  border: 2px solid #2980d1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body.dark .input-border {
+  background-color: transparent;
+  border: 2px solid #2980d1 !important;
+  color: #2980d1;
+}
+
+body.dark .input-border:focus {
+  border: 2px solid #1a61a3 !important;
+}
+/*# sourceMappingURL=inputs.css.map */

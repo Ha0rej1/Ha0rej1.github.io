@@ -1,0 +1,62 @@
+@import 'colors'
+.input-material
+    padding: 10px
+    border-radius: 20px
+    border: none
+    margin: 10px 0
+.input-border
+    padding: 10px
+    border-radius: 20px
+    border: none
+    margin: 10px 0
+    
+.input
+    padding: 10px 5px
+    margin: 10px 0
+    border-radius: 0
+    border: none
+    box-sizing: border-box
+    border-radius: 5px
+    background-color: rgb(238, 238, 238)
+    
+input, textarea:focus
+    outline: none
+    
+.input-material 
+    background-color: white
+    border: 2px solid white
+    transition: 0.3s
+
+
+.input-material:focus 
+    border: 2px solid $accent-color
+    transition: 0.3s
+
+
+.input-border 
+    background-color: transparent
+    border: 2px solid $accent-color !important
+    color: $accent-color
+
+
+.input-border:focus 
+    border: 2px solid #1a61a3 !important
+
+body.dark
+    .input-material 
+        background-color: white
+        border: 2px solid white
+        transition: 0.3s
+    .input-material:focus 
+        border: 2px solid $darkaccent-color
+        transition: 0.3s
+
+
+    .input-border 
+        background-color: transparent
+        border: 2px solid $darkaccent-color !important
+        color: $darkaccent-color
+
+
+    .input-border:focus 
+        border: 2px solid #1a61a3 !important

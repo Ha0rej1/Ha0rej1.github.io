@@ -1,0 +1,27 @@
+#gotop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#gotop.gotop-show {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#gotop {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+body.dark #gotop {
+  background: #FFFFFF;
+  color: #000000;
+}
+/*# sourceMappingURL=gotop.css.map */

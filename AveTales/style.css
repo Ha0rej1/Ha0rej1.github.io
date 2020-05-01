@@ -1,0 +1,179 @@
+#project-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+  position: relative;
+}
+
+#project-name a.back {
+  position: absolute;
+  left: 0vw;
+  font-size: 0.8em;
+}
+
+#project-name a.language {
+  position: absolute;
+  right: 0vw;
+  font-size: 0.8em;
+}
+
+.taleslist .blockdivider {
+  margin-bottom: 0;
+}
+
+.taleslist .talesfilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.taleslist .talesfilter div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.taleslist .filter {
+  margin-left: 10px;
+  color: #d6d6d6;
+  font-size: 0.8em;
+}
+
+.taleslist .filter-icon {
+  margin-left: 10px;
+}
+
+.taleslist .tale {
+  border-bottom: 1px solid #2f2f2f;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.taleslist .tale .tale-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 60px;
+      grid-template-columns: auto 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.taleslist .tale .play-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.taleslist .tale .play-options .option {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 15px;
+  background-color: #474747;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.2em;
+}
+
+.taleslist .tale .tale-description {
+  color: #cacaca;
+}
+
+.taleslist .tale:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.adblock {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.blockdivider {
+  border-bottom: 1px solid #2f2f2f;
+  padding-bottom: 15px;
+}
+
+#randomplayer {
+  height: 70vh;
+  position: relative;
+}
+
+#randomplayer #project-name {
+  font-size: 2em;
+}
+
+#randomplayer #project-name i {
+  position: absolute;
+  right: 0vw;
+  font-size: 0.8em;
+}
+
+#randomplayer .playerbg {
+  background: rgba(32, 34, 51, 0.9);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#randomplayer .playerbg .player-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#randomplayer .playerbg i {
+  font-size: 3.5em;
+}
+
+#randomplayer .playerbg .border {
+  border-left: 1px solid #191B27;
+  margin: 0 10px;
+}
+
+#randomplayer .adblock {
+  width: 90vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */
