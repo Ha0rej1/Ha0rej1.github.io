@@ -1,4 +1,5 @@
 var pagechange = document.getElementById("pagechange");
+var headerbtns = document.getElementsByClassName("headerbtn")
 $(document).ready(function () {
 
     $(function () {
@@ -23,10 +24,15 @@ $(document).ready(function () {
             // Проверяем не начата ли загрузка какой-либо ссылки
             if (flag == true) {
                 flag = false;
-
+                
                 // Добавляем анимации
                 pagechange.classList.remove("fadeinupbut");
                 pagechange.classList.add("fadeoutdownbut");
+                for(let headerbtn of headerbtns){
+                    headerbtn.classList.remove("fadein")
+                    headerbtn.classList.add("fadeout")
+                }
+
                 // С задержкой открываем URL, возвращая штатный текст кнопке, разрешаем открывать новые ссылки
                 setTimeout(function () {
                     flag = true;

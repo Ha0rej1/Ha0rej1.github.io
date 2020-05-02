@@ -1,3 +1,7 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #project-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,13 +16,13 @@
   position: relative;
 }
 
-#project-name a.back {
+#project-name a#back {
   position: absolute;
   left: 0vw;
   font-size: 0.8em;
 }
 
-#project-name a.language {
+#project-name a#languagebut {
   position: absolute;
   right: 0vw;
   font-size: 0.8em;
@@ -170,10 +174,68 @@
   margin: 0 10px;
 }
 
-#randomplayer .adblock {
-  width: 90vw;
-  position: absolute;
-  bottom: 0;
+@media screen and (min-width: 768px) {
+  #randomplayer .adblock {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #randomplayer .adblock {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+#screenholder {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#screenholder .block {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+#screenholder .block ul {
+  list-style: none;
+  text-align: center;
+}
+
+#screenholder .block ul li {
+  border-bottom: 1px solid #2f2f2f;
+  padding-bottom: 15px;
+  font-size: 1.5em;
+}
+
+#screenholder .block ul li:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+#screenholder #holder {
+  position: fixed;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

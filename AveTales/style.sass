@@ -1,4 +1,6 @@
 @import 'components/colors'
+*
+    -webkit-tap-highlight-color: transparent
 #project-name
     display: flex
     justify-content: center
@@ -6,12 +8,12 @@
     font-size: 2em
     position: relative
 
-    a.back
+    a#back
         position: absolute
         left: 0vw
         font-size: 0.8em
 
-    a.language
+    a#languagebut
         position: absolute
         right: 0vw
         font-size: 0.8em
@@ -113,9 +115,47 @@
             border-left: 1px solid #191B27
             margin: 0 10px
 
-    .adblock
-        width: 90vw
-        position: absolute
-        bottom: 0
+    @media screen and (min-width: 768px)
+        .adblock
+            width: 30%
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+    @media screen and (max-width: 768px)
+        .adblock
+            width: 100%
+            position: absolute
+            bottom: 0
+            left: 0
+#screenholder
+    background-color: rgba(0, 0, 0, 0.7)
+    position: fixed
+    transition: 0.5s
+    left: 0
+    bottom: 0
+    width: 100vw
+    height: 100vh
+    .block
+        position: fixed
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        z-index: 999
+        ul
+            list-style: none
+            text-align: center
+            li
+                border-bottom: 1px solid $darkborder
+                padding-bottom: 15px
+                font-size: 1.5em
+            li:last-child
+                padding-bottom: 0
+                border-bottom: none
+    #holder
+        position: fixed
+        display: block
         left: 0
-    
+        bottom: 0
+        width: 100vw
+        height: 100vh
