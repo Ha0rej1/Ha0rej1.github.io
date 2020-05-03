@@ -78,12 +78,13 @@
 }
 
 .taleslist .tale .play-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-grid-columns: 15vw 15vw 15vw 15vw;
+      grid-template-columns: 15vw 15vw 15vw 15vw;
 }
 
 .taleslist .tale .play-options .option {
