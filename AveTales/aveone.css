@@ -834,31 +834,26 @@ body.dark .link {
 }
 
 body.dark ::-webkit-resizer {
-  background-image: url(style.css);
-  background-repeat: no-repeat;
-  width: 4px;
+  width: 0px;
   height: 0px;
 }
 
 body.dark ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 0px;
+  height: 0px;
 }
 
 body.dark ::-webkit-scrollbar-button {
-  background-image: url(style.css);
-  background-repeat: no-repeat;
-  width: 6px;
+  width: 0px;
   height: 0px;
 }
 
 body.dark ::-webkit-scrollbar-thumb {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2980d1), color-stop(#2370b6), color-stop(#1f619b), color-stop(#1c5282), to(#194369));
-  background-image: linear-gradient(to bottom, #2980d1, #2370b6, #1f619b, #1c5282, #194369);
+  background: transparent;
 }
 
 body.dark ::-webkit-scrollbar-track {
-  background-color: #ecedee;
+  background-color: transparent;
 }
 
 body {
