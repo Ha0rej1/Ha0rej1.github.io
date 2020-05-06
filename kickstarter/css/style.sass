@@ -1,0 +1,173 @@
+*, html
+    padding: 0
+    margin: 0
+
+.wrapper
+    padding: 7vh 15vw
+    position: relative
+    min-height: 80vh
+
+a
+    text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+    font-weight: normal
+
+body
+    background: #121212
+    background: #121212
+    font-family: 'Nunito', sans-serif
+    background-size: 100vw 100vh
+    background-attachment: fixed
+
+#project-header
+    margin-bottom: 7vh
+    width: 30%
+    margin-left: auto
+    margin-right: auto
+    display: block
+
+#project-header-main
+    margin-bottom: 7vh
+    width: 30%
+    margin-left: auto
+    margin-right: auto
+    display: block
+
+.block
+    border-radius: 30px
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25)
+    box-sizing: border-box
+    padding: 15px
+    background: #ffffff
+    margin: 20px 0
+.projects-list 
+    .project
+        text-align: center
+        color: #FFFFFF
+        p
+            margin-top: 5px
+            font-size: 0.8rem
+        &.diarybg
+            background: rgb(0,57,230)
+            background: linear-gradient(0deg, rgba(0,57,230,1) 0%, rgba(0,150,230,1) 100%)
+        &.studentbg
+            background: rgb(139,79,176)
+            background: linear-gradient(0deg, rgba(98,7,169,1)  0%, rgba(139,79,176,1) 100%)
+        &.talesbg
+            background: rgb(16,5,99)
+            background: linear-gradient(0deg, rgba(1,0,8,1) 0%, rgba(16,5,99,1) 100%)
+        &.dormitorybg
+            background: rgb(139,79,176)
+            background: linear-gradient(0deg, rgba(98,7,169,1)  0%, rgba(139,79,176,1) 100%)
+        &.musicbg
+            background: #ffcc4e
+            display: none
+
+@media screen and (max-width: 1024px)
+    .back
+        color: #ffffff
+        position: absolute
+        left: 5vw
+        cursor: pointer
+        top: 10vh
+        font-size: 1.5em
+    #project-header-main
+        width: 80%
+    .wrapper
+        padding: 7vh 5vw
+    .projects-list
+        flex-direction: row
+        .project
+            p
+                font-size: 1.5em
+            img
+                width: 60%
+                margin: 0 auto
+                display: block
+
+@media screen and (min-width: 1024px)
+    #project-container
+        img
+            width: 10% !important
+    .back
+        color: #ffffff
+        position: absolute
+        top: 10vh
+        left: 15vw
+        cursor: pointer
+        font-size: 1.5em
+    #project-header
+        width: 20%
+    .projects-list
+        display: grid
+        justify-content: space-between
+        grid-template-columns: 17vw 17vw 17vw 17vw
+        box-sizing: border-box
+        grid-template-rows: 1fr 1fr 
+        gap: 20px
+        grid-template-rows: auto auto
+        .project
+            height: 17vw
+            transition: 0.3s
+            cursor: pointer
+            img
+                width: 80%
+                margin: 0 auto
+                display: block
+            &:hover
+                transform: scale(1.1)
+                transition: 0.3s
+        .block
+            width: 100%
+
+footer
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    text-align: center
+    color: #FFFFFF
+    padding: 15px
+    box-sizing: border-box
+
+#diarypage
+    background: rgb(0,57,230)
+    background: linear-gradient(0deg, rgba(0,57,230,1) 0%, rgba(0,150,230,1) 100%)
+    background-size: 100vw 100vh
+    background-attachment: fixed
+#studentpage
+    background: rgb(139,79,176)
+    background: linear-gradient(0deg, rgba(98,7,169,1)  0%, rgba(139,79,176,1) 100%)
+    background-size: 100vw 100vh
+    background-attachment: fixed
+#talespage
+    background: rgb(16,5,99)
+    background: linear-gradient(0deg, rgba(1,0,8,1) 0%, rgba(16,5,99,1) 100%)
+    background-size: 100vw 100vh
+    background-attachment: fixed
+#dormitorypage
+    background: rgb(139,79,176)
+    background: linear-gradient(0deg, rgba(98,7,169,1)  0%, rgba(139,79,176,1) 100%)
+    background-size: 100vw 100vh
+    background-attachment: fixed
+
+#project-container
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #FFFFFF
+    margin-bottom: 5vh
+    h1
+        font-weight: normal
+        margin-left: 10px
+    img
+        width: 20%
+
+
+
+::-webkit-scrollbar
+    width: 3px
+#diarypage
+    ::-webkit-scrollbar-thumb
+        background: 

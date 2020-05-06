@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#e1D1NsnwLr_1_);stroke:#FFFFFF;stroke-width:24;stroke-miterlimit:10;}
+	.st1{fill:#FFCC4E;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{font-family:'Nunito-Regular';}
+	.st4{font-size:143px;}
+</style>
+<g>
+	<g>
+		
+			<linearGradient id="e1D1NsnwLr_1_" gradientUnits="userSpaceOnUse" x1="537.2797" y1="454.3948" x2="422.4515" y2="234.5894" gradientTransform="matrix(1 0 0 -1 0 840)">
+			<stop  offset="0" style="stop-color:#2D2D31"/>
+			<stop  offset="1" style="stop-color:#000000"/>
+		</linearGradient>
+		<path id="e1D1NsnwLr" class="st0" d="M748.4,401.9c0,121.2-98.4,219.7-219.7,219.7s-219.7-98.5-219.7-219.7
+			s98.4-219.6,219.7-219.6S748.4,280.8,748.4,401.9z"/>
+	</g>
+</g>
+<path class="st1" d="M529.6,288.3c-60.6,0-109.8,49.1-109.8,109.8S469,507.9,529.6,507.9s109.8-49.1,109.8-109.8
+	S590.2,288.3,529.6,288.3z M528.7,444.1c-24.5,0-44.4-19.9-44.4-44.4s19.9-44.4,44.4-44.4c24.5,0,44.4,19.9,44.4,44.4
+	S553.2,444.1,528.7,444.1z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="51.5972" y1="640.5453" x2="528.6877" y2="163.4547">
+	<stop  offset="0" style="stop-color:#000000"/>
+	<stop  offset="1" style="stop-color:#2D2D31"/>
+</linearGradient>
+<rect x="51.6" y="163.5" class="st2" width="477.1" height="477.1"/>
+<text transform="matrix(1 0 0 1 98.6057 355.3633)"><tspan x="0" y="0" class="st1 st3 st4">Ave</tspan><tspan x="0" y="171.6" class="st1 st3 st4">Music</tspan></text>
+</svg>
