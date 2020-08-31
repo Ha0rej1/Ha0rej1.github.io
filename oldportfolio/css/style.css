@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+
+
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #131218;
+    user-select: none;
+}
+.container {
+    margin-left: 15px;
+}
+nav {
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+
+nav .pc-menu li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav .pc-menu {
+    position: absolute;
+    right: 15px;
+    font-size: 24px;
+    top: 20px;
+
+}
+
+nav a {
+    opacity: 1;
+    transition: 0.3s;
+
+}
+
+nav a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 2em;
+    transition: 0.3s;
+    opacity: 1;
+    width: 110px;
+}
+.logo:hover{
+    transition: 0.3s;
+    opacity: 0.7;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+.content {}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #040405;
+    color: white;
+}
+
+.contacts {
+    opacity: 1;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.contacts i {
+    margin-left: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    opacity: 1;
+    transition: 0.3s;
+    padding:5px;
+}
+
+i:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 770px) {
+    .menu-burger {
+        display: none !important;
+    }
+
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .pc-menu {
+        display: none !important;
+    }
+
+    .menu-burger {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 24px;
+        z-index: 10;
+        color: white;
+        transition: 0.7s !important;
+    }
+
+    .menu-burger-move {
+        top: 100px;
+        transition: 0.7s !important;
+    }
+}
+
+.mobile-menu-move {
+    transition: 0.7s;
+    top: 0px !important;
+    color: black;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: -85px;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    transition: 0.7s;
+    padding-top: 15px;
+}
+
+
+.mobile-menu li {
+    text-align: center;
+    margin-right: 20px;
+    font-size: 24px;
+}
+.mobile-menus a{
+    color: black;
+}
+
+#welcome {
+    height: 100vh;
+    color: white;
+    position: relative;
+   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    user-select: none;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 1s ease infinite;
+    -moz-animation: Gradient 1s ease infinite;
+    animation: Gradient 1s ease infinite;
+}
+
+
+#projects {
+    overflow: hidden;
+
+}
+
+#projects-block {
+    text-align: center;
+    position: relative;
+
+}
+
+#projects-block .card {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+
+}
+
+#top-welcome {
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    display: flex;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.3s;
+    text-align: center;
+    z-index: 9999;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#welcome-block {
+    overflow: hidden;
+    height: 200px;
+    white-space: nowrap;
+}
+
+#welcome .btn {
+    margin-right: 10px;
+    position: relative;
+    top: 30px;
+}
+
+.card {
+    transition: 0.3s;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card p {
+    padding: 10px;
+}
+
+::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 0px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ecedee;
+    width: 0px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #000024, #6D019D);
+}
+
+::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+#projects-main {
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #projects-main {
+        visibility: hidden;
+    }
+
+    #welcome img {
+        height: 100%;
+        width: 80%;
+    }
+
+    #top-welcome {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-37%);
+
+    }
+
+    #projects {}
+
+    #welcome .btn {
+        margin-left: 10px;
+    }
+
+    #lastcard {
+        margin-bottom: 160px !important;
+    }
+    #welcome .btn {
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+}
+
+@media screen and (min-width: 770px) {
+    #welcome-block {
+        position: relative;
+        top: 120px;
+    }
+
+    #top-welcome img {
+        margin-left: 14%;
+    }
+
+    .logo {
+        position: fixed;
+    }
+
+    #projects .card {
+        margin-bottom: 120px;
+    }
+
+    #projects {
+
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #projects {
+    }
+}
+
+.dnone {
+    display: none;
+}
+
+#footer-text {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 65px;
+
+}
+
+.prefooter {
+    height: 50px;
+    background-color: #0a0a0d;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#prefooter-contacts {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    font-size: 1.3em;
+}
+a{
+    color:white;
+}
+@media screen and (width: 1024px){
+    #projects{
+    }
+}
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ha0rej1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/505beb7154.js"></script>
+</head>
+<body id="no-scroll" class="no-scroll">
+
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+
+    <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none";
+            }
+        }, 16);
+    }
+    window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
+    </script>
+
+    <div class="wrapper">
+        <div class="content">
+            <nav id="nav">
+                <a href="#nav">
+                    <p class="logo">Ha0rej1</p>
+                </a>
+                <ul class="pc-menu">
+                    <li> <a href="#inf" onclick="showinf()">Проекты </a></li>
+                    <li><a href="#prefooter-contacts" onclick="showinf()">Связаться </a></li>
+                </ul>
+                <a onclick="callmenu()"><i class="fas fa-bars menu-burger" id="burgermen"></i></a>
+                <ul id="mobmenu" class="mobile-menu">
+                    <li> <a href="#inf" onclick="showinf()">Проекты</a></li>
+                    <li><a href="#prefooter-contacts" onclick="showinf()">Связаться </a></li>
+                </ul>
+            </nav>
+            <div id="welcome">
+
+
+                <div id="top-welcome">
+                    <img src="img/macbook.png" width="50%" height="100%" alt="">
+                    <div id="welcome-block">
+                        <p>Привет! <br>Меня зовут Ростислав. <br>
+                            Я занимаюсь Web разработкой и <br> дизайном 2 года</p>
+                        <a href="#inf" class="btn" onclick="showinf()">
+                            Подробнее
+                        </a>
+                        <a href="#prefooter-contacts" class="btn" onclick="showinf()">
+                            Связаться
+                            
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <a href="https://t.me/ha0rej1" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
+                </div>
+                
+            </div>
+            <div id="inf">
+                <div id="projects">
+                    <p id="projects-main">Проекты</p>
+                    <div id="projects-block">
+                        <div class="card" id="firstcard">
+                            <img src="img/kazkabel.png" alt="" width="100%">
+                            <p class="project-description">Казка.бел - озвученные белорусские сказки и предания<br>
+                                (Html, materialize css, js)</p>
+                            <a class="btn" href="https://kazkabelgroup.github.io">
+                                Перейти
+                            </a>
+                        </div>
+                        <div class="card">
+                            <img src="img/ivanovskiy.png" alt="" width="100%">
+                            <p class="project-description">Ивановский - сайт про советского генерала <br>
+                                (Html, materialize.css, js)
+                            </p>
+                            <a class="btn" href="https://ivanovskiy.github.io">
+                                Перейти
+                            </a>
+                        </div>
+                        <div class="card" id="lastcard">
+                            <img src="img/aveweb.png" alt="" width="100%">
+                            <p class="project-description">Ave Diary - Электронный дневник <br>(Html, css)</p>
+                            <a class="btn" href="https://aveweb.xyz">
+                                Перейти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="news">
+                    <p id="news-cat-title">Новости</p>
+                    <div id="news-block">
+                        <div class="card">
+                            <p class="project-description">Новый сайт уже в разработке!<br>
+                                <img src="img/newwebsite.png" alt="" width="100%">
+                                <p class="news-date">16.07.2019</p>
+                        </div>
+                        <div class="card">
+                            <p class="project-description">Новый сайт уже в разработке!<br>
+                                <img src="img/newwebsite.png" alt="" width="100%">
+                                <p class="news-date">16.07.2019</p>
+                        </div>
+                        <div class="card">
+                            <p class="project-description">Новый сайт уже в разработке!<br>
+                                <img src="img/newwebsite.png" alt="" width="100%">
+                                <p class="news-date">16.07.2019</p>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                        <p id="footer-text">
+                            <a href="https://t.me/ha0rej1" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://vk.com/profy2107" target="_blank"><i class="fab fa-vk"></i></a>
+                            <a href="mailto:Rostik3021@gmail.com" я> <i class="fas fa-envelope"></i></a>
+                   <a href="#nav">Ha0rej1 2019</a></p>
+            </div>
+            </footer>
+        </div>
+    </div>
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
+    <style type="text/css">
+    #hellopreloader>p {
+        display: none;
+    }
+
+    #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        min-width: 100%;
+        background: #131218 url(http://hello-site.ru//main/images/preloads/tail-spin.svg) center center no-repeat;
+        background-size: 41px;
+    }
+    </style>
+</body>
+<script src="js/burger.js"></script>
+</html>

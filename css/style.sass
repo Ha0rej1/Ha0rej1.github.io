@@ -1,0 +1,212 @@
+*, html
+    margin: 0
+    padding: 0
+    scroll-behavior: smooth
+
+body
+    font-family: 'Roboto', sans-serif
+    
+a
+    color: unset
+    text-decoration: none
+
+header
+    padding: 30px 5vw
+    font-family: 'Montserrat', sans-serif
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    box-sizing: border-box
+    z-index: 1
+    color: #ffffff
+    transition: 0.3s
+    user-select: none
+    animation: NavbarAppear 0.5s ease-in-out
+    #goup
+        opacity: 0
+        position: absolute
+        left: 10vw
+        font-size: 1.2em
+        top: 50%
+        transform: translateY(-50%)
+        color: #000000
+        @media screen and ( max-width: 768px )
+            display: none
+            
+    i
+        margin-right: 5px
+    &.color-header
+        padding: 20px 5vw
+        background-color: #ffffff
+        color: #000000
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15)
+        transition: 0.3s
+        #goup
+            opacity: 1
+    #logo
+            
+    nav
+        display: flex
+        justify-content: space-between
+        ul
+            display: flex
+            list-style: none
+            @media screen and ( max-width: 768px )
+                display: none
+            li
+                margin-left: 30px
+
+#first-section
+    height: 100vh
+    box-sizing: border-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 10vw
+    padding-right: 15vw
+    background-color: #2259c5
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E")
+    user-select: none
+    @media screen and ( max-width: 768px )
+        flex-direction: column
+        justify-content: space-around
+        padding-right: 10vw
+        #symbol
+            display: none
+    #description
+        font-family: 'Montserrat', sans-serif
+        h1
+            font-weight: normal
+            font-size: 3em
+            color: #ffffff
+        p
+            color: #ffffff
+    #symbol
+        color: #ffffff
+        font-size: 10em
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15)
+        animation: flying 2s ease-in-out infinite
+        animation-delay: 0.5s
+    .btn
+        display: block
+        width: fit-content
+        margin-top: 20px
+        color: #2259c5
+        background-color: #ffffff
+        border-radius: 7px
+        padding: 10px 18px
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15)
+
+#skills-section
+    box-sizing: border-box
+    display: flex
+    padding: 5vw 10vw
+    user-select: none
+    flex-direction: column
+    padding-bottom: 0
+    #section-header
+        margin-bottom: 20px
+    .skill-block
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-bottom: 37px
+        .projects-count
+            margin-left: 15px
+        &#webskill
+            .skill-bar
+                div
+                    background-color: #2259c5
+                    width: 85%
+        &#phpskill
+            .skill-bar
+                div
+                    background-color: #2259c5
+                    width: 30%
+        &#pythonskill
+            .skill-bar
+                div
+                    background-color: #2259c5
+                    width: 30%
+        .skill-bar
+            box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff
+            height: 50px
+            width: 50%
+            border-radius: 10px
+            overflow: hidden
+            background-color: #ffffff
+            div
+                width: 70%
+                height: 100%
+                background-color: #fc7268
+                border-radius: 10px
+                box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15)
+                display: flex
+                align-items: center
+                padding-left: 10px
+                color: #ffffff
+                h2
+                    font-weight: normal
+        @media screen and ( max-width: 768px )
+            width: 100%
+            flex-direction: column
+            align-items: unset
+            .projects-count
+                margin-top: 10px
+            .skill-bar
+                width: 100% !important
+                border-radius: 20px
+                div
+                    border-radius: 20px
+                    font-size: 0.7em
+
+            
+#projects-section
+    box-sizing: border-box
+    padding: 5vw 10vw
+    user-select: none
+    #section-header
+        margin-bottom: 20px
+    #projects-block
+        display: grid
+        grid-gap: 30px
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+        grid-template-rows: repeat(auto-fit, 300px)
+        @media screen and ( max-width: 768px )
+            display: flex
+            flex-direction: column
+
+        .project-block
+            display: block
+            border-radius: 30px
+            background-color: #ffffff
+            height: 300px
+            box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff
+            padding: 15px
+            box-sizing: border-box
+
+@keyframes flying
+    0%
+        transform: translateY(0px)
+    50%
+        transform: translateY(5px)
+    100%
+        transform: translateY(0px)
+
+@keyframes NavbarAppear
+    0%
+        transform: translateY(-60px)
+        opacity: 0
+    100%
+        transform: translateY(0)
+        opacity: 1
+
+::-webkit-scrollbar
+    width: 6px
+
+::-webkit-scrollbar-track
+    background-color: #ffffff
+
+::-webkit-scrollbar-thumb
+    background-color: #2259c5
