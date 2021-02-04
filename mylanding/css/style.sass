@@ -4,7 +4,7 @@
     scroll-behavior: smooth
 
 body
-    font-family: 'Roboto', sans-serif
+    font-family: 'Montserrat', sans-serif
     background: #121212
     
 a
@@ -14,7 +14,7 @@ a
 header
     padding: 20px 10vw
     font-family: 'Montserrat', sans-serif
-    position: fixed
+    position: absolute
     left: 0
     top: 0
     width: 100%
@@ -106,18 +106,21 @@ header
         display: block
         width: fit-content
         color: #ffffff
-        background: linear-gradient(90deg, #2e63ce 0%, #012a7c 100%)
+        background: #2e63ce
         border-radius: 7px
         padding: 10px 18px
         box-shadow: 0px 0px 15px 10px rgba(46, 99, 206, 0.15)
         transition: 0.3s
+        margin-top: 30px
+        opacity: 1
         &:hover
             transition: 0.3s
-            background: linear-gradient(90deg, #2e63ce 0%, #2e63ce 100%)
+            background: #2e63ce
+            opacity: 0.7
 
 #projects-section
     box-sizing: border-box
-    padding: 5vw 10vw
+    padding: 50px 10vw
     user-select: none
     font-family: 'Montserrat'
     font-weight: normal
@@ -127,17 +130,20 @@ header
         margin-bottom: 20px
     #projects-block
         display: grid
-        grid-gap: 30px
+        grid-gap: 50px
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
-        grid-template-rows: repeat(auto-fit, 300px)
         @media screen and ( max-width: 768px )
             display: flex
             flex-direction: column
             .project-block
-                margin-bottom: 50px
+                margin-bottom: 0px
 
         .project-block
             display: block
+            background: rgba(255, 255, 255, 0.3)
+            box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3)
+            padding: 15px
+            border-radius: 15px
             box-sizing: border-box
             color: #ffffff
             h1
@@ -146,12 +152,83 @@ header
                 width: 100%
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5)
                 border-radius: 10px
+                height: 180px
 
-#contact-zone
+#contact
     width: 100%
     box-sizing: border-box
     padding: 15px 10vw
     color: #ffffff
+    user-select: none
+    position: relative
+    .circle
+        background: linear-gradient(90deg, #7d62a1 0%, #012a7c 100%)
+        transform: skewY(7deg)
+        position: absolute
+        z-index: -1
+        border-radius: 50%
+        width: 50%
+        box-sizing: border-box
+        height: 100px
+        bottom: 0
+        @media screen and ( max-width: 768px )
+            display: none
+    .circle2
+        background: linear-gradient(90deg, #dc4b66 0%, #012a7c 100%)
+        transform: skewY(5deg)
+        position: absolute
+        z-index: -1
+        border-radius: 30px
+        width: 30%
+        box-sizing: border-box
+        height: 100px
+        bottom: 0
+        right: 10vw
+        @media screen and ( max-width: 768px )
+            display: none
+    .circle3
+        background: linear-gradient(90deg, #018e45 0%, #012a7c 100%)
+        transform: skewY(-15deg)
+        position: absolute
+        z-index: -1
+        border-radius: 30px
+        width: 300px
+        box-sizing: border-box
+        height: 30px
+        bottom: 100px
+        right: 30vw
+        @media screen and ( max-width: 768px )
+            display: none
+    .container
+        display: flex
+        margin-top: 15px
+        i
+            margin-right: 10px
+        .btn
+            display: flex
+            align-items: center
+            width: fit-content
+            color: #ffffff
+            background: #2e63ce
+            border-radius: 7px
+            padding: 10px 18px
+            box-shadow: 0px 0px 15px 10px rgba(46, 99, 206, 0.15)
+            transition: 0.3s
+            margin-right: 15px
+            box-sizing: border-box
+            opacity: 1
+            &:hover
+                transition: 0.3s
+                background: #2e63ce
+                opacity: 0.7
+        @media screen and ( max-width: 768px )
+            flex-direction: column
+            .btn
+                width: 100%
+                padding: 20px 15px
+                margin-bottom: 15px
+                i
+                    font-size: 1.2em
 
 
 footer
@@ -159,6 +236,7 @@ footer
     padding: 15px
     color: #ffffff
     font-family: 'Montserrat'
+    user-select: none
 
 @keyframes flying
     0%
