@@ -215,7 +215,6 @@ header nav ul li {
 #projects-section #projects-block {
   display: -ms-grid;
   display: grid;
-  grid-gap: 50px;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -231,17 +230,15 @@ header nav ul li {
             flex-direction: column;
   }
   #projects-section #projects-block .project-block {
-    margin-bottom: 0px;
+    margin: 0 !important;
+    margin-bottom: 50px !important;
+    padding: 0 !important;
   }
 }
 
 #projects-section #projects-block .project-block {
   display: block;
-  background: rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
   padding: 15px;
-  border-radius: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #ffffff;
@@ -257,6 +254,24 @@ header nav ul li {
           box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   height: 180px;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  #projects-section #projects-block .project-block {
+    -webkit-transform: rotateZ(-3deg) skew(-3deg, -3deg) scale(1.05);
+            transform: rotateZ(-3deg) skew(-3deg, -3deg) scale(1.05);
+  }
+  #projects-section #projects-block .project-block img:hover {
+    -webkit-transform: rotateZ(-3deg) skew(-3deg, -3deg) scale(1.05);
+            transform: rotateZ(-3deg) skew(-3deg, -3deg) scale(1.05);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 1;
+    cursor: pointer;
+  }
 }
 
 #contact {
