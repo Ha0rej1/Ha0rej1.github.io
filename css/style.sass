@@ -173,10 +173,10 @@ header
                 transform: rotateZ(-3deg) skew(-3deg, -3deg) scale(1.05)
                 img
                     &:hover
-                        transform: rotateZ(-3deg) skew(-3deg, -3deg) scale(1.05)
+                        // transform: rotateZ(-3deg) skew(-3deg, -3deg) scale(1.05)
                         transition: 0.3s
-                        opacity: 1
-                        cursor: pointer
+                        // opacity: 1
+                        // cursor: pointer
                         
 
 #contact
@@ -287,3 +287,68 @@ footer
 
 ::-webkit-scrollbar-thumb
     background-color: #2259c5
+
+.zoomed
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 0vw
+    height: auto
+    animation: zoom-in 0.25s linear
+    animation-fill-mode: forwards
+    padding: 100vw
+    box-shadow: inset 0px 0px 0px 100vw rgba(0, 0, 0, 0.8)
+    will-change: opacity 
+.zoomed-rm
+    animation: zoom-out 0.25s linear
+    animation-fill-mode: forwards
+
+.zoom-img
+    cursor: pointer
+
+.close-zoom
+    position: fixed
+    right: 50px
+    top: 50px
+    z-index: 5
+    font-size: 2em
+    color: #fff
+    animation: close-zoom-in 0.25s linear
+    animation-fill-mode: forwards
+    cursor: pointer
+    &.close-zoom-rm
+        animation: close-zoom-rm 0.25s linear
+        animation-fill-mode: forwards
+    @keyframes close-zoom-rm
+        0%
+            transform: scale(1)
+            opacity: 1
+        100%
+            transform: scale(0)
+            opacity: 0
+    @keyframes close-zoom-in
+        0%
+            transform: scale(0)
+            opacity: 0
+        100%
+            transform: scale(1)
+            opacity: 1
+@keyframes zoom-in
+    0%
+        border-radius: 0px 
+        opacity: 0
+        width: 10vw
+    100%
+        border-radius: 25px
+        opacity: 1
+        width: 70vw
+        
+@keyframes zoom-out
+    0%
+        opacity: 1
+        width: 70vw
+    100%
+        opacity: 0
+        width: 10vw
+        
