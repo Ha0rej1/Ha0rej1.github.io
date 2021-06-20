@@ -1,0 +1,184 @@
+*, body
+    margin: 0
+    padding: 0
+    font-family: 'Roboto', sans-serif
+
+a
+    text-decoration: none
+    color: #fff
+
+header
+    box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.15)
+    box-sizing: border-box
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0    
+    z-index: 999
+    padding: 15px 15vw
+    background-color: rgba(0, 0, 0, 0.9)
+    opacity: 0
+    transition: 0.1s
+    font-weight: normal
+    transform: scale(0.7)
+    border-radius: 50px
+    padding: 0px 15vw
+    height: 0
+    h1
+        font-weight: normal
+        text-shadow: 4px 3px 0 #7A7A7A
+    &.sticky
+        position: fixed
+
+    &.ready
+        padding: 15px 15vw
+        height: fit-content
+        transform: scale(1)
+        border-radius: 0
+        opacity: 1
+        transition: 0.3s
+
+
+    #secondlogo
+        color: #fff
+    
+    
+#first
+    user-select: none
+    height: 100vh
+    overflow: hidden
+    position: relative
+    #widget
+        position: absolute
+        left: 30px
+        bottom: 30px
+        z-index: 2
+        display: flex
+        @media screen and ( max-width: 768px )
+            justify-content: space-between
+            width: 70%
+            left: 50%
+            bottom: 7.5%
+            transform: translateX(-50%)
+        a
+            margin-right: 15px
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+            width: 30px
+            height: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 2em
+            background: rgba(79, 79, 79, 0.7)
+            border-radius: 15px
+            padding: 15px
+            color: #fff
+    video
+        object-fit: cover
+        display: block
+        width: 100%
+        height: 100%
+        filter: brightness(0.3) 
+        z-index: 0
+
+    h1
+        text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15)
+        position: fixed
+        left: 50%
+        top: 50%
+        font-weight: normal
+        font-size: 5em
+        transform: translate(-50%, -50%)
+        color: #fff
+        transition: 0.1s
+        @media screen and ( max-width: 768px )
+            font-size: 3.5em
+            white-space: nowrap
+        &#artname.cont 
+            opacity: 0
+            transition: 0.1s
+            transform: translate(-50%, -50%) scale(0.7)
+
+        
+
+
+
+#second
+    position: relative
+    height: 100vh
+    background: #121212
+    padding: 15px 15vw
+    .blocks-group
+        display: flex
+        justify-content: center
+        margin-top: 65px
+        article
+            border-radius: 50px
+            background: #121212
+            box-shadow:  20px 20px 60px #070707, -20px -20px 60px #1d1d1d
+            color: #cecece
+            margin-right: 50px
+            padding: 30px
+            &:last-child
+                margin-right: 0
+    .abfig1
+        width: 100px
+        height: 100px
+        border-radius: 15px
+        opacity: 0.7
+        background: #FF5F6D
+        background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D)
+        background: linear-gradient(to right, #FFC371, #FF5F6D)
+        position: absolute
+        left: 50px
+        top: 50%
+        transform: translateY(-50%) rotate(55deg)
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+
+    .abfig2
+        width: 50px
+        height: 200px
+        border-radius: 15px
+        opacity: 0.7
+        background: #396afc
+        background: -webkit-linear-gradient(to right, #2948ff, #396afc)
+        background: linear-gradient(to right, #2948ff, #396afc)
+        position: absolute
+        right: 150px
+        top: 50%
+        transform: translateY(-50%) rotate(-55deg)
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+    .abfig3
+        width: 300px
+        height: 200px
+        border-radius: 30px
+        opacity: 0.7
+        background: #AAFFA9
+        background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9)
+        background: linear-gradient(to right, #11FFBD, #AAFFA9)
+        position: absolute
+        bottom: 50px
+        left: 30px
+        transform: rotate(10deg)
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+    .abfig4
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        opacity: 0.7
+        background: #e65c00
+        background: -webkit-linear-gradient(to right, #F9D423, #e65c00)
+        background: linear-gradient(to right, #F9D423, #e65c00)
+        position: absolute
+        bottom: 50px
+        right: 70px
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+#third
+    height: 100vh
+
+::-webkit-scrollbar
+    width: 8px
+    background: #717171
+
+::-webkit-scrollbar-thumb
+    background: #fff
