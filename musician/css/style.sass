@@ -7,8 +7,11 @@ a
     text-decoration: none
     color: #fff
 
+img
+    user-select: none
+
 header
-    box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.15)
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.15)
     box-sizing: border-box
     position: absolute
     width: 100%
@@ -24,9 +27,16 @@ header
     border-radius: 50px
     padding: 0px 15vw
     height: 0
+    transition: 0.3s
+    user-select: none
     h1
         font-weight: normal
-        text-shadow: 4px 3px 0 #7A7A7A
+        font-family: "Roboto Slab"
+        margin-left: 150px
+        opacity: 0
+        transition: 0.7s
+        
+        // text-shadow: 4px 3px 0 #7A7A7A
     &.sticky
         position: fixed
 
@@ -37,6 +47,12 @@ header
         border-radius: 0
         opacity: 1
         transition: 0.3s
+        h1
+            margin-left: 0
+            color: #fff
+            opacity: 1
+            transition: 0.7s
+
 
 
     #secondlogo
@@ -82,7 +98,7 @@ header
         z-index: 0
 
     h1
-        text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15)
+        // text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15)
         position: fixed
         left: 50%
         top: 50%
@@ -91,6 +107,30 @@ header
         transform: translate(-50%, -50%)
         color: #fff
         transition: 0.1s
+        font-family: 'Roboto Slab'
+        span
+            transition: 0.5s
+            &:first-child   
+                &.first-hide
+                    opacity: 0
+                    transform: translateX(100px)
+                    transition: 0.3s
+            &:last-child
+                &.first-hide
+                    opacity: 0
+                    transform: translateX(100px)
+                    transition: 0.7s
+            position: absolute
+            font-size: 0.5em
+            font-family: 'Raleway'
+            font-weight: 100
+            &:first-child
+                top: -30px
+            &:last-child
+
+            display: block
+
+
         @media screen and ( max-width: 768px )
             font-size: 3.5em
             white-space: nowrap
@@ -104,77 +144,196 @@ header
 
 
 #second
+    user-select: none
     position: relative
     height: 100vh
+    @media screen and ( max-width: 768px )
+        height: auto
+        padding-top: 100px
     background: #121212
     padding: 15px 15vw
-    .blocks-group
+    .last-release
         display: flex
+        flex-direction: row
         justify-content: center
-        margin-top: 65px
-        article
-            border-radius: 50px
-            background: #121212
-            box-shadow:  20px 20px 60px #070707, -20px -20px 60px #1d1d1d
-            color: #cecece
-            margin-right: 50px
-            padding: 30px
-            &:last-child
+        align-items: center
+        position: absolute
+        
+        width: 70vw
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        .description
+            h1
+                font-weight: 100
+                font-size: 3em
+                margin-bottom: 20px
+                font-family: "Raleway"
+            p
+                margin-bottom: 15px
+                font-family: "Raleway"
+            margin-right: 15vw
+            color: #fff
+            .services
+                
+                img
+                    border-radius: 15px
+                    margin-right: 15px
+                    height: 50px
+                    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15)
+                    transition: 0.3s
+                    cursor: pointer
+                    &:hover
+                        box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.3)
+                        transform: scale(1.1)
+                        transition: 0.3s
+        .picture
+            position: relative
+            img
+                &.blurred
+                    position: absolute
+                    width: 30vw
+                    left: 50%
+                    top: 50%
+                    transform: translate(-50%, -50%)
+                    filter: blur(100px)
+                    opacity: 0.3
+                    z-index: -1
+                &.album
+                    z-index: 1
+                    width: 20vw
+                    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.15)
+            p
+                margin-top: 10px
+                width: 100%
+                text-align: center
+                justify-content: center
+                align-items: center
+                display: flex
+                flex-direction: column
+                span
+                    width: fit-content
+                    &:first-child
+                        font-family: "Raleway"
+                        font-weight: 100
+                        color: #fff
+                        font-size: 2em
+                        font-weight: bold
+                        margin-bottom: 7px
+                    &:last-child
+                        color: #fff
+                        font-family: "Raleway"
+                        font-weight: 200
+                        font-size: 1em
+                        opacity: 1
+        @media screen and ( max-width: 768px )
+            position: static
+            transform: unset
+            flex-direction: column-reverse
+            .description
+                margin-top: 20px
                 margin-right: 0
-    .abfig1
-        width: 100px
-        height: 100px
-        border-radius: 15px
-        opacity: 0.7
-        background: #FF5F6D
-        background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D)
-        background: linear-gradient(to right, #FFC371, #FF5F6D)
-        position: absolute
-        left: 50px
-        top: 50%
-        transform: translateY(-50%) rotate(55deg)
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
-
-    .abfig2
-        width: 50px
-        height: 200px
-        border-radius: 15px
-        opacity: 0.7
-        background: #396afc
-        background: -webkit-linear-gradient(to right, #2948ff, #396afc)
-        background: linear-gradient(to right, #2948ff, #396afc)
-        position: absolute
-        right: 150px
-        top: 50%
-        transform: translateY(-50%) rotate(-55deg)
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
-    .abfig3
-        width: 300px
-        height: 200px
-        border-radius: 30px
-        opacity: 0.7
-        background: #AAFFA9
-        background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9)
-        background: linear-gradient(to right, #11FFBD, #AAFFA9)
-        position: absolute
-        bottom: 50px
-        left: 30px
-        transform: rotate(10deg)
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
-    .abfig4
-        width: 100px
-        height: 100px
-        border-radius: 50%
-        opacity: 0.7
-        background: #e65c00
-        background: -webkit-linear-gradient(to right, #F9D423, #e65c00)
-        background: linear-gradient(to right, #F9D423, #e65c00)
-        position: absolute
-        bottom: 50px
-        right: 70px
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3)
+                h1
+                    font-size: 2.5em
+                    white-space: nowrap
+            .services
+                display: flex
+                flex-wrap: wrap
+                img
+                    display: block
+                    width: auto !important
+                    margin-right: 0
+                    margin-bottom: 20px
+                    &:last-child
+                        margin-bottom: 0
+            .picture
+                margin-top: 50px
+                width: 100%
+                img
+                    &.album
+                        width: 100%
+                    &.blurred 
+                        width: 100%
+                    
 #third
-    height: 100vh
+
+    user-select: none
+    position: relative
+    height: auto
+    background: #121212
+    padding: 15px 15vw
+    #allreleases
+        display: flex
+        flex-direction: column
+        position: relative
+        .bgrelease
+            @media screen and ( max-width: 768px )
+                display: none
+            z-index: 1
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            width: 98vw
+            filter: blur(100px)
+            opacity: 0.3
+            background-size: 100% 100%
+            height: 70vh
+            transition: 0.3s
+            &.test
+                opacity: 0
+                transition: 0.3s
+        #background-release
+            background-image: url('../img/album.jpg')
+        #background-release2
+            background-image: url('../img/album1.jpg')
+
+        .headerof
+            font-family: "Raleway"
+            font-weight: 100
+            font-size: 3em
+            margin-bottom: 50px
+            color: #fff
+        .releases
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            z-index: 2
+            .release
+                margin-bottom: 50px
+                cursor: pointer
+
+                p
+                    margin-top: 10px
+                    width: 100%
+                    text-align: center
+                    justify-content: center
+                    align-items: center
+                    display: flex
+                    flex-direction: column
+                    font-family: "Raleway"
+                    font-weight: 100
+                    color: #fff
+                    font-size: 1.5em
+                    font-weight: bold
+                img
+                    width: 15vw
+                    transition: 0.3s
+                    // box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.15)
+                    // &:hover
+                    //     transition: 0.3s
+                    //     transform: scale(1.1)
+                    //     box-shadow: 0px 0px 50px 15px rgba(255, 255, 255, 0.15)
+        @media screen and ( max-width: 768px )
+            .releases
+                flex-direction: column
+                .release
+                    img
+                        width: 100%
+            
+
+                        
+
 
 ::-webkit-scrollbar
     width: 8px

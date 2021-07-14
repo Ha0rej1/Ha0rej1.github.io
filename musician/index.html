@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.jpg">
     <link rel="stylesheet" href="css/style.css">
     <title>Musician</title>
@@ -14,9 +16,13 @@
 <body>
     <main>
         <section id="first">
-            <video src="bg.mp4" autoplay loop></video>
-            <h1 id="artname">Danty Sailor</h1>
-            <div id="widget">
+            <video src="bg.mp4" autoplay loop muted></video>
+            <h1 id="artname">
+                <span class="first-wh">Hi, I am</span>    
+                Danty Sailor
+                <span class="first-wh"><b>best</b> musician in the world</span>
+            </h1>
+            <!-- <div id="widget">
                 <a href="#">
                     <i class="fab fa-telegram-plane"></i>
                 </a>
@@ -26,18 +32,68 @@
                 <a href="#">
                     <i class="fab fa-vk"></i>
                 </a>
-            </div>
+            </div> -->
         </section>
         <section id="second">
             <header id="header">
                 <h1 id="secondlogo">Danty Sailor</h1>
             </header>
-            <div class="abfig1"></div>
+            <div class="last-release">
+                <div class="description">
+                    <h1>Last release</h1>
+                    <p>
+                        My last release was very impressive.
+                    </p>
+                    <div class="services">
+                        <img src="img/spotify.png" alt="">
+                        <img src="img/soundcloud_logo.jpg" alt="">
+                        <img src="img/yandex.jpg" alt="">
+                        <img src="img/apple.png" alt="">
+                    </div>
+                </div>
+                <div class="picture">
+                    <img class="blurred" src="img/album.jpg" alt="">
+                    <img class="album" src="img/album.jpg" alt="">
+                    <p>
+                        <span>LO FI</span>
+                        <span>Danty Sailor</span>
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <!-- <div class="abfig1"></div>
             <div class="abfig2"></div>
             <div class="abfig3"></div>
-            <div class="abfig4"></div>
+            <div class="abfig4"></div> -->
         </section>
-        <section id="third"></section>
+        <section id="third">
+            <div id="allreleases">
+                <!-- <div id="background-release2" class="bgrelease" alt=""></div>
+                <div id="background-release" class="bgrelease" alt=""></div> -->
+                <h1 class="headerof">All my releases</h1>
+                <div class="releases">
+                    <div class="release release-hover">
+                        <img src="img/album.jpg" alt="">
+                        <p>LO FI</p>
+                    </div>
+                    <div class="release release-hover">
+                        <img src="img/album1.jpg" alt="">
+                        <p>Last</p>
+                    </div>
+                    <div class="release release-hover">
+                        <img src="img/album2.jpg" alt="">
+                        <p>NO Way</p>
+                    </div>
+                    <div class="release release-hover">
+                        <img src="img/album3.jpg" alt="">
+                        <p>Do or die</p>
+                    </div>
+                </div>
+            </div>            
+        </section>
     </main>
     <footer>
 
